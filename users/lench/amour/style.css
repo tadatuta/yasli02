@@ -123,8 +123,13 @@
 .b-main-menu
 {
     float: right;
-    margin: 10px 0 0 0;
+    position: absolute;
+    right: 0;
+    margin: 15px -50px 0 0;
+    padding: 0;
     overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
 }
 
 .b-main-menu__item
@@ -132,6 +137,7 @@
     float: left;
     list-style: none;
 }
+
 
 .b-main-menu__link
 {
@@ -145,10 +151,16 @@
 .b-main-menu__item_state_active
 {
     background: #f00;
+    border-radius: 12px;
 }
 
 .b-main-menu__item_state_active .b-main-menu__link
 {
     padding: 18px 30px;
     color: #fff;
+}
+
+.b-main-menu__item_position_last
+{
+    padding-right: 50px;
 }
