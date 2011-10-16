@@ -1,0 +1,27 @@
+
+body{
+    background: url("img/bg.png") repeat scroll 0 0 #fff;
+    min-width: 1000px;
+    width: 100%;
+    font: 100% Arial,Helvetica,sans-serif;
+}
+.lang-menu{
+    float: right;
+    position: absolute;
+    margin-top: 5px;
+    right: 10px;
+    
+}
+.lang-menu li{
+    display: inline;
+    font-size: 12px;
+    font-color: #666666;
+    border-right: 1px solid #666;
+    padding: 0 4px 0 0 ;
+}
+.lang-menu li a{
+    color: #666666;
+}
+.title{
+    margin: 6px 0 0 115px;
+}
