@@ -2,9 +2,8 @@
 {
     margin: 0;
     padding: 0;
-    background: url(img/bg.gif) repeat;
+    background: url(img/bg.gif);
     font: 12px arial, sans-serif;
-
 }
 .b-wrapper
 {
