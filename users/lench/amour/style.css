@@ -122,8 +122,9 @@
 
 .b-main-menu
 {
-    padding: 0;
-    margin: 0;
+    float: right;
+    margin: 10px 0 0 0;
+    overflow: hidden;
 }
 
 .b-main-menu__item
@@ -132,3 +133,22 @@
     list-style: none;
 }
 
+.b-main-menu__link
+{
+    font: 18px Georgia, "Times New Roman", sans-serif;
+    font-style: italic;
+    display: block;
+    padding: 18px 12px;
+    color: #3399ff;
+}
+
+.b-main-menu__item_state_active
+{
+    background: #f00;
+}
+
+.b-main-menu__item_state_active .b-main-menu__link
+{
+    padding: 18px 30px;
+    color: #fff;
+}
