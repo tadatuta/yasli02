@@ -1,0 +1,6 @@
+html { background: #00adef url("../../i/bg_t.jpg") left top repeat-x;}
+body {  background:url("../../i/bg_t_l.jpg") left 96px no-repeat;
+
+
+}
+
