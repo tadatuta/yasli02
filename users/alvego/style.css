@@ -1,0 +1,35 @@
+html {height:100%;}
+
+body {
+  margin:0;
+  padding:0;
+  height:auto !important;
+  height:100%;
+  min-height:100%;
+  color:#000;
+  font: 75%/158% arial,tahoma,verdana,sans-serif;
+  position:relative;
+  z-index:0;
+}
+
+#main {
+    margin: 0 auto;
+    width:1000px;
+}
+
+
+/*debug*/
+
+
+
+#overlay {
+    position:absolute;
+    outline:1px solid red;
+    top:0;
+    left:0;
+    width:100%;
+    height:1208px;
+    z-index:-1;
+    background:url('images/overlay.png') top center no-repeat;
+    opacity:.3;
+}
