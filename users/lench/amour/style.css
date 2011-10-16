@@ -124,11 +124,11 @@
 {
     padding: 0;
     margin: 0;
-    list-style: none;
 }
 
-.b-main-menu__link
+.b-main-menu__item
 {
     float: left;
+    list-style: none;
 }
 
