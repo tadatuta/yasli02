@@ -1,24 +1,38 @@
 <!doctype html>
-<html>
+<html id="nojs">
 <head>
 <title>Index page</title>
 <meta content="IE=EmulateIE7, IE=edge" http-equiv="X-UA-Compatible">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 <link rel="shortcut icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="favicon.png">
-<link rel="stylesheet" href="css/style.css">
+    <!--[if gt IE 8] <!-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--<![endif]-->
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/style.ie.css" type="text/css"/>
+    <![endif]-->
+
+    <script type="text/javascript">
+        <!--
+        document.documentElement.id = "js"
+        //-->
+    </script>
+
+  <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+ <![endif]-->
+
 </head>
 <body>
 <div class="b-page">
 <div class="b-page__inner">
 <div class="b-header">
-<h1 class="b-logo"><img src="i/b-logo.png" alt=""></h1>
-<h2 class="b-slogan"><img src="i/b-slogan.png" alt=""></h2>
+<h1 class="b-logo"><img src="i/b-logo.png" alt="Атоих" title="Атоих"></h1>
+<h2 class="b-slogan"><img src="i/b-slogan.png" alt="Любовь всегда приходит вовремя"  title=" Любовь всегда приходит вовремя" ></h2>
 
 <ul class="b-lang">
 	<li class="b-lang__item"><a href="#" class="b-lang__link">English</a></li>
