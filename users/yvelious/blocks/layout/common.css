@@ -1,0 +1,12 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    min-height:100%;
+
+    min-width: 960px;
+
+}
+body {
+    background: url(../../i/rose_l_t.png) no-repeat left top, url(../../i/bg.png) repeat left top #ffeaef  ;
+    overflow: visible;}
+
