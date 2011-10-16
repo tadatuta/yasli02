@@ -1,12 +1,13 @@
 html, body {
-    height: 100%;
-    width: 100%;
-    min-height:100%;
-
-    min-width: 960px;
-
+	height: 100%;
+	width: 100%;
+	min-height:100%;
+	min-width: 1000px;
+}
+html {
+	background: url(../../i/bg.png) repeat left top #ffeaef;
 }
 body {
-    background: url(../../i/rose_l_t.png) no-repeat left top, url(../../i/bg.png) repeat left top #ffeaef  ;
-    overflow: visible;}
-
+	background:url(../../i/rose_l_t.png) no-repeat left top;
+	overflow: visible;
+}
