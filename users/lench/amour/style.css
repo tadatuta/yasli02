@@ -22,13 +22,20 @@
     background: url("i/b-page__logo.png") no-repeat;
 }
 
-.b-page__title
+.b-title
 {
     display: block;
     width: 345px;
     height: 105px;
     overflow: hidden;
+    margin: 0;
     text-indent: -345px;
+}
+
+.b-title__link
+{
+    display: block;
+    height: 100%;
 }
 
 .b-page__title-text
@@ -117,12 +124,11 @@
 {
     padding: 0;
     margin: 0;
-    float: right;
+    list-style: none;
 }
 
 .b-main-menu__link
 {
     float: left;
-    list-style: none;
 }
 
