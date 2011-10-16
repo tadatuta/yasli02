@@ -1,0 +1,128 @@
+.b-page
+{
+    margin: 0;
+    background: url("i/l-page.png") repeat #fff;
+}
+
+.b-page__inner
+{
+    font: 12px Arial, sans-serif;
+    margin: auto;
+    position: relative;
+    width: 1000px;
+}
+
+.b-page__logo
+{
+    position: absolute;
+    width:637px;
+    height: 358px;
+    z-index: -1;
+    left: -128px;
+    background: url("i/b-page__logo.png") no-repeat;
+}
+
+.b-page__title
+{
+    display: block;
+    width: 345px;
+    height: 105px;
+    overflow: hidden;
+    text-indent: -345px;
+}
+
+.b-page__title-text
+{
+    background: url("i/b-page__title-text.png") no-repeat;
+    width: 333px;
+    height: 31px;
+    position: absolute;
+    top: 74px;
+    left: 350px;
+}
+
+.b-header
+{
+    overflow: hidden;
+}
+
+.b-language-menu
+{
+    float: right;
+    margin: 15px 0 0 0;
+}
+
+.b-language-menu__language
+{
+    float: left;
+    list-style: none;
+}
+
+.b-language-menu__link
+{
+    display: inline-block;
+    padding: 0 4px;
+    line-height: 10px;
+    border-right: 1px solid #666;
+    color: #666;
+}
+
+.b-language-menu__link_state_active
+{
+    text-decoration: none;
+}
+
+.b-actions
+{
+    overflow: hidden;
+    float: right;
+    clear: both;
+    margin: 6px 0 0 0;
+}
+
+.b-search
+{
+    font: 18px Georgia, "Times New Roman", sans-serif;
+    font-style: italic;
+    color: #666;
+    float: left;
+}
+
+.b-search__text
+{
+    font: 18px Georgia, "Times New Roman", sans-serif;
+    font-style: italic;
+    width: 105px;
+    color: #666;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.b-authorization
+{
+    float: left;
+    padding: 3px 0;
+    margin: 0 0 0 20px;
+}
+
+.b-authorization__enter-link
+{
+    font: 18px Georgia, "Times New Roman", sans-serif;
+    font-style: italic;
+    color: #666;
+}
+
+.b-main-menu
+{
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+.b-main-menu__link
+{
+    float: left;
+    list-style: none;
+}
+
