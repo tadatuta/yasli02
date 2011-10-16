@@ -1,0 +1,115 @@
+.b-page
+{
+    margin: 0;
+    padding: 0;
+    background: url(img/bg.gif) repeat;
+    font: 12px arial, sans-serif;
+
+}
+.b-wrapper
+{
+    margin: 0 auto;
+    width: 1000px;
+    position: relative;
+}
+.b-image-bg-one
+{
+    width: 622px;
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    left: -116px;
+    top: 0;
+    background: url("img/rose-top+logo.png") no-repeat;
+}
+.b-header
+{
+    padding-top: 8px;
+    z-index: 3;
+    position: relative;
+}
+.b-logo
+{
+    display: inline-block;
+    width: 345px;
+    height: 90px;
+}
+.b-link {
+    font-style: italic !important;
+    font-size: 18px;
+    font: 18px  georgia, sans-serif;
+}
+.b-link_color_gray {
+    color: #666;
+}
+.b-header__right {
+    display: block;
+    /*width: 651px;*/
+    width: 530px;
+    float: right;
+    height: 90px;
+    top: 0;
+    margin-right: 110px;
+    position: relative;
+    text-align: right;
+}
+.b-language
+{
+    list-style: none;
+}
+.b-language li {
+    display: inline-block;
+    padding: 0 1px;
+    border-right: 1px #666 solid;
+}
+.b-language li:last-child
+{
+    border: none;
+}
+.b-language a {
+    color: #666;
+}
+.b-search {
+    margin-right: 20px;
+}
+.b-search, .b-search input
+{
+    font: 18px  georgia, sans-serif;
+    color: #666;
+    font-style: italic;
+    display: inline-block;
+}
+.b-search input
+{
+    background: none;
+    border: none;
+    width: 100px;
+}
+.b-slogan
+{
+    background: url("img/slogan.png") no-repeat;
+    width: 334px;
+    height: 31px;
+}
+.b-menu {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    float: right;
+    background: #fff;
+    -moz-border-radius: 20px; /* Firefox */
+    -webkit-border-radius: 20px; /* Safari, Google Chrome */
+    -o-border-radius: 20px; /* Opera */
+    border-radius: 20px; /* CSS3 */
+    behavior: url(border-radius.htc); /* IE */
+}
+.b-menu__item {
+    display: inline-block;
+    
+}
+.b-menu__item a {
+    color: #3399ff;
+    display: block;
+    line-height: 20px;
+    padding: 15px 15px;
+}
