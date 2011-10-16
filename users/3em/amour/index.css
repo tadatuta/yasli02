@@ -56,6 +56,7 @@
 .b-language
 {
     list-style: none;
+    margin: 0;
 }
 .b-language li {
     display: inline-block;
@@ -90,6 +91,7 @@
     background: url("img/slogan.png") no-repeat;
     width: 334px;
     height: 31px;
+    margin-top: 25px;
 }
 .b-menu {
     list-style: none;
