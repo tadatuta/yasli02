@@ -1,0 +1,126 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+
+    padding:0;
+
+    border:0;
+
+    outline:0;
+
+    font-size:100%;
+
+    vertical-align:baseline;
+
+    background:transparent;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+body {
+	background: #fff url(../img/bg_fon.png);
+    font: 12px Arial, Helvetica, sans-serif;
+    color:#333;
+}
+
+.wrapp {
+    background: url(../img/up_rose.png) no-repeat;
+    height:350px;
+}
+header, .content, footer {
+    width:1000px;
+    margin: 0 auto;
+}
+
+.lang, .reg
+{
+    float:right;
+
+}
+
+.lang {margin:20px 130px 0 0; }
+
+.lang   li
+{
+	list-style-type:none;
+
+	display: -moz-inline-stack;
+
+	display: inline-block;
+
+    margin: 0 6px 0 0;
+}
+
+.lang   li a
+{
+	color: #666;
+    
+
+}
+
+.lang   li a:hover
+{
+    text-decoration: none;
+}
+
+.lang   li a:after
+{
+    content: " |";
+	    
+}
+
+.lang   li a.last-child:after
+{
+    content: "";
+
+}
+
+.reg {margin:5px 136px 0 0; }
+
+.reg a{
+    color:#666;
+    font: 18px italic Georgia,'Times New Roman', Times, serif;
+
+
+}
+.clearfix:after
+{
+	content: " ";
+
+	clear:both;
+
+	display: block;
+
+	visibility: hidden;
+}
+
+.logo
+{
+   position:relative;
+   top: -58px;
+   left:-10px;
+}
+
+.main   li
+{
+	list-style-type:none;
+
+	display: -moz-inline-stack;
+
+	display: inline-block;
+
+    margin: 0 6px 0 0;
+}

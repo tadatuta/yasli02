@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Amour - Любовь всегда приходит вовремя</title>
+    <title>Amour — Любовь всегда приходит вовремя</title>
     <meta charset="utf-8">
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <link rel="stylesheet" href="style.css">
@@ -10,73 +10,84 @@
 <body>
 <div id="overlay"></div>
 <div id="main">
-  <header>
-    <a id="headline" href="#" title="logo">Amour</a><span id="slogan" title="slogan">Любовь всегда приходит вовремя</span>
-    <nav>
-       <ul id="menu">
-        <li class="active"><a href="#">Интересные факты</a></li>
-        <li><a href="#">Анкеты</a></li>
-        <li><a href="#">Услуги</a></li>
-        <li><a href="#">Фото</a></li>
-        <li><a href="#">Тест</a></li>
-        <li><a href="#">Помощь</a></li>
-       </ul>
-    </nav>
+    <header>
+        <hgroup>
+            <h1><a id="headline" href="#index">Amour</a></h1>
+            <h2 id="slogan">Любовь всегда приходит вовремя</h2>
+        </hgroup>
+    
+        <nav id="menu">
+            <ul>
+                <li class="active">Интересные факты</li>
+                <li><a href="#forms">Анкеты</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#">Фото</a></li>
+                <li><a href="#">Тест</a></li>
+                <li><a href="#">Помощь</a></li>
+            </ul>
+        </nav>
       <ul id="language">
         <li><a href="#">English</a></li>
-        <li class="active"><a href="#">Русский</a></li>
+        <li class="active">Русский</li>
         <li><a href="#">Украинська</a></li>
         <li><a href="#">French</a></li>
         <li><a href="#">Espanol</a></li>
         <li><a href="#">Italian</a></li>
      </ul>
-     <form id="searchform"><input type="text" id="search"/></form>
+     <form id="searchform"><input id="search"></form>
      <a href="#" id="login">Вход</a>
   </header>
   <div id="content">
     <div class="featured">
-      <div id="slideshow"><div>
+      <div id="slideshow"></div>
       <div id="contacts">
         <h3>Ищешь половинку?</h3>
-        <p>в любое время дня и ночи:
-        <span class="phone">050 55-72-894</span>
-        <span class="phone">(06543) 12-34-6</span>
-        А если не так срочно,
-        то <a href="mailto:foo@bar.com" title="Отправить письмо">пиши</a> или <a href="#">заходи</a></p>
-      <div>
+        <dl>
+          <dd>в любое время дня и&nbsp;ночи:</dd>
+          <dt class="phone">050 55-72-894</dt>
+          <dt class="phone">(06543) 12-34-6</dt>
+        </dl>
+        <p>
+            А&nbsp;если не&nbsp;так&nbsp;срочно,
+            то&nbsp;<a href="mailto:foo@bar.com">пиши</a>
+            или&nbsp;<a href="#">заходи</a>
+        </p>
+      </div>
     </div>
     <ul id="layout">
-      <li><h4>Это интересно</h4>
+      <li>
+          <h4>Это интересно</h4>
         <article>
-          <h5><a href=""#>Осенние и зимние скидки!</a></h5>
+          <h5><a href="#">Осенние и&nbsp;зимние скидки!</a></h5>
           <p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октябрь то вам вдвойне повезло, так как иненно в этом месяце 20% скидка на все наши услуги.</p>
         </article>
         <article>
-          <h5><a href=""#>Еще больше осенних и зимних скидок!</a></h5>
+          <h5><a href="#">Еще больше осенних и зимних скидок!</a></h5>
           <p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октябрь то вам вдвойне повезло, так как иненно в этом месяце 20% скидка на все наши услуги.</p>
         </article>
       </li>
-      <li><h4>Новые анкеты</h4>
-        <ul id="persons">
-          <li><img src="#" alt="фото" /><a href="#" title="profile">Иван</a>,24 года Киев<li>
-          <li><img src="#" alt="фото" /><a href="#" title="profile">Наталья</a>,20 лет Ивано-франковск<li>
-          <li><img src="#" alt="фото" /><a href="#" title="profile">Пол</a>,32 года Нью-Йорк<li>
-          <li><img src="#" alt="фото" /><a href="#" title="profile">Кармен</a>,32 года Нью-Йорк<li>
-          <li><img src="#" alt="фото" /><a href="#" title="profile">Джеймс</a>,45 лет Лондон<li>
-          <li><img src="#" alt="фото" /><a href="#" title="profile">София</a>,56 лет Ялта<li>
-        </ul>
+      <li>
+            <h4>Новые анкеты</h4>
+            <ul id="persons">
+              <li><a href="#"><img src="#" alt="фото"> Иван</a>,24&nbsp;года Киев</li>
+              <li><img src="#" alt="фото" /><a href="#">Наталья</a>,20&nbsp;лет Ивано-франковск</li>
+              <li><img src="#" alt="фото" /><a href="#" title="profile">Пол</a>,32&nbsp;года Нью-Йорк</li>
+              <li><img src="#" alt="фото" /><a href="#" title="profile">Кармен</a>,32&nbsp;года Нью-Йорк</li>
+              <li><img src="#" alt="фото" /><a href="#" title="profile">Джеймс</a>,45&nbsp;лет Лондон</li>
+              <li><img src="#" alt="фото" /><a href="#" title="profile">София</a>,56&nbsp;лет Ялта</li>
+            </ul>
       </li>
       <li><h4>Новые услуги</h4>
         <article>
-          <h5><a href=""#>Знакомства</a></h5>
-          <p>Заполнив анкету в нашем агент-<br />стве, вы гарантированно найдете свою любовь.<br /><a href="#">Отправить заявку</a> на поиск партнё-<br />ра вы можете прямо сейчас!</p>
+          <h5><a href="#">Знакомства</a></h5>
+          <p>Заполнив анкету в нашем агентстве, вы гарантированно найдете свою любовь.<br /><a href="#">Отправить заявку</a> на поиск партнё-<br />ра вы можете прямо сейчас!</p>
         </article>
         <article>
-          <h5><a href=""#>Студийная фотосъёмка</a></h5>
+          <h5><a href="#">Студийная фотосъёмка</a></h5>
           <p>Не секрет, что людям, которые хорошо выглядят, сопутствует удача. Мы вам поможем.</p>
         </article>
         <article>
-          <h5><a href=""#>Тренинги</a></h5>
+          <h5><a href="#">Тренинги</a></h5>
           <p>Что изменить в своем поведении, чтобы привлекать к себе представителей противоположного пола? Узнайте об этом и многом другом на наших психологический тренингах.</p>
         </article>        
       </li>
