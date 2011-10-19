@@ -1,0 +1,61 @@
+body{
+    background:url(../img/background.png) white;
+    color:#333333;
+    font: 12pt Arial,sans-serif;
+}
+article, aside, details, footer, header, menu, nav, section,time {
+    display: block;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+:link {
+    color:#3399ff;
+}
+.header .lang,
+.header .lang :link
+{
+
+    color: #666666;
+}
+.header .lang li {
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+
+}
+.header .search {
+    font:italic 18pt Georgia;
+    background:transparent;
+    color: #666666;
+}
+
+.header .login {
+    font:italic 18pt Georgia;
+    color: #666666;
+}
+
+.header .menu :link,
+.header .menu :visited{
+    font:italic 18pt Georgia;
+
+}
+
+
+:link:hover, :visited:hover {
+    color: white;
+}
+
+
+.content .column h1{
+    font:italic 24pt Georgia;
+    color: #666666;
+}
+.content .column h1 a{
+    font:italic 16pt Georgia;
+    color: #3399ff;
+}
