@@ -1,0 +1,107 @@
+
+
+@font-face {
+    font-family: "Georgia Italic";
+    src: local("Georgia Italic"),
+    local("GeorgiaItalic"),
+    url(../lib/georgiaitalic.ttf) format('truetype')
+
+}
+
+
+
+
+body{
+    background:url(../img/background.png) white;
+    color:#333333;
+    font: 12pt Arial,sans-serif;
+}
+article, aside, details, footer, header, menu, nav, section,time {
+    display: block;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li,
+nav li a{
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+}
+:link {
+    color:#3399ff;
+}
+.header .lang,
+.header .lang :link
+{
+
+    color: #666666;
+}
+
+.header .search {
+    font:italic 18pt "Georgia Italic";
+    background:transparent;
+    color: #666666;
+    border:none;
+
+}
+
+.header .login {
+    font:italic 18pt "Georgia Italic";
+    color: #666666;
+}
+.header .menu ul{
+    border-radius: 17px/13px;
+    -moz-border-radius: 17px/13px;
+    -webkit-border-radius: 17px/13px;
+    height:53px;
+    width:731px;
+    background:white;
+}
+.header .menu li,
+.header .menu li a{
+    height:100%;
+
+
+}
+.header .menu li a{
+
+    padding: 0 34px 0 34px;
+    margin:0 -10px 0 -10px;
+}
+.header .menu :link,
+.header .menu :visited{
+    font:italic 18pt "Georgia Italic";
+
+}
+
+
+.header .menu :link:hover,
+.header .menu :visited:hover {
+    border-radius: 17px/13px;
+    -moz-border-radius: 17px/13px;
+    -webkit-border-radius: 17px/13px;
+    color: white;
+    background:red;
+
+}
+.content .column{
+    display: -moz-inline-box;
+    display: inline-block;
+//display:inline;
+//zoom:1;
+    width:253px;
+}
+
+.content .column h1{
+    font:italic 24pt "Georgia Italic";
+    color: #666666;
+}
+.content .column h1 a{
+    font:italic 16pt "Georgia Italic";
+    color: #3399ff;
+}

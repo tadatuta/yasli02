@@ -2,9 +2,8 @@
 {
     margin: 0;
     padding: 0;
-    background: url(img/bg.gif) repeat;
+    background: url(img/bg.gif);
     font: 12px arial, sans-serif;
-
 }
 .b-wrapper
 {
@@ -14,11 +13,11 @@
 }
 .b-image-bg-one
 {
-    width: 622px;
+    width: 713px;
     height: 350px;
     position: absolute;
     z-index: 1;
-    left: -116px;
+    left: -207px;
     top: 0;
     background: url("img/rose-top+logo.png") no-repeat;
 }
@@ -33,16 +32,20 @@
     display: inline-block;
     width: 345px;
     height: 90px;
+    margin: 0;
 }
-.b-link {
+.b-link
+{
     font-style: italic !important;
     font-size: 18px;
     font: 18px  georgia, sans-serif;
 }
-.b-link_color_gray {
+.b-link_color_gray
+{
     color: #666;
 }
-.b-header__right {
+.b-header__right
+{
     display: block;
     /*width: 651px;*/
     width: 530px;
@@ -58,7 +61,8 @@
     list-style: none;
     margin: 0;
 }
-.b-language li {
+.b-language li
+{
     display: inline-block;
     padding: 0 1px;
     border-right: 1px #666 solid;
@@ -67,10 +71,12 @@
 {
     border: none;
 }
-.b-language a {
+.b-language a
+{
     color: #666;
 }
-.b-search {
+.b-search
+{
     margin-right: 20px;
 }
 .b-search, .b-search input
@@ -85,6 +91,7 @@
     background: none;
     border: none;
     width: 100px;
+    outline: none;
 }
 .b-slogan
 {
@@ -93,7 +100,8 @@
     height: 31px;
     margin-top: 25px;
 }
-.b-menu {
+.b-menu
+{
     list-style: none;
     margin: 10px 0 0;
     padding: 0;
@@ -105,17 +113,20 @@
     border-radius: 20px; /* CSS3 */
     behavior: url(border-radius.htc); /* IE */
 }
-.b-menu__item {
+.b-menu__item
+{
     display: inline-block;
     
 }
-.b-menu__item a {
+.b-menu__item a
+{
     color: #3399ff;
     display: block;
     line-height: 20px;
     padding: 15px 20px;
 }
-.b-menu__active {
+.b-menu__active
+{
     background: rgb(204,0,51); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(204,0,51,1) 0%, rgba(255,51,102,1) 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,0,51,1)), color-stop(100%,rgba(255,51,102,1))); /* Chrome,Safari4+ */
@@ -123,7 +134,6 @@
     background: -o-linear-gradient(top, rgba(204,0,51,1) 0%,rgba(255,51,102,1) 100%); /* Opera11.10+ */
     background: -ms-linear-gradient(top, rgba(204,0,51,1) 0%,rgba(255,51,102,1) 100%); /* IE10+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0033', endColorstr='#ff3366',GradientType=0 ); /* IE6-9 */
-    background: linear-gradient(top, rgba(204,0,51,1) 0%,rgba(255,51,102,1) 100%); /* W3C */
 
     -moz-border-radius: 20px; /* Firefox */
     -webkit-border-radius: 20px; /* Safari, Google Chrome */
