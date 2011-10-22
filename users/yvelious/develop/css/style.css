@@ -1,5 +1,5 @@
 @import url(../blocks/utils/u-reset.css);
-
+@import url(../blocks/utils/u-clearfix.css);
 @import url(../blocks/utils/u-helper.css);
 @import url(../blocks/layout/common.css);
 @import url(../blocks/typo/t-typo.css);
@@ -23,7 +23,7 @@
 @import url(../blocks/b-copy/b-copy.css);
 @import url(../blocks/b-relation/b-relation.css);
 @import url(../blocks/b-select__lang/b-select__lang.css);
-@import url(../blocks/utils/u-clearfix.css);
+@import url(../blocks/b-search/b-search.css);
 @import url(../blocks/b-boy/b-boy.css);
 
 
