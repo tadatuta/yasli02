@@ -1,10 +1,16 @@
 .b-search { position: absolute; top:40px;
-    right: 100px;}
+    right: 100px;
+    background: url("../../i/b-search.png") no-repeat left top;
+    padding-left: 8px;
+}
 
 .b-search__input {
-    width:132px;
-    height: 22px;
-    font:italic 18px/22px Georgia, serif; color:#666;
+    width:108px;
+    height: 20px;
+    font:italic 18px/20px Georgia, serif; color:#666;
+    background: transparent;
+    border:none;
+    
     
 
 
