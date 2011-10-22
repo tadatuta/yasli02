@@ -3,86 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <title>Amour</title>
+    <link rel='stylesheet' href="css/amour.css">
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+
+    <![endif]-->
 
 
 </head>
 <body>
     <header class='header'>
-        <nav class='lang' >&nbsp;
+        <nav class='lang myclear' >&nbsp;
             <ul>
                 <li><a href="/lang/en">English</a></li
-                        ><li><a href='/lang/ru'>Русский</a></li
+                        ><li>Русский</li
                     ><li><a href='/lang/ua'>Українська</a></li
                     ><li><a href='/lang/fr'>French</a></li
                     ><li><a href="/lang/es">Espanol</a></li
                     ><li><a href="/lang/it">Italian</a></li
 
             ></ul>
-            <form name="searchform" method="POST" action="/search">
-                <input class='search' type='search'>
-             </form>
-            <a href="login">Вход</a>
+
 
         </nav>
+        <div class='wrapper myclear'>
+            <form name="searchform" method="POST" action="/search">
+                {<input class='search' placeholder='поиск' type='search'>}
+            </form>
+
+            <a href="login" class="login">вход</a>
+        </div>
         <div class='logo'></div>
         <nav class='menu'>
-            <a href="/fakty">Интересные факты</a>
-            <a href="/ankety">Анкеты</a>
-            <a href="/uslugi">Услуги</a>
-            <a href="/foto">Фото</a>
-            <a href="/test">Тест</a>
-            <a href="/help">Помощь</a>
+            <ul>
+                <li><a href="/fakty">Интересные факты</a></li
+                ><li><a href="/ankety">Анкеты</a></li
+                ><li><a href="/uslugi">Услуги</a></li
+                ><li><a href="/foto">Фото</a></li
+                ><li><a href="/test">Тест</a></li
+                ><li><a href="/help">Помощь</a></li>
+            </ul>
 
         </nav>
         
 
     </header>
     <section class='middle'>
-        <ul class='gallery'>
-            <li>
-                <a href="galery/1"></a>
-                <div class='moto'>
-                    <h1></h1>
-                    <p></p>
-                </div>
-            </li>
-            <li>
-                <a href="galery/2"></a>
-                <div class='moto'>
-                    <h1></h1>
-                    <p></p>
-                </div>
-            </li>
-            <li>
-                <a href="galery/3"></a>
-                <div class='moto'>
-                    <h1></h1>
-                    <p></p>
-                </div>
-            </li>
-            <li>
-                <a href="galery/4"></a>
-                <div class='moto'>
-                    <h1>Для любви нет границ</h1>
-                    <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи ностранцев!</p>
-                </div>
-            </li>
-            <li>
-                <a href="galery/5"></a>
-                <div class='moto'>
-                    <h1></h1>
-                    <p></p>
-                </div>
-            </li>
-            <li>
-                <a href="galery/6"></a>
-                <div class='moto'>
-                    <h1></h1>
-                    <p></p>
-                </div>
-            </li>
 
+            <ul class='gallery' >
+            <li>
+                <figure style='background-image: url(img/0509_Happy_Couple2_mid.jpg)'>
+                    <img src='img/0509_Happy_Couple2_mid.jpg' lowres='img/0509_Happy_Couple2_sml.jpg'  alt=''>
+
+                    <figcaption>
+                        <h1>Для любви нет границ</h1>
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи иностранцев!</p>
+                    </figcaption>
+                </figure>
+
+            </li>
+            <li>
+                <figure style='background-image: url(img/love-is_1920x1200.jpg)'>
+                    <img src='img/love-is_1920x1200.jpg' lowres='img/0509_Happy_Couple2_sml.jpg'  alt=''>
+
+                    <figcaption>
+                        <h1>Для любви нет границ</h1>
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи иностранцев!</p>
+                    </figcaption>
+                </figure>
+
+            </li>
+            <li>
+                <figure style='background-image: url(img/catherineronny226.jpg)'>
+                    <img src='img/love-is_1920x1200.jpg' lowres='img/catherineronny226.jpg'  alt=''>
+
+                    <figcaption>
+                        <h1>Для любви нет границ</h1>
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи иностранцев!</p>
+                    </figcaption>
+                </figure>
+
+            </li>
+            <li>
+                <figure style='background-image: url(img/para-na-beregu-morya_1920x1200.jpg)'>
+                    <img src='img/love-is_1920x1200.jpg' lowres='img/catherineronny226.jpg'  alt=''>
+
+                    <figcaption>
+                        <h1>Для любви нет границ</h1>
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи иностранцев!</p>
+                    </figcaption>
+                </figure>
+                <figure style='background-image: url(img/forever-love-anime-nice-31000.jpg)'>
+                    <img src='img/love-is_1920x1200.jpg' lowres='img/forever-love-anime-nice-31000.jpg'  alt=''>
+
+                    <figcaption>
+                        <h1>Для любви нет границ</h1>
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи иностранцев!</p>
+                    </figcaption>
+                </figure>
+                <figure style='background-image: url(img/catherineronny226.jpg)'>
+                    <img src='img/love-is_1920x1200.jpg' lowres='img/catherineronny226.jpg'  alt=''>
+
+                    <figcaption>
+                        <h1>Для любви нет границ</h1>
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи иностранцев!</p>
+                    </figcaption>
+                </figure>
+            </li>
         </ul>
+
         <ul>
             <li>1</li>
             <li>2</li>
@@ -94,8 +123,8 @@
         <aside class=''>
             Ищешь половинку?
             в любое время дня и ночи:
-            050 55-72-894
-            (06543)12-34-6
+            <span class='phone p1'>050 55-72-894</span>
+            <span class='phone p2'>(06543)12-34-6</span>
             А если не так срочно,
             то пиши или заходи
         </aside>
@@ -132,16 +161,16 @@
         <article>
             <ul>
                 <li>
-                    <img src='/ankety/photo?id={id}'>
-                    <span class='name'>Иван</span>, 24 года, Киев
+                    <a href="#"><img src='/ankety/photo?id={id}'>
+                    <span class='name'>Иван</span></a>, 24 года, Киев
                 </li>
                 <li>
-                    <img src='/ankety/photo?id={id}'>
-                    <span class='name'>Наталья</span>, 20 лет, Ивано-Франковск
+                    <a href="#"><img src='/ankety/photo?id={id}'>
+                    <span class='name'>Наталья</span></a>, 20 лет, Ивано-Франковск
                 </li>
                 <li>
-                    <img src='/ankety/photo?id={id}'>
-                    <span class='name'>Пол</span>, 32 года, Нью-Йорк
+                    <a href="#"><img src='/ankety/photo?id={id}'>
+                    <span class='name'>Пол</span></a>, 32 года, Нью-Йорк
                 </li>
                 <li>
                     <img src='/ankety/photo?id={id}'>
@@ -168,7 +197,7 @@
 
 
             <h1>
-                <a>Студийная фотосъёмка</a>
+                <a href="#">Студийная фотосъёмка</a>
             </h1>
 
             Не секрет, что людям, которые хорошо выглядят, сопутствует удача. Мы вам в этом поможем.
@@ -197,7 +226,7 @@
 
 
             <h1>
-                <a>Знакомства</a>
+                <a href="#">Знакомства</a>
             </h1>
 
             Заполнив анкету в нашем агентстве, вы гарантировано найдёте свою любовь.
@@ -209,7 +238,7 @@
 
 
             <h1>
-                <a>Студийная фотосъёмка</a>
+                <a href="#">Студийная фотосъёмка</a>
             </h1>
 
             Не секрет, что людям, которые хорошо выглядят, сопутствует удача. Мы вам в этом поможем.
@@ -223,7 +252,7 @@
 
 
             <h1>
-                <a>Тренинги</a>
+                <a href="#">Тренинги</a>
             </h1>
 
             Что изменить в своём поведении, чтобы привлекать к себе представителей противоположного пола? Узнайте об

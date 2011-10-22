@@ -1,0 +1,11 @@
+.b-copy
+{
+    width: 160px;
+    font:12px/18px Arial, sans-serif; color:#333;
+    /* ... */
+}
+
+.b-copy span {
+
+    padding-left: 60px;
+}
