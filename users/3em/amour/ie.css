@@ -1,0 +1,60 @@
+@import "index.css";
+.b-wrapper
+{
+    width: expression(this.parentNode.scrollWidth > 1800 ? '1800px' : this.parentNode.scrollWidth <= 1000 ? '1000px' : 'auto');
+}
+.b-conteiner-bg
+{
+    width: expression(this.parentNode.scrollWidth < 1000 ? '1000px' : 'auto');
+}
+.b-image-bg-one
+{
+    background-image: url("images/rose-top+logo.png");
+    background-repeat:no-repeat;
+	-background: none;
+    -filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/rose-top+logo.png', sizingMethod='scale');
+}
+.b-image-bg-two
+{
+    background-image: url("images/rose-bottom.png");
+    background-repeat:no-repeat;
+	-background: none;
+    -filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/rose-bottom.png', sizingMethod='scale');
+}
+.b-slogan
+{
+    background-image: url("images/slogan.png");
+    background-repeat:no-repeat;
+	-background: none;
+    -filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/slogan.png', sizingMethod='scale');
+}
+.b-angel-one
+{
+    background-image: url("images/angel.png");
+    background-repeat:no-repeat;
+	-background: none;
+    -filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/angel.png', sizingMethod='scale');
+}
+.b-angel-two
+{
+    background-image: url("images/angel-2.png");
+    background-repeat:no-repeat;
+	-background: none;
+    -filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/angel-2.png', sizingMethod='scale');
+}
+.b-content__column_ie
+{
+    margin-right: 0;
+}
+.b-footer__column_ie
+{
+    margin: 0 0 30px 4px !important;
+}
+.b-language__ie
+{
+    border: none;
+}
+.jcarousel-control__ie
+{
+    margin-right: 0;
+}
