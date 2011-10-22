@@ -1,0 +1,234 @@
+
+
+@font-face {
+    font-family: "Georgia Italic";
+    src: local("Georgia Italic"),
+    local("GeorgiaItalic"),
+    url(../lib/georgiaitalic.ttf) format('truetype')
+
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../lib/arial-webfont.eot');
+    src: local('Arial'), url('../lib/arial-webfont.ttf') format('truetype'), url('../lib/arial-webfont.svg#ArialRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body{
+    margin:0;
+    padding:0;
+    background:url(../img/background.png) white;
+    color:#333333;
+    font: 12px Arial,sans-serif;
+}
+article, aside, details, footer, header, menu, nav, section,time,figure {
+    display: block;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li,
+nav li a{
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+}
+:link {
+    color:#3399ff;
+}
+.header{
+
+    width:1227px;
+
+
+
+}
+.header .lang{
+
+    margin-right:15%;
+    text-align:right;
+    height:29px;
+}
+
+.header .lang,
+.header .lang :link
+{
+    color: #666666;
+    text-decoration: none;
+}
+.header .lang li{
+    border-left:1px solid;
+    padding:0 4px 0 2px;
+    letter-spacing: 2px;
+
+}
+.header .lang :link
+{
+    border-bottom: 1px solid;
+}
+.header .lang li:first-child{
+    border-left:0px;
+
+}
+
+.header .wrapper{
+    margin-top:6px;
+    height:65px;
+    font:italic 18px "Georgia Italic";
+    color: #666666;
+    letter-spacing:-0.04em;
+    margin-right:15%;
+    padding-right:4px;
+    text-align:right;
+
+}
+
+
+.header .wrapper form {
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+    margin-right: 27px;
+}
+.header .wrapper .search {
+    font:italic 18px "Georgia Italic";
+    color: #666666;
+    letter-spacing:-.04em;
+    background:transparent;
+    border:none;
+    letter-spacing:-.04em;
+    /*http://desktoppub.about.com/b/2009/05/08/10-kerning-and-tracking-tutorials.htm*/
+    width:96px;
+
+}
+.header .wrapper .login{
+   color:inherit;
+
+}
+
+
+
+.header .menu{
+    margin-right:4%;
+    text-align:right;
+
+}
+.header .menu ul{
+    border-radius: 17px/13px;
+    -moz-border-radius: 17px/13px;
+    -webkit-border-radius: 17px/13px;
+    height:53px;
+    background:white;
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+
+
+
+}
+
+.header .menu li,
+.header .menu li a{
+    height:100%;
+
+
+}
+.header .menu li a{
+
+    padding: 0 34px 0 34px;
+    margin:0 -10px 0 -10px;
+}
+.header .menu :link,
+.header .menu :visited{
+    font:italic 18px/53px "Georgia Italic";
+
+}
+
+
+.header .menu :link:hover,
+.header .menu :visited:hover {
+    border-radius: 17px/13px;
+    -moz-border-radius: 17px/13px;
+    -webkit-border-radius: 17px/13px;
+    color: white;
+    background:red;
+
+}
+
+.middle{
+    width:1227px;
+    margin: 18px 0 0 0;
+
+
+}
+.middle .gallery,
+.middle .gallery figure{
+
+    width:731px;
+    height:344px;
+    border:1px solid green;
+    border-radius: 17px/13px;
+    -moz-border-radius: 17px/13px;
+    -webkit-border-radius: 17px/13px;
+    overflow: hidden;
+
+
+}
+.middle .gallery{
+    padding:0;
+    margin: 0 0 0 128px;
+}
+.middle .gallery figure{
+    position:relative;
+    //background-size: cover;
+    background-size: contain;
+}
+.middle .gallery figure figcaption{
+    position:absolute;
+    top:37px;
+    width:731px;
+    height:108px;
+    background-color: rgba(255,51,102,0.5);
+
+}
+.middle .gallery figure img{
+    opacity:0;
+}
+
+
+
+.middle .gallery li{
+
+
+
+}
+
+
+
+.content .column{
+    border:1px solid green;
+    display: -moz-inline-box;
+    display: inline-block;
+//display:inline;
+//zoom:1;
+    width:253px;
+}
+
+.content .column h1{
+    font:italic 24pt "Georgia Italic";
+    color: #666666;
+}
+.content .column h1 a{
+    font:italic 16pt "Georgia Italic";
+    color: #3399ff;
+}
