@@ -8,13 +8,22 @@
 
 }
 
+@font-face {
+    font-family: 'Arial';
+    src: url('../lib/arial-webfont.eot');
+    src: local('Arial'), url('../lib/arial-webfont.ttf') format('truetype'), url('../lib/arial-webfont.svg#ArialRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 
 body{
+    margin:0;
+    padding:0;
     background:url(../img/background.png) white;
     color:#333333;
-    font: 12pt Arial,sans-serif;
+    font: 12px Arial,sans-serif;
 }
 article, aside, details, footer, header, menu, nav, section,time {
     display: block;
@@ -35,24 +44,80 @@ nav li a{
 :link {
     color:#3399ff;
 }
+.header{
+
+    width:1227px;
+    border:1px solid green;
+
+}
+.header .lang{
+    border:1px solid red;
+    margin-right:15%;
+    text-align:right;
+    height:29px;
+}
+
 .header .lang,
 .header .lang :link
 {
-
     color: #666666;
+    text-decoration: none;
+}
+.header .lang li{
+    border-left:1px solid;
+    padding:0 4px 0 2px;
+    letter-spacing: 2px;
+
+}
+.header .lang :link
+{
+    border-bottom: 1px solid;
+}
+.header .lang li:first-child{
+    border-left:0px;
+
 }
 
-.header .search {
-    font:italic 18pt "Georgia Italic";
+.header .second{
+
+
+    font:italic 18px "Georgia Italic";
+    color: #666666;
+    //letter-spacing:-0.04em;
+    margin-right:15%;
+    padding-right:4px;
+    float:right;
+
+}
+
+.header .second form {
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+    margin-right: 27px;
+}
+.header .second .search {
+    font:italic 18px "Georgia Italic";
+    color: #666666;
+    letter-spacing:-.04em;
     background:transparent;
-    color: #666666;
     border:none;
+    letter-spacing:-.04em;
+    /*http://desktoppub.about.com/b/2009/05/08/10-kerning-and-tracking-tutorials.htm*/
+    width:96px;
+
+}
+.header .second .login{
+   color:inherit;
 
 }
 
-.header .login {
-    font:italic 18pt "Georgia Italic";
-    color: #666666;
+
+
+.header .menu{
+    margin-right:4%;
+    border:1px solid yellow;
 }
 .header .menu ul{
     border-radius: 17px/13px;
@@ -61,6 +126,7 @@ nav li a{
     height:53px;
     width:731px;
     background:white;
+    float:right;
 }
 .header .menu li,
 .header .menu li a{
@@ -75,7 +141,7 @@ nav li a{
 }
 .header .menu :link,
 .header .menu :visited{
-    font:italic 18pt "Georgia Italic";
+    font:italic 18px "Georgia Italic";
 
 }
 
