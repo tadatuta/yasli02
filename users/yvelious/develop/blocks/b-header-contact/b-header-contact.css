@@ -1,0 +1,34 @@
+.b-header-contact
+{
+   padding-top: 40px;
+    position: relative;
+
+
+    
+
+}
+
+
+
+
+
+.b-header__text_gray {
+    
+    font:18px/28px Georgia, serif;
+    color:#666;
+
+     margin-bottom: 10px;
+
+    
+}
+.b-header__text_gray span {
+    font-size: 24px;}
+
+.b-header__phone {
+
+    font:italic 33px/40px Georgia, serif;
+    color:#f36;
+    margin-bottom: 12px;
+
+
+}
