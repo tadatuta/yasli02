@@ -1,0 +1,30 @@
+.b-discount
+{
+  
+    /* ... */
+}
+.b-discount
+
+.b-discount__heading {
+
+       font:italic 16px/20px Georgia, serif;
+    margin-bottom: 0;
+
+}
+.b-discount__text_intend {
+    text-indent: 30px;}
+.b-discount__more {
+    
+
+
+    
+}
+
+.b-discount__more__heading {
+   font:italic 16px/20px Georgia, serif;
+    margin-bottom: 0;
+
+}
+
+.b-discount__more__text_intend {
+    text-indent: 30px;}
