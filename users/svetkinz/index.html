@@ -1,19 +1,41 @@
-<!doctype html>
+п»ї<!doctype html>
 <!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="windows-1251">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amour - Р»СЋР±РѕРІСЊ РІСЃРµРіРґР° РїСЂРёС…РѕРґРёС‚ РІРѕРІСЂРµРјСЏ</title>
+  <meta name="description" content="СЃР°Р№С‚ Р·РЅР°РєРѕРјСЃС‚РІ">
+  <meta name="keywords" content="Р·РЅР°РєРѕРјСЃС‚РІР°, Р»СЋР±РѕРІСЊ">
 
-  <script src="http://yandex.st/modernizr/1.7/modernizr.min.js"></script>
-  <script>window.Modernizr || document.write("<script src='/images/v1/js/modernizr-1.7.min.js'>\x3C/script>")</script>
+  <meta name="author" content="РЎРІРµС‚Р»Р°РЅР°">
 
-  <script src="http://yandex.st/jquery/1.5.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write("<script src='/images/v1/js/jquery-1.5.1.min.js'>\x3C/script>")</script>
+  
+  <script src="v1/js/jquery.min.js"></script>
+  <script src="v1/js/modernizr.min.js"></script>
+
+
+  <script>
+	$(document).ready(function() {
+		$("#slide-1").click(function() {
+			$("#slide_images").css("left","0");
+			$("#slide_controls span").removeClass("selected");
+			$(this).addClass("selected");
+		});
+		$("#slide-2").click(function() {
+			$("#slide_images").css("left","-730px");
+			$("#slide_controls span").removeClass("selected");
+			$(this).addClass("selected");			
+		});
+	});	
+</script>
+
+<script type="text/javascript">
+  inputPlaceholder( document.getElementById('search') )
+</script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 
 
@@ -24,138 +46,155 @@
 	<header>
 		<div class="container">
 		
-			<div class="other_nav">
-				<a href="/" title="Amour" ><img src="v1/img/logo.png" alt="amour любовь всегда приходит вовремя"></a>
-				<ul class="lang">
-					<li><a href="#">English</a></li>
-					<li><a href="#" class="current">Русский</a></li>
-					<li><a href="#">Украинська</a></li>
-					<li><a href="#">French</a></li>
-					<li><a href="#">Espanol</a></li>
-					<li><a href="#">Italian</a></li>
+			<a href="/" class="logo ib" title="amour"><img src="v1/img/logo.png" alt=""/></a>
+		
+			<div class="other_nav ib">
+			
+				<ul class="lang clearfix">
+						<li><a href="#">English</a>
+						<li class="current">Р СѓСЃСЃРєРёР№
+						<li><a href="#">РЈРєСЂР°РёРЅСЃСЊРєР°</a>
+						<li><a href="#">French</a>
+						<li><a href="#">Espanol</a>
+						<li><a href="#">Italian</a>
 				</ul>
+						
+				<form action="#" method="post" name="search" class="ib">
+					{<input name="search" class="search" id="search" placeholder="РїРѕРёСЃРє"/>}
+				</form>
 				
-				
+				<a href="#" class="login">РІС…РѕРґ</a>
 			</div>
 			
 			<nav>
 				<ul class="clearfix ib">
-					<li><a href="#">Интересные факты</a><li>
-					<li><a href="#">Анкеты</a><li>
-					<li><a href="#">Услуги</a><li>
-					<li><a href="#">Фото</a><li>
-					<li><a href="#">Текст</a><li>
-					<li><a href="#">Помощь</a><li>
+					<li><a href="#" class="if">РРЅС‚РµСЂРµСЃРЅС‹Рµ С„Р°РєС‚С‹</a>
+					<li><a href="#" class="an">РђРЅРєРµС‚С‹</a>
+					<li><a href="#" class="us">РЈСЃР»СѓРіРё</a>
+					<li><a href="#" class="fo">Р¤РѕС‚Рѕ</a>
+					<li><a href="#" class="te">РўРµРєСЃС‚</a>
+					<li><a href="#" class="po">РџРѕРјРѕС‰СЊ</a>
 				</ul>
 			</nav>
 		
-			<div id="scroll" class="clearfix">
-				<div id="pics" class="ib"><div id="element1"></div></div>
-				<div class="sidebar ib">
-					<p><span>Ищешь половинку? </span><br />в любое время дня и ночи:</p>
-					<p class="tel">050 55-72-894<br />(06543)12-34-6</p>
-					<p>А если не так срочно,<br />то <a href="mailto:xxx@xxx.ru">пиши</a> или <a href="#">заходи</a></p>
+			<div id="action">
+				<div class="ib">
+				<!--<p id="slide_controls"><span class="selected" id="slide-1">1</span><span id="slide-2" class="">2</span></p>-->
+					<div id="slide_container" class="ib">
+						<div id="slide_images" style="left: 0px; ">
+							<div id="pic-1">
+								<figure>
+									<img src="v1/img/pic1.jpg" alt="" />
+									<figcaption>
+										<h3>Р”Р»СЏ Р»СЋР±РІРё РЅРµС‚ РіСЂР°РЅРёС†!</h3>
+										<p>РњС‹ СЃРѕС‚СЂСѓРґРЅРёС‡Р°РµРј СЃ РІРµРґСѓС‰РёРјРё РјРёСЂРѕРІС‹РјРё Р±СЂР°С‡РЅС‹РјРё&nbsp;<br />Р°РіРµРЅС‚СЃС‚РІР°РјРё. Р’Р°С€Сѓ Р°РЅРєРµС‚Сѓ СѓРІРёРґСЏС‚ РјРёР»Р»РёРѕРЅС‹ С‚С‹СЃСЏС‡Рё РёРЅРѕСЃС‚СЂР°РЅС†РµРІ!</p>								
+									</figcaption>
+								</figure>
+							</div>
+							
+						</div>
+					</div>
 				</div>
+				
+
+				<aside class="ib">
+					<p><span>РС‰РµС€СЊ РїРѕР»РѕРІРёРЅРєСѓ? </span><br />РІ Р»СЋР±РѕРµ РІСЂРµРјСЏ РґРЅСЏ&nbsp;Рё РЅРѕС‡Рё:</p>
+					<p class="tel">050&nbsp;55-72-894<br />(06543)12-34-6</p>
+					<p>Рђ РµСЃР»Рё РЅРµ С‚Р°Рє СЃСЂРѕС‡РЅРѕ,<br />С‚Рѕ <a href="mailto:xxx@xxx.ru">РїРёС€Рё</a>&nbsp;РёР»Рё <a href="#">Р·Р°С…РѕРґРё</a></p>
+				</aside>
 			</div>
 		</div>
 	</header>
 	
 	<div id="main">
 		<div class="container">
-			<div class="ib col_main">
-				<p class="title">Это интересно</p>
-				<div class="item">
-					<a href="#" class="next ib">Осенние и зимние скидки!</a>
-					<p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октябрь, то вам вдвойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
-				</div>
-				<div class="item">
-					<a href="#" class="next ib">Ещё больше осенних и зимних скидкок!</a>
-<p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октябрь, то вам вдвойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
-				</div>
-			</div>
-			<div class="ib col_main">
-				<p class="title">Новые анкеты</p>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" alt="" /></a>
-					<p><a href="#">Иван</a>, 24 года Киев</p>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" class="mrn" alt="" /></a>
-					<p><a href="#">Наталья</a>, 20 лет Ивано-Франковск</p>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" alt="" /></a>
-					<p><a href="#">Пол</a>, 32 года Нью-Йорк</p>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" class="mrn" alt="" /></a>
-					<p><a href="#">Кармен</a>, 25 лет Милан</p>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" alt="" /></a>
-					<p><a href="#">Джеймс</a>, 45 лет Лондон</p>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" class="mrn" alt="" /></a>
-					<p><a href="#">София</a>, 56 лет Ялта</p>
-				</div>
-			</div>
-			<div class="ib col_main">
-				<p class="title">Новые услуги</p>
-				<div class="item">
-					<a href="#" class="next ib">Знакомства</a>
-<p>Заполнив анкету в нашем агентстве, вы гарантировано найдёте свою любовь.
-<br /><a href="#">Отправить заявку</a> на поиск партнёра вы можете прямо сейчас!</p>
-				</div>
-<div class="item">
-					<a href="#" class="next ib">Студийная фотосъёмка</a>
-<p>
-Не секрет, что людям, которые хорошо выглядят, сопутствует удача. Мы вам в этом поможем.</p>
-				</div>
-<div class="item">
-					<a href="#" class="next ib">Тренинги</a>
-<p>
-Что изменить в своём поведении, чтобы привлекать к себе представителей противоположного пола? Узнайте об этом и многом другом на наших психологических тренингах.</p>
-				</div>
-			</div>
-			<div class="ib col_main">
-				<p class="title">Свежие фото</p>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" alt="" /></a>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" class="mrn" alt="" /></a>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" alt="" /></a>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" class="mrn" alt="" /></a>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" alt="" /></a>
-				</div>
-				<div class="pic_item ib">
-					<a href="#"><img src="v1/img/pic4.jpg" class="mrn" alt="" /></a>
-				</div>
-			</div>
+			<section class="ib txt">
+				<h3>Р­С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ</h3>
+				<dl>
+					<dt><a href="#">РћСЃРµРЅРЅРёРµ Рё Р·РёРјРЅРёРµ СЃРєРёРґРєРё!</a></dt>
+					<dd>РЎ РїСЂРёС…РѕРґРѕРј РѕСЃРµРЅРё РѕРїР°РґР°РµС‚ РЅРµ С‚РѕР»СЊРєРѕ Р»РёСЃС‚РІР°, РЅРѕ Рё РЅР°С€Рё С†РµРЅС‹! Р•СЃР»Рё РІС‹ РїР»Р°РЅРёСЂСѓРµС‚Рµ РЅР°С‡Р°Р»Рѕ РЅРѕРІРѕР№ Р¶РёР·РЅРё РЅР° РѕРєС‚СЏР±СЂСЊ, С‚Рѕ РІР°Рј РІРґРІРѕР№РЅРµ РїРѕРІРµР·Р»Рѕ, С‚Р°Рє РєР°Рє РёРјРµРЅРЅРѕ РІ СЌС‚РѕРј РјРµСЃСЏС†Рµ 20% СЃРєРёРґРєР° РЅР° РІСЃРµ РЅР°С€Рё СѓСЃР»СѓРіРё.</dd>				
+					<dt><a href="#">Р•С‰С‘ Р±РѕР»СЊС€Рµ РѕСЃРµРЅРЅРёС… Рё Р·РёРјРЅРёС… СЃРєРёРґРєРѕРє!</a></dt>
+					<dd>РЎ РїСЂРёС…РѕРґРѕРј РѕСЃРµРЅРё РѕРїР°РґР°РµС‚ РЅРµ С‚РѕР»СЊРєРѕ Р»РёСЃС‚РІР°, РЅРѕ Рё РЅР°С€Рё С†РµРЅС‹! Р•СЃР»Рё РІС‹ РїР»Р°РЅРёСЂСѓРµС‚Рµ РЅР°С‡Р°Р»Рѕ РЅРѕРІРѕР№ Р¶РёР·РЅРё РЅР° РѕРєС‚СЏР±СЂСЊ, С‚Рѕ РІР°Рј РІРґРІРѕР№РЅРµ РїРѕРІРµР·Р»Рѕ, С‚Р°Рє РєР°Рє РёРјРµРЅРЅРѕ РІ СЌС‚РѕРј РјРµСЃСЏС†Рµ 20% СЃРєРёРґРєР° РЅР° РІСЃРµ РЅР°С€Рё СѓСЃР»СѓРіРё.</dd>
+				</dl>
+			</section>
+			<section class="ib pic">
+				<h3>РќРѕРІС‹Рµ Р°РЅРєРµС‚С‹</h3>
+				
+				<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ" /> РРІР°РЅ</a>,&nbsp;24&nbsp;РіРѕРґР° РљРёРµРІ</div>
+
+				<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ" /> РќР°С‚Р°Р»СЊСЏ</a>,&nbsp;20&nbsp;Р»РµС‚ РРІР°РЅРѕ-Р¤СЂР°РЅРєРѕРІСЃРє</div>
+					
+				<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ" /> РџРѕР»</a>,&nbsp;32&nbsp;РіРѕРґР° РќСЊСЋ-Р™РѕСЂРє</div>	
+										
+				<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ" /> РљР°СЂРјРµРЅ</a>,&nbsp;25&nbsp;Р»РµС‚ РњРёР»Р°РЅ</div>	
+					
+				<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ" /> Р”Р¶РµР№РјСЃ</a>,&nbsp;45&nbsp;Р»РµС‚ Р›РѕРЅРґРѕРЅ</div>	
+										
+				<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ" /> РЎРѕС„РёСЏ</a>,&nbsp;56&nbsp;Р»РµС‚ РЇР»С‚Р°</div>	
+
+			</section>
+			<section class="ib txt">
+				<h3>РќРѕРІС‹Рµ СѓСЃР»СѓРіРё</h3>
+				<dl>
+					<dt><a href="#">Р—РЅР°РєРѕРјСЃС‚РІР°</a></dt>
+					<dd>Р—Р°РїРѕР»РЅРёРІ Р°РЅРєРµС‚Сѓ РІ РЅР°С€РµРј Р°РіРµРЅС‚СЃС‚РІРµ, РІС‹ РіР°СЂР°РЅС‚РёСЂРѕРІР°РЅРѕ РЅР°Р№РґС‘С‚Рµ СЃРІРѕСЋ Р»СЋР±РѕРІСЊ.<br /><a href="#">РћС‚РїСЂР°РІРёС‚СЊ Р·Р°СЏРІРєСѓ</a> РЅР° РїРѕРёСЃРє РїР°СЂС‚РЅС‘СЂР° РІС‹ РјРѕР¶РµС‚Рµ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ!</dd>				
+					<dt><a href="#">РЎС‚СѓРґРёР№РЅР°СЏ С„РѕС‚РѕСЃСЉС‘РјРєР°</a></dt>
+					<dd>РќРµ СЃРµРєСЂРµС‚, С‡С‚Рѕ Р»СЋРґСЏРј, РєРѕС‚РѕСЂС‹Рµ С…РѕСЂРѕС€Рѕ РІС‹РіР»СЏРґСЏС‚, СЃРѕРїСѓС‚СЃС‚РІСѓРµС‚ СѓРґР°С‡Р°. РњС‹ РІР°Рј РІ СЌС‚РѕРј РїРѕРјРѕР¶РµРј.</dd>
+					<dt><a href="#">РўСЂРµРЅРёРЅРіРё</a></dt>
+					<dd>Р§С‚Рѕ РёР·РјРµРЅРёС‚СЊ РІ СЃРІРѕС‘Рј РїРѕРІРµРґРµРЅРёРё, С‡С‚РѕР±С‹ РїСЂРёРІР»РµРєР°С‚СЊ Рє СЃРµР±Рµ РїСЂРµРґСЃС‚Р°РІРёС‚РµР»РµР№ РїСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅРѕРіРѕ РїРѕР»Р°? РЈР·РЅР°Р№С‚Рµ РѕР± СЌС‚РѕРј Рё РјРЅРѕРіРѕРј РґСЂСѓРіРѕРј РЅР° РЅР°С€РёС… РїСЃРёС…РѕР»РѕРіРёС‡РµСЃРєРёС… С‚СЂРµРЅРёРЅРіР°С….</dd>
+				</dl>
+			</section>
+			<section class="ib pic mbs">
+				<h3>РЎРІРµР¶РёРµ С„РѕС‚Рѕ</h3>
+					<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ 1" /></a></div>
+					<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ 2" /></a></div>
+					<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ 3" /></a></div>
+					<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ 4" /></a></div>
+					<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ 5" /></a></div>
+					<div><a href="#"><img src="v1/img/pic4.jpg" alt="С„РѕС‚Рѕ 6" /></a></div>
+			</section>
 		</div>
 	</div>
 	
 	<footer>
 		<div class="container">
-			3
+			<div class="vcard ib">
+				<p>
+					&copy;&nbsp;2010
+					<span class="category">РњРµР¶РґСѓРЅР°СЂРѕРґРЅРѕРµ<br />Р±СЂР°С‡РЅРѕРµ&nbsp;Р°РіРµРЅС‚СЃС‚РІРѕ</span>
+					<span class="fn org">&laquo;РђРјСѓСЂ&raquo;</span>
+				</p>
+	 
+				<p>РўРµР»РµС„РѕРЅ:&nbsp;<span class="tel">050 55-72-894</span><br /><span class="tel fr">(06543)12-34-6</span></p>
+			</div>
+			<div class="ib nav">
+				<ul>
+					<li><a href="#">РџРѕСЃРјРѕС‚СЂРµС‚СЊ РЅР° РєР°СЂС‚Рµ</a>
+					<li><a href="#">РќР°РїРёСЃР°С‚СЊ РїРёСЃСЊРјРѕ</a>
+					<li><a href="#">РџР°СЂС‚РЅС‘СЂСЃС‚РІРѕ</a>
+				</ul>
+			</div>
+			<div class="ib lang">
+				<form action="/" method="post">
+				    <select name="lang">
+						<option value="Other language?">Other language?</option>
+						<option value="Р’С‹Р±СЂР°С‚СЊ СЂСѓСЃСЃРєРёР№?">Р’С‹Р±СЂР°С‚СЊ СЂСѓСЃСЃРєРёР№?</option>
+						<option value="РЈРєСЂР°РёРЅСЃСЊРєР°">РЈРєСЂР°РёРЅСЃСЊРєР°</option>
+						<option value="French">French</option>
+						<option value="Espanol">Espanol</option>
+				   </select>
+				</form>
+			</div>
+			<div class="ib">
+				<p>Р”РёР·Р°Р№РЅ: <a href="http://www">РўР°РґР°С‚СѓС‚Р°</a></p>				
+			</div>
 		</div>
 	</footer>
 	
-
-
-
-  <!--[if lt IE 7 ]>
+	  <!--[if lt IE 7 ]>
     <script src="/images/v1/js/dd_belatedpng.js"></script>
     <script>DD_belatedPNG.fix("img, .png_bg");</script>
   <![endif]-->
-
 
 
 </body>
