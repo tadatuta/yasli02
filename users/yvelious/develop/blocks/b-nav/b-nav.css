@@ -42,4 +42,7 @@ a.b-nav__link:hover, a.b-nav__link:active {
 
 }
 
-a.b-nav__link:last-child { padding-right:38px }
+.b-nav .b-nav__item:last-child a.b-nav__link:hover { padding-right:44px;
+    margin-right: -30px;
+    
+}
