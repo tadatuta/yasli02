@@ -155,10 +155,15 @@
     color: #3399ff;
 }
 
-.b-main-menu__item_state_active
+.b-main-menu__item:hover, .b-main-menu__item_state_active
 {
-    background: #f00;
+    background: url(i/b-main-menu__item.png);
     border-radius: 12px;
+}
+
+.b-main-menu__item:hover .b-main-menu__link
+{
+    color: #fff;
 }
 
 .b-main-menu__item_state_active .b-main-menu__link
