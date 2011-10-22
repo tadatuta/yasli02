@@ -1,6 +1,6 @@
 .b-search { position: absolute; top:40px;
     right: 100px;
-    background: url("../../i/b-search.png") no-repeat left top;
+    background: url("../../i/b-search.png") no-repeat left 3px;
     padding-left: 8px;
 }
 
