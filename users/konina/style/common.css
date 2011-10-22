@@ -1,3 +1,4 @@
+/***  RESET begin  *****************************************************/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin:0;
 	padding:0;
@@ -8,17 +9,374 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display:block;
 }
-nav ul {list-style:none;}
-/***********************************************************************/
+ul {list-style:none;}
 
-html, body{
+.clearfix:after {
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+	content:"\0020";
+}
+/***  RESET end  *******************************************************/
+
+/***  FONTS begin  ****************************************************/
+/***  FONTS end  *******************************************************/
+/* html, body{
 	width:100%;
 	height:100%;
-}
+} */
 body{
-	background:#fff url(../images/bg.png) repeat;
-	color:#000;
-	font-size:62.5%;
 	min-width:1000px;
-	font-family:Tahoma, sans-serif;
+	font-family:Georgia, Serif;
+	font-size:62.5%;
+	font-style:italic;
+	color:#333;
+	background:#fff url(../images/bg-fon.png);
 }
+a{
+	color:#39f;
+}
+/***  HEADER begin  ****************************************************/
+.header{
+	position:relative;
+	height:310px;
+    padding: 0 9%;
+    margin-bottom:-130px;
+	background: url("../images/flower-header.png") -17% 85% no-repeat ;
+}
+.header .logo{
+	overflow:hidden;
+	width:691px;
+	height:99px;
+}
+	.header hgroup{
+		color:#f36;
+	}
+		.header h1{
+			float:left;
+			
+			font-size:7em;
+			font-weight:100;
+			text-indent:100px;
+		}
+		.header h1 a{
+			color:#f36;
+			text-shadow:2px 2px #fff;
+		}
+			.header h1 a{text-decoration:none;}
+		.header h2{ 
+			font-size: 2em;
+		    font-weight: 100;
+		    opacity:0.5;
+		    
+		    padding-top: 45px;		   
+		    margin-left: 350px;
+		}
+/* выбор языка***************************/
+	.lang{
+		padding:13px 9% 0 0;
+		margin-bottom:-22px;
+		text-align:right;		
+	}
+	.lang li{
+		display:inline-block;
+			
+		font-family:Arial, sans-serif;
+		font-size:1.2em;
+		font-style:normal;
+		color:#666;
+		
+	}
+		.lang li:after{
+			content:"|";
+		}
+		.lang li:last-child:after{
+			content:none;
+		}
+		.lang li a{
+			color:#666;	
+			text-decoration:none;	
+			letter-spacing:1px;
+			
+			border-bottom:1px solid #666;			
+		}
+/* навигация по сайту**********************/
+.navigation{
+	margin-top:3px;
+	text-align:right;
+}
+.navigation li{
+	display:inline-block;
+	position:relative;
+}
+	.navigation li a{
+		position:relative;
+		display:inline-block;
+		padding:16px 39px;
+		margin-left:-30px;	
+		
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		
+		font-size:1.8em;
+		background:#fff;
+	}
+	.navigation li a:hover,
+	.navigation li a:active{
+		z-index:1;
+		color:#fff;
+		background:#f00;
+	}
+.navigation .active{
+	z-index:1;
+	padding:16px 39px;
+	margin-left:-30px;	
+	
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+	font-size:1.8em;
+	color:#fff;
+	background:#f00;
+	text-decoration:underline;
+}
+/* формы поиска и аутентификации***********/
+form[name="search"]{
+	float:left;
+	position:absolute;
+	top:20px;
+	font-size:1.8em;
+}
+	 #search{
+		border:none;
+		background:transparent;
+	} 
+	input[type=search] {
+    -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-decoration, 
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+a[href="#enter"]{
+	position:absolute;
+	top:20px;
+	font-size:1.8em;
+}
+form[name="user_enter"]{
+	display:none;
+}
+
+/***  HEADER end  *******************************************************/
+
+/* слайд-шоу ******************************/
+.slideshow{
+	width:730px;
+	height:342px;
+	overflow:hidden;
+	position:relative;	
+	float:left;
+}
+	.tabs{
+		position:absolute;
+		right:20px;
+		bottom:0;
+		z-index:1;
+	}
+		.tabs li{
+			display:inline-block; 
+			font-size: 2.4em;
+		    height: 40px;
+		    width: 18px;
+			cursor:pointer;
+			color:#fff;
+			text-align:center;
+		}
+		.tabs li:hover{
+			background:#fff;
+			color:#f00;
+			-webkit-border-radius: 9px 9px 0 0;
+			-moz-border-radius: 9px 9px 0 0;
+			border-radius: 9px 9px 0 0;
+		}
+	.tabs-content{
+		width:4380px;
+		position:relative;
+		left:0;				
+		-webkit-transition:all 2.0s ease-in-out;
+		-moz-transition:all 2.0s ease-in-out;
+		-o-transition:all 2.0s ease-in-out;
+		-ms-transition:all 2.0s ease-in-out;	
+		transition:all 2.0s ease-in-out;
+	}
+		.tabs-content li{
+			display:inline-block;
+			margin-right:-2px;				
+		}
+			figure{
+				position:relative;
+			}
+			figcaption{
+				position:absolute;
+				top:36px;
+				left:0;
+				width:730px;
+				height:108px;
+				background:rgba(255,51,102,0.5);
+			}
+			figcaption p {
+			    color: #fff;
+			    font-size: 2.4em;
+			    padding: 14px 50% 0 30px;
+			}
+			figcaption p + p {
+			    font-family: Arial,sans-serif;
+			    font-size: 1.2em;
+			    font-style: normal;
+			    line-height: 1.8;
+			}
+			
+/*контакты в центре******************************************************/
+.contacts {
+    margin-left: 730px;
+    padding: 27px 0 150px 25px;
+    background:url("../images/decor-contacts.png") no-repeat  56% 93%;
+}
+	.contacts h2 {
+	    color: #666;
+	    font-size: 2.4em;
+	    font-weight: 100;
+	}
+	.contacts dt {
+	    color: #666;
+	    font-size: 1.8em;
+	    line-height: 2;
+	}
+		.contacts dd {
+		    color: #F36;
+		    font-size: 3.6em;
+		    line-height: 1.3;
+		}
+		.contacts dd + dd {
+		    font-size: 3.3em;
+		}
+	.contacts p {
+	    color: #666;
+	    font-size: 1.8em;
+	    line-height: 1.8;
+	    padding-top: 10px;
+	}
+		
+
+/***  LAYOUT begin  *******************************************************/
+.layout{
+	margin:0 10%;
+}
+section{
+	float:left;
+	width:25%;
+}
+	section h1 {
+	    color: #666;
+	    font-size: 2.4em;
+	    font-weight: 100;
+	}
+	section h2 {
+	    font-size: 1.6em;
+	    font-weight: 100;
+	    line-height: 1.3;
+	    padding-top: 10px;
+	}
+	section p {
+		color: #333;
+	    font-family: Arial,sans-serif;
+	    font-size: 1.2em;
+	    font-style: normal;
+	    line-height: 1.5;
+	    text-indent:30px;
+	    padding-right:30px;
+	}
+.newforms ul{
+	padding-top:14px;
+	margin-bottom:-60px;
+}
+	.newforms li{
+		display:inline-block;
+		overflow:hidden;
+		width:106px;
+		height:144px;
+		margin-right:17px;
+		vertical-align:top;
+		font-size:1.2em;
+		color:#333;
+	}
+		.newforms li a{
+			line-height:1.6;
+			text-decoration:none;
+		}
+			.newforms li img{
+				width:112px;
+				height:72px;
+				margin-right:-6px;
+				margin-bottom:-1px;
+			}
+			.newforms li span{
+				text-decoration:underline;
+			}
+		
+.newphotos li{
+	display:inline-block;
+	overflow:hidden;
+	width:106px;
+	height:71px;
+	margin:13px 15px 6px -1px;
+	vertical-align:top;
+}
+	.newphotos li a{
+		text-decoration:none;
+	}
+		.newphotos li img{
+			width:112px;
+			height:72px;
+			margin-right:-6px;
+			margin-bottom:-1px;
+		}
+
+/***  LAYOUT end  *******************************************************/
+
+/***  FOOTER begin  ****************************************************/
+.footer{
+	font-family:Arial, sans-serif;
+	font-style:normal;
+	font-size:1.2em;
+	height:600px;
+	padding:117px 10% 0;
+	background:url(../images/flower-footer.png) 144% 0% no-repeat;
+}
+.vcard, 
+.interactive,
+.otherlang,
+.author{
+	display:inline-block;
+	width:15%;
+	padding-right:9.5%;
+	line-height:1.9;
+}
+.vcard{
+	position:relative;
+}
+.vcard:before{
+	content:"\0020";
+	display:block;
+	width:230px;
+	height:207px;
+	position:absolute;
+	left:0;
+	top:-200px;
+	background:url(../images/decor-footer.png) 0 0 no-repeat;
+}
+/***  FOOTER end  *******************************************************/
