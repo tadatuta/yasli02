@@ -25,7 +25,7 @@ body{
     color:#333333;
     font: 12px Arial,sans-serif;
 }
-article, aside, details, footer, header, menu, nav, section,time {
+article, aside, details, footer, header, menu, nav, section,time,figure {
     display: block;
 
 }
@@ -47,11 +47,12 @@ nav li a{
 .header{
 
     width:1227px;
-    border:1px solid green;
+
+
 
 }
 .header .lang{
-    border:1px solid red;
+
     margin-right:15%;
     text-align:right;
     height:29px;
@@ -78,26 +79,27 @@ nav li a{
 
 }
 
-.header .second{
-
-
+.header .wrapper{
+    margin-top:6px;
+    height:65px;
     font:italic 18px "Georgia Italic";
     color: #666666;
-    //letter-spacing:-0.04em;
+    letter-spacing:-0.04em;
     margin-right:15%;
     padding-right:4px;
-    float:right;
+    text-align:right;
 
 }
 
-.header .second form {
+
+.header .wrapper form {
     display: -moz-inline-box;
     display: inline-block;
     //display:inline;
     //zoom:1;
     margin-right: 27px;
 }
-.header .second .search {
+.header .wrapper .search {
     font:italic 18px "Georgia Italic";
     color: #666666;
     letter-spacing:-.04em;
@@ -108,7 +110,7 @@ nav li a{
     width:96px;
 
 }
-.header .second .login{
+.header .wrapper .login{
    color:inherit;
 
 }
@@ -117,17 +119,24 @@ nav li a{
 
 .header .menu{
     margin-right:4%;
-    border:1px solid yellow;
+    text-align:right;
+
 }
 .header .menu ul{
     border-radius: 17px/13px;
     -moz-border-radius: 17px/13px;
     -webkit-border-radius: 17px/13px;
     height:53px;
-    width:731px;
     background:white;
-    float:right;
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+
+
+
 }
+
 .header .menu li,
 .header .menu li a{
     height:100%;
@@ -141,7 +150,7 @@ nav li a{
 }
 .header .menu :link,
 .header .menu :visited{
-    font:italic 18px "Georgia Italic";
+    font:italic 18px/53px "Georgia Italic";
 
 }
 
@@ -155,7 +164,59 @@ nav li a{
     background:red;
 
 }
+
+.middle{
+    width:1227px;
+    margin: 18px 0 0 0;
+
+
+}
+.middle .gallery,
+.middle .gallery figure{
+
+    width:731px;
+    height:344px;
+    border:1px solid green;
+    border-radius: 17px/13px;
+    -moz-border-radius: 17px/13px;
+    -webkit-border-radius: 17px/13px;
+    overflow: hidden;
+
+
+}
+.middle .gallery{
+    padding:0;
+    margin: 0 0 0 128px;
+}
+.middle .gallery figure{
+    position:relative;
+    //background-size: cover;
+    background-size: contain;
+}
+.middle .gallery figure figcaption{
+    position:absolute;
+    top:37px;
+    width:731px;
+    height:108px;
+    background-color: rgba(255,51,102,0.5);
+
+}
+.middle .gallery figure img{
+    opacity:0;
+}
+
+
+
+.middle .gallery li{
+
+
+
+}
+
+
+
 .content .column{
+    border:1px solid green;
     display: -moz-inline-box;
     display: inline-block;
 //display:inline;
