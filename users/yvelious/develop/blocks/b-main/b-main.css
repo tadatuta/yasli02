@@ -1,0 +1,17 @@
+.b-main
+{
+    position: relative;
+    padding-bottom: 90px;
+    /* ... */
+}
+
+.b-main__heading {
+
+     font:italic 24px/28px Georgia, serif; color:#666;
+    margin-bottom: 8px;
+
+}
+
+
+
+

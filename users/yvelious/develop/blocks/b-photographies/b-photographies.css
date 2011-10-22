@@ -1,0 +1,20 @@
+.b-photographies
+{
+    /* ... */
+}
+
+.b-photographies__heading {
+
+
+     font:italic 16px/20px Georgia, serif;
+    margin-bottom: 0; 
+
+}
+
+
+.b-photographies__text_intend {
+
+text-indent:30px;
+
+
+    }

@@ -1,45 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="b-html">
 <head>
     <title>Amour</title>
     <meta charset="utf-8">
-    <link href="index.css" rel="stylesheet">
+    <!--[if (gte IE 9)|!(IE)]><!-->
+        <link href="index.css" rel="stylesheet">
+    <!--<![endif]-->
+    <!--[if IE]>
+        <link href="ie.css" rel="stylesheet">
+    <![endif]-->
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/carusel.js"></script>
+    
 </head>
 <body class="b-page">
     <div class="b-wrapper">
-        <div class="b-image-bg-one"></div>
-        <div class="b-header">
-            <a href="#" class="b-logo"></a>
-            <div class="b-header__right">
-                <ul class="b-language">
-                    <li><a href="#">English</a></li>
-                    <li><a href="#">Русский</a></li>
-                    <li><a href="#">Украинский</a></li>
-                    <li><a href="#">French</a></li>
-                    <li><a href="#">Espanol</a></li>
-                    <li><a href="#">Italian</a></li>
-                </ul>
-                <div class="b-search">
-                    {<input value="поиск">}
+        <div class="b-inner">
+            <div class="b-image-bg-one"></div>
+            <div class="b-image-bg-two"></div>
+            <div class="b-header">
+                <h1 class="b-logo"><a href="#" class="b-logo"></a></h1>
+                <div class="b-header__right">
+                    <ul class="b-language">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Русский</a></li>
+                        <li><a href="#">Украинский</a></li>
+                        <li><a href="#">French</a></li>
+                        <li><a href="#">Espanol</a></li>
+                        <li class="b-language__ie"><a href="#">Italian</a></li>
+                    </ul>
+                    <form method="get" class="b-search">
+                        {<input value="поиск">}
+                    </form>
+                    <a class="b-link b-link_color_gray" href="#">вход</a>
+                    <h1 class="b-slogan"></h1>
                 </div>
-                <a class="b-link b-link_color_gray" href="#">вход</a>
-                <div class="b-slogan"></div>
+                <ul class="b-menu">
+                    <li class="b-menu__item"><a class="b-link b-menu__active" href="#">Интересные факты</a></li>
+                    <li class="b-menu__item"><a class="b-link" href="#">Анкеты</a></li>
+                    <li class="b-menu__item"><a class="b-link" href="#">Услуги</a></li>
+                    <li class="b-menu__item"><a class="b-link" href="#">Фото</a></li>
+                    <li class="b-menu__item"><a class="b-link" href="#">Тест</a></li>
+                    <li class="b-menu__item"><a class="b-link" href="#">Помощь</a></li>
+                </ul>
             </div>
-            <ul class="b-menu">
-                <li class="b-menu__item"><a class="b-link" href="#">Интересные факты</a></li>
-                <li class="b-menu__item"><a class="b-link" href="#">Анкеты</a></li>
-                <li class="b-menu__item"><a class="b-link" href="#">Услуги</a></li>
-                <li class="b-menu__item"><a class="b-link" href="#">Фото</a></li>
-                <li class="b-menu__item"><a class="b-link" href="#">Тест</a></li>
-                <li class="b-menu__item"><a class="b-link" href="#">Помощь</a></li>
-            </ul>
+
+            <div class="b-info">
+                <div id="mycarousel" class="jcarousel-skin-tango">
+                    <ul>
+                        <li>
+                            <div class="b-carusel__pic b-carusel__pic_num_1"></div>
+                            <div class="b-carusel__discrip">
+                                <h2 class="b-title-topic">Для любви нет границ</h2>
+                                <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="b-carusel__pic b-carusel__pic_num_2"></div>
+                            <div class="b-carusel__discrip">
+                                <h2 class="b-title-topic">Для любви нет границ</h2>
+                                <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="b-carusel__pic b-carusel__pic_num_1"></div>
+                            <div class="b-carusel__discrip">
+                                <h2 class="b-title-topic">Для любви нет границ</h2>
+                                <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="b-carusel__pic b-carusel__pic_num_2"></div>
+                            <div class="b-carusel__discrip">
+                                <h2 class="b-title-topic">Для любви нет границ</h2>
+                                <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="b-carusel__pic b-carusel__pic_num_1"></div>
+                            <div class="b-carusel__discrip">
+                                <h2 class="b-title-topic">Для любви нет границ</h2>
+                                <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="b-carusel__pic b-carusel__pic_num_2"></div>
+                            <div class="b-carusel__discrip">
+                                <h2 class="b-title-topic">Для любви нет границ</h2>
+                                <p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="jcarousel-control">
+                        <a id="select1" onclick="select(1);" class="b-link b-number-active" href="#">1</a>
+                        <a id="select2" onclick="select(2);" class="b-link" href="#">2</a>
+                        <a id="select3" onclick="select(3);" class="b-link" href="#">3</a>
+                        <a id="select4" onclick="select(4);" class="b-link" href="#">4</a>
+                        <a id="select5" onclick="select(5);" class="b-link" href="#">5</a>
+                        <a id="select6" onclick="select(6);" class="b-link jcarousel-control__ie" href="#">6</a>
+                    </div>
+                </div>
+                <div class="b-contuct">
+                    <h2 class="b-title-topic">Ищешь половинку?</h2>
+                    <p>в любое время дня и ночи:</p>
+                    <i>050 55-72-894</i>
+                    <i>(06543)12-34-6</i>
+                    <p class="b-contuct_margin_top">А если не так срочно, то&nbsp;<a href="#">пиши</a> или <a href="#">заходи</a></p>
+                    <div class="b-angel-one"></div>
+                </div>
+            </div>
+            <div class="b-content">
+                <div class="b-content__column">
+                    <h2 class="b-title-topic">Это интересно</h2>
+                    <a class="b-link" href="#">Осенние и зимние скидки!</a>
+                    <p class="b-content_margin_bottom">С приходом осени опадает не только листва, но и наши цены! Если вы планирvуете начало новой жизни на октябрь, то вам вдвойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
+                    <a class="b-link" href="#">Ещё больше осенних и зимних скидкок!</a>
+                    <p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октябрь, то вам вдвойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
+                    <div class="b-angel-two"></div>
+                </div>
+                <div class="b-content__column">
+                    <h2 class="b-title-topic b-title-topic_margin_bottom">Новые анкеты</h2>
+                    <a href="#" class="b-form b-form_margin_right">
+                        <span class="b-form__profile b-form__profile_pic_one"></span>
+                        <i>Иван</i>, 24 года Киев
+                    </a>
+                    <a href="#" class="b-form">
+                        <span class="b-form__profile b-form__profile_pic_two"></span>
+                        <i>Наталья</i>, 20 лет Ивано-Франковск
+                    </a>
+                    <a href="#" class="b-form b-form_margin_right">
+                        <span class="b-form__profile b-form__profile_pic_one"></span>
+                        <i>Иван</i>, 24 года Киев
+                    </a>
+                    <a href="#" class="b-form">
+                        <span class="b-form__profile b-form__profile_pic_two"></span>
+                        <i>Наталья</i>, 20 лет Ивано-Франковск
+                    </a>
+                    <a href="#" class="b-form b-form_margin_right">
+                        <span class="b-form__profile b-form__profile_pic_one"></span>
+                        <i>Иван</i>, 24 года Киев
+                    </a>
+                    <a href="#" class="b-form">
+                        <span class="b-form__profile b-form__profile_pic_two"></span>
+                        <i>Наталья</i>, 20 лет Ивано-Франковск
+                    </a>
+                </div>
+                <div class="b-content__column">
+                    <h2 class="b-title-topic">Новые услуги</h2>
+                    <a class="b-link" href="#">Знакомства</a>
+                    <p>Заполнив анкету в нашем агентстве, вы гарантировано найдёте свою любовь.</p>
+                    <p class="b-content__topic b-content_margin_bottom"><a href="#">Отправить заявку</a> на поиск партнёра вы можете прямо сейчас!</p>
+                    <a class="b-link" href="#">Студийная фотосъёмка</a>
+                    <p class="b-content_margin_bottom">Не секрет, что людям, которые хорошо выглядят, сопутствует удача. Мы вам в этом поможем.</p>
+                    <a class="b-link" href="#">Тренинги</a>
+                    <p>Что изменить в своём поведении, чтобы привлекать к себе представителей противоположного пола? Узнайте об этом и многом другом на наших психологических тренингах.</p>
+                </div>
+                <div class="b-content__column b-content__column_ie ">
+                    <h2 class="b-title-topic b-title-topic_margin_bottom">Свежие фото</h2>
+                    <a href="#" class="b-form b-form_margin_right b-form_margin_bottom">
+                        <span class="b-form__profile b-form__profile_pic_one"></span>
+                    </a>
+                    <a href="#" class="b-form b-form_margin_bottom">
+                        <span class="b-form__profile b-form__profile_pic_two"></span>
+                    </a>
+                    <a href="#" class="b-form b-form_margin_right b-form_margin_bottom">
+                        <span class="b-form__profile b-form__profile_pic_three"></span>
+                    </a>
+                    <a href="#" class="b-form b-form_margin_bottom">
+                        <span class="b-form__profile b-form__profile_pic_four"></span>
+                    </a>
+                    <a href="#" class="b-form b-form_margin_right b-form_margin_bottom">
+                        <span class="b-form__profile b-form__profile_pic_five"></span>
+                    </a>
+                    <a href="#" class="b-form b-form_margin_bottom">
+                        <span class="b-form__profile b-form__profile_pic_six"></span>
+                    </a>
+                    <a href="#" class="b-form b-form_margin_right b-form_margin_bottom">
+                        <span class="b-form__profile b-form__profile_pic_seven"></span>
+                    </a>
+                    <a href="#" class="b-form b-form_margin_bottom">
+                        <span class="b-form__profile b-form__profile_pic_eight"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="b-footer">
+                <div class="b-footer__column">
+                    <p>&copy; 2010 Международное</p>
+                    <p>брачное агентство «Амур»</p>
+                    <p>телефоны: 050 55-72-894</p>
+                    <p class="b-phone">(06543)12-34-6</p>
+                </div>
+                <div class="b-footer__column b-footer__column_width">
+                    <ul class="b-company-info">
+                        <li><a href="#">Посмотреть на карте</a></li>
+                        <li><a href="mailto:zemka4@gmail.com">Написать письмо</a></li>
+                        <li><a href="#">Партнёрство</a></li>
+                    </ul>
+                    <form class="b-form-language" method="post">
+                        <select>
+                            <option disabled>Other language?</option>
+                            <option value="English">English</option>
+                            <option value="German">German</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="b-footer__column b-footer__column_ie">
+                    Дизайн: <a href="http://tadatuta.ru/">Тадатута</a>
+                </div>
+            </div>
+
         </div>
-
-        <div></div>
-        <div></div>
-
-        <footer></footer>
-        
     </div>
+
 </body>
 </html>
