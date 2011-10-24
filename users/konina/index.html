@@ -1,9 +1,9 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>Amour</title>
-	<link rel="stylesheet" type="text/css" href="style/common.css" media="all"/>
+	<link rel="stylesheet" href="style/common.css"/>
 	<!--[if lt IE 9]>
 		<script type="text/javascript">
 		/* emulate HTML5 elements */
@@ -13,212 +13,230 @@
 		}
 		</script>
 	<![endif]-->
-	
+	<script type="text/javascript"> 
+		window.onload = slideshow;
+		
+		function slideshow(){
+			var ul = document.getElementsByClassName("tabs");
+			for(var i = 0; i < ul.length; i++){
+				var li = ul[i].getElementsByTagName('LI');
+					for(var j = 0; j < li.length; j++){
+						li[j].onclick = function(){
+							var num = (parseInt(this.textContent) - 1 );
+							var ulCont = document.getElementsByClassName("tabs-content")[0];
+							var x = "-"+(num * 730) + "px";
+							ulCont.style.left = x;
+						}
+					}
+			}
+		}
+	</script>
 </head>
 <body>
 	<header class="header" role="banner">
 		<ul class="lang">
 			<li><a href="#">English</a></li>
-			<li><a href="#">Русский</a></li>
+			<li class="active">Русский</li>
 			<li><a href="#">Украинська</a></li>
 			<li><a href="#">French</a></li>
 			<li><a href="#">Espanol</a></li>
 			<li><a href="#">Italian</a></li>
 		</ul>
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			<hgroup>
+				<h1><a href="index.html">Amour</a></h1>
+				<h2>Любовь всегда приходит вовремя</h2>
+			</hgroup>
+		</div>
+		<nav role="navigation">
+			<ul class="navigation">
+				<li class="active">Интересные факты</li>
+				<li><a href="#forms">Анкеты</a></li>
+				<li><a href="#services">Услуги</a></li>
+				<li><a href="#photo">Фото</a></li>
+				<li><a href="#test">Тест</a></li>
+				<li><a href="#help">Помощь</a></li>
+			</ul>
+		</nav>
 		<form action="#" method="get" name="search">
 			<input type="search" id="search"/>
 			<label for="search">поиск</label>
 		</form>
-		<form action="#" method="post" name="userenter">
-			
+		<a href="#enter">вход</a>
+		<form action="#" method="post" name="user_enter">
+			<label for="login">Логин</label>
+			<input type="text" name="user_login" id="login" autocomplete="on" />
+			<label for="password">Пароль</label>
+			<input type="password" name="user_password" id="password" autocomplete="off" />
+			<input type="submit" value="Войти" />
 		</form>
-		<hgroup>
-			<h1>Amour</h1>
-			<h2>Любовь всегда приходит вовремя</h2>
-		</hgroup>
-		<nav role="navigation">
-			<ul class="navigation">
-				<li><a href="#">Интересные факты</a></li>
-				<li><a href="#">Анкеты</a></li>
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Фото</a></li>
-				<li><a href="#">Тест</a></li>
-				<li><a href="#">Помощь</a></li>
-			</ul>
-		</nav>
 	</header>
-	<!--> блок с галереей и телефонами  <-->
-	<div class="gallery">
-            <ul class="tabs">
-                <li><a href="#one">1</a></li>
-                <li><a href="#two">2</a></li>
-                <li><a href="#three">3</a></li>
-                <li><a href="#four">4</a></li>
-                <li><a href="#five">5</a></li>
-                <li><a href="#six">6</a></li>
-            </ul>
-            <div class="tabs-content">
-                <ul>
-                    <li id="one">
+	<div class="layout clearfix">
+		<div class="clearfix">
+			<div class="slideshow">
+				<ul class="tabs">
+				    <li>1</li>
+				    <li>2</li>
+				    <li>3</li>
+				    <li>4</li>
+				    <li>5</li>
+				    <li>6</li>
+				</ul>      
+				<ul class="tabs-content">
+				            <li>
 						<figure>
-							<img src="images/user1.jpg" alt="" />
+							<img src="images/slide1.jpg" alt="" />
 							<figcaption>
-								<p>Для любви нет границ1</p>
+								<p>Для любви нет границ</p>
 								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
 							</figcaption>
 						</figure>
 					</li>
-                    <li id="two">
+				                <li>
 						<figure>
-							<img src="images/user1.jpg" alt="" />
+							<img src="images/slide2.jpg" alt="" />
 							<figcaption>
-								<p>Для любви нет границ1</p>
+								<p>Для любви нет 2 границ</p>
 								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
 							</figcaption>
 						</figure>
 					</li>
-                    <li id="three">
+				                <li>
 						<figure>
-							<img src="images/user1.jpg" alt="" />
+							<img src="images/slide1.jpg" alt="" />
 							<figcaption>
-								<p>Для любви нет границ1</p>
+								<p>Для любви нет 3 границ</p>
 								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
 							</figcaption>
 						</figure>
 					</li>
-                    <li id="four">
+				                <li>
 						<figure>
-							<img src="images/user1.jpg" alt="" />
+							<img src="images/slide2.jpg" alt="" />
 							<figcaption>
-								<p>Для любви нет границ1</p>
+								<p>Для любви нет 4 границ</p>
 								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
 							</figcaption>
 						</figure>
 					</li>
-                    <li id="five">
+				                <li>
 						<figure>
-							<img src="images/user1.jpg" alt="" />
+							<img src="images/slide1.jpg" alt="" />
 							<figcaption>
-								<p>Для любви нет границ1</p>
+								<p>Для любви нет 5 границ</p>
 								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
 							</figcaption>
 						</figure>
 					</li>
-                    <li id="six">
+				                <li>
 						<figure>
-							<img src="images/user1.jpg" alt="" />
+							<img src="images/slide2.jpg" alt="" />
 							<figcaption>
-								<p>Для любви нет границ1</p>
+								<p>Для любви нет 6 границ</p>
 								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
 							</figcaption>
 						</figure>
 					</li>
-                </ul>
-            </div>
-        </div>
-		<article class="main" role="main">
-			<h1>Ищешь половинку?</h1> 
-			<p>в любое время дня и ночи:</p>
-			<p>телефоны: <span class="tel">050 55-72-894 <br/>(06543) 12-34-6</span></p>
-			<p>А если не так срочно, то <a href="mailto:tadatuta@amour.ru">пиши</a> или <a href="#">заходи</a></p>
-		</article>
-	<section class="interest">
-	<h1>это интересно</h1>
-		<article>
-			<h1>Осенние и зимние скидки!</h1>
-			<p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октяябрь, то вам вдовойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
-		</article>
-		<article>
-			<h1>Еще больше осенних и зимних скидок! </h1>
-			<p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октяябрь, то вам вдовойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
-		</article>
-	</section>
-	<section class="newforms">
-		<h1>Новые анкеты</h1>
-		<ul class="newforms">
-			<li>
-				<figure>
-				<img src="images/user1.jpg" alt="Иван, 24 года Киев" />
-				<figcaption><a href="#userform">Иван,</a>  24 года Киев </figcaption>
-			   </figure>
-			</li>
-			<li>
-				<figure>
-				<img src="images/user2.jpg" alt="Наталья, 20 лет Ивано-Франковск" />
-				<figcaption><a href="#userform">Наталья,</a> 20 лет Ивано-Франковск</figcaption>
-			   </figure>
-			</li>
-			<li>
-				<figure>
-				<img src="images/user3.jpg" alt="Пол, 32 года Нью-Йорк" />
-				<figcaption><a href="#userform">Пол,</a> 32 года Нью-Йорк</figcaption>
-			   </figure>
-			</li>
-			<li>
-				<figure>
-				<img src="images/user4.jpg" alt="Кармен, 25 лет Милан" />
-				<figcaption><a href="#userform">Кармен,</a>  25 лет Милан</figcaption>
-			   </figure>
-			</li>
-			<li>
-				<figure>
-				<img src="images/user5.jpg" alt="Джеймс, 45 лет Лондон" />
-				<figcaption><a href="#userform">Джеймс,</a>  45 лет Лондон</figcaption>
-			   </figure>
-			</li>
-			<li>
-				<figure>
-				<img src="images/user6.jpg" alt="София, 56 лет Ялта" />
-				<figcaption><a href="#userform"> София,</a>  56 лет Ялта</figcaption>
-			   </figure>
-			</li>
-		</ul>
-	</section>
-	<section class="ourservices">
-		<h1>Новые услуги</h1>
-		<article>
-			<h1>Знакомства</h1>
-			<p>Заполнив анкету в нашем агентстве, вы гарантировано найдете свою любовь.</p>
-			<p><a href="#formorder">Отправить заявку</a> на поиск партнера вы можете прямо сейчас!</p>
-		</article>
-		<article>
-			<h1>Студийная фотосъемка</h1>
-			<p>Не секрет что людям, которые хорошо выглядят, сопутствует удача. Мы вам в этом поможем.</p>
-		</article>
-		<article>
-			<h1>Тренинги</h1>
-			<p>Что изменить в своем поведении, чтобы привлекать к себе представителей противоположного пола? Узнайте об этом и о многом другом на наших  психологических тренингах.</p>
-		</article>
-	</section>
-	<section class="newphotos">
-		<ul>
-			<li><a href="#"><img src="" alt="foto"/></a></li>
-			<li><a href="#"><img src="" alt="foto"/></a></li>
-			<li><a href="#"><img src="" alt="foto"/></a></li>
-			<li><a href="#"><img src="" alt="foto"/></a></li>
-			<li><a href="#"><img src="" alt="foto"/></a></li>
-			<li><a href="#"><img src="" alt="foto"/></a></li>
-			<li><a href="#"><img src="" alt="foto"/></a></li>
-			<li><a href="#"><img src="" alt="foto"/></a></li>
-		</ul>
-	</section>
-	<footer class="footer" role="info"> 
-		<div id="" class="vcard">
-			<div>&copy;2010 <span class="org">Международное брачное агентство «Амур»</span></div>
-			<div>телефоны: <span class="tel">050 55-72-894 <br/>(06543) 12-34-6</span></div>
+			            </ul>
+			</div>
+			<div class="contacts">
+				<h2>Ищешь половинку?</h2> 
+				<dl>
+					<dt>в любое время дня и ночи:</dt>
+					<dd class="tel">050 55-72-894</dd> 
+					<dd class="tel">(06543) 12-34-6</dd>
+				</dl>
+				<p>
+					А&nbsp;если не&nbsp;так срочно, то&nbsp;<a href="mailto:tadatuta@amour.ru">пиши</a> или&nbsp;<a href="#">заходи</a>
+				</p>
+			</div>
 		</div>
-		<section class="interactive">
-			<p>
-				<a href="#map">Посмотреть на карте</a>
-			</p>
-			<p>
-				<a href="mailto:tadaduta@amour.ru">Написать письмо</a>
-			</p>
-			<p><a href="#partner">Партнёрство</a></p>
+		<section class="interest">
+			<h1>Это интересно</h1>
+			<h2><a href="#discount">Осенние и&nbsp;зимние скидки!</a></h2>
+			<p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октяябрь, то вам вдовойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
+			<h2><a href="#sales">Еще больше осенних и зимних скидок!</a> </h2>
+			<p>С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на октяябрь, то вам вдовойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.</p>
 		</section>
-		<form action="#" class="otherlang" method="post">
-			<select name="lang" id="lang">
-				<option disabled>Other language?</option>
+		<section class="newforms">
+			<h1>Новые анкеты</h1>
+			<ul>
+				<li>
+					<a href="#userform_1">
+						<img src="images/photo1.jpg" alt="photo" />
+						<span>Иван,</span>
+					</a>  24&nbsp;года Киев				
+				</li>
+				<li>
+					<a href="#userform_2">
+						<img src="images/photo7.jpg" alt="photo" />
+						<span>Наталья,</span>
+					</a> 20&nbsp;лет Ивано-Франковск
+				</li>
+				<li>
+					<a href="#userform_3">
+						<img src="images/photo1.jpg" alt="photo" />
+						<span>Пол,</span>
+					</a> 32&nbsp;года Нью-Йорк		
+				</li>
+				<li>
+					<a href="#userform_4">
+						<img src="images/photo7.jpg" alt="photo" />
+						<span>Кармен,</span>
+					</a>  25&nbsp;лет Милан			
+				</li>
+				<li>
+					<a href="#userform_6">
+						<img src="images/photo1.jpg" alt="photo" />
+						<span> Джеймс,</span>
+					</a>  45&nbsp;лет Лондон	
+				</li>
+				<li>
+					<a href="#userform_5">
+						<img src="images/photo7.jpg" alt="photo" />
+						<span>София,</span>
+					</a> 56&nbsp;лет Ялта					
+				</li>
+			</ul>
+		</section>
+		<section class="ourservices">
+			<h1>Новые услуги</h1>
+				<h2><a href="#dating_service">Знакомства</a></h2>
+				<p>Заполнив анкету в нашем агентстве, вы гарантировано найдете свою любовь.
+				<br /><a href="#formorder">Отправить заявку</a> на поиск партнера вы можете прямо сейчас!</p>
+				<h2><a href="#photography">Студийная фотосъемка</a></h2>
+				<p>Не секрет что людям, которые хорошо выглядят, сопутствует удача. Мы вам в этом поможем.</p>
+				<h2><a href="#trainings">Тренинги</a></h2>
+				<p>Что изменить в своем поведении, чтобы привлекать к себе представителей противоположного пола? Узнайте об этом и о многом другом на наших  психологических тренингах.</p>
+		</section>
+		<section class="newphotos">
+			<h1>Свежие фото</h1>
+			<ul>
+				<li><a href="#"><img src="images/photo1.jpg" alt="photo1"/></a></li>
+				<li><a href="#"><img src="images/photo2.jpg" alt="photo2"/></a></li>
+				<li><a href="#"><img src="images/photo3.jpg" alt="photo3"/></a></li>
+				<li><a href="#"><img src="images/photo4.jpg" alt="photo4"/></a></li>
+				<li><a href="#"><img src="images/photo5.jpg" alt="photo5"/></a></li>
+				<li><a href="#"><img src="images/photo6.jpg" alt="photo6"/></a></li>
+				<li><a href="#"><img src="images/photo7.jpg" alt="photo7"/></a></li>
+				<li><a href="#"><img src="images/photo8.jpg" alt="photo8"/></a></li>
+			</ul>
+		</section>
+	</div>
+	<footer class="footer" role="contentinfo"> 
+		<div class="vcard">
+			<div>&copy;2010 <span class="org">Международное брачное агентство «Амур»</span></div>
+			<div>телефоны: <span class="tel">050 55-72-894</span><br/><span class="tel">(06543) 12-34-6</span></div>
+		</div>
+		<ul class="interactive">
+			<li><a href="#map">Посмотреть на карте</a></li>
+			<li><a href="mailto:tadaduta@amour.ru">Написать письмо</a></li>
+			<li><a href="#partner">Партнёрство</a></li>
+		</ul>
+		<form action="#" name="otherlang" class="otherlang" method="post">
+			<select name="chooselang">
+				<option selected disabled>Other language?</option>
 				<option value="english">English</option>
 				<option value="russian">Русский</option>
 				<option value="ukraine">Украинська</option>
