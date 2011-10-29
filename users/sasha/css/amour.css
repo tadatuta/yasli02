@@ -27,6 +27,8 @@ body{
 }
 article, aside, details, footer, header, menu, nav, section,time,figure {
     display: block;
+    margin:0;
+    padding:0;
 
 }
 nav ul{
@@ -168,7 +170,19 @@ nav li a{
 .middle{
     width:1227px;
     margin: 18px 0 0 0;
+    overflow:hidden;
 
+}
+.middle .wrapper{
+    position:relative;
+    padding:0;
+    margin: 0 0 0 128px;
+    width:731px;
+    height:344px;
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
 
 }
 .middle .gallery,
@@ -176,29 +190,61 @@ nav li a{
 
     width:731px;
     height:344px;
-    border:1px solid green;
-    border-radius: 17px/13px;
-    -moz-border-radius: 17px/13px;
-    -webkit-border-radius: 17px/13px;
+    border-radius: 18px;
+    -moz-border-radius: 18px;
+    -webkit-border-radius: 18px;
     overflow: hidden;
 
 
 }
+
 .middle .gallery{
+    list-style-type: none;
     padding:0;
-    margin: 0 0 0 128px;
+    margin: 0;
+}
+.middle .gallery a{
+    height:0;
+    font-size: 0;
+    overflow:hidden;
 }
 .middle .gallery figure{
+
     position:relative;
-    //background-size: cover;
-    background-size: contain;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*-webkit-transition:all 1.0s ease-in-out;
+    	-moz-transition:all 1.0s ease-in-out;
+    	-o-transition:all 1.0s ease-in-out;
+    	-ms-transition:all 1.0s ease-in-out;
+    	transition:all 1.0s ease-in-out;
+      */
 }
 .middle .gallery figure figcaption{
     position:absolute;
-    top:37px;
-    width:731px;
+    top:40px;
+    left:0;
+    //width:701px;
+    width:387px;
     height:108px;
     background-color: rgba(255,51,102,0.5);
+    color:white;
+    padding-left: 30px;
+    padding-right:314px;
+    line-height: 21px;
+
+}
+.middle .gallery figcaption h1{
+    font:italic 24px "Georgia Italic";
+    margin: 12px 0 16px 0;
+    //margin-top: 12px;
+    //margin-bottom:16px;
+
+}
+.middle .gallery figcaption h1{
+
 
 }
 .middle .gallery figure img{
@@ -206,26 +252,119 @@ nav li a{
 }
 
 
+.middle .links{
+    position:absolute;
+    bottom: 0px;
+    right:29px;
+    z-index:2;
+    margin:0;
+    padding:0;
 
-.middle .gallery li{
+}
+.middle .links li{
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+
+}
+.middle .links a{
+    font:italic 24px "Georgia Italic";
+    text-decoration: none;
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+    padding: 0 3px 10px 2px;;
+
+
+
+}
+.middle .links :link,
+.middle .links :visited{
+    color:white;
+    text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
+    letter-spacing: 2px;
+    border-radius: 8px 8px 0 0;
+    -moz-border-radius: 8px 8px 0 0;
+    -webkit-border-radius: 8px 8px 0 0;
+
+}
+.middle .links :link:hover,
+.middle .links :visited:hover{
+    color:red;
+    text-shadow: none;
+    background:  white;
+
 
 
 
 }
 
 
-
-.content .column{
+.middle .c1 {
+    float:right;
+    margin-right: 97px;
+    width:253px;
     border:1px solid green;
     display: -moz-inline-box;
     display: inline-block;
-//display:inline;
-//zoom:1;
-    width:253px;
+    //display:inline;
+    //zoom:1;
+    vertical-align: top;
+    padding:0;
+    font:italic 18px "Georgia Italic";
+    color: #666666;
+    line-height:32px;
+}
+.middle .c1 h1{
+    margin-bottom:0px;
+
+}
+.middle .c1 .phone{
+    color: #ff3366;
+    white-space:nowrap;
+
+}
+.middle .c1 .p1 {
+    font-size:36px;
 }
 
-.content .column h1{
-    font:italic 24pt "Georgia Italic";
+.middle .c1 .p2 {
+    font-size:33px;
+    margin-bottom:-6px;
+}
+.middle .c1:after{
+    content:url(../img/amourr.png);
+    display:block;
+    text-align: center;
+}
+
+
+.content{
+    width:1099px;
+
+    margin: 0 0 0 128px;
+    overflow:hidden;
+}
+
+.content .column{
+    vertical-align:top;
+    outline:1px solid blue;
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
+    width:226px;
+    margin-right:20px;
+}
+.content .column:last-child{
+    border:1px solid green;
+}
+
+.content .column h1,
+.middle .c1 h1{
+    font:italic 24px "Georgia Italic";
     color: #666666;
 }
 .content .column h1 a{
