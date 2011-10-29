@@ -1,5 +1,8 @@
 .b-head
 {
+    position: relative;
+    z-index: 20;
+
     padding: 20px 0 23px;
 
     background: #e9ebec;
