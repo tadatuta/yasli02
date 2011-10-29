@@ -1,3 +1,5 @@
+map{outline:none;}
+a{outline:none;}
 /***  RESET begin  *****************************************************/
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin:0;
@@ -11,27 +13,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 ul {list-style:none;}
 
-.clearfix:after {
+/* .clearfix:after {
 	clear:both;
 	display:block;
 	visibility:hidden;
 	height:0;
 	content:"\0020";
-}
+	
+} */
+.clearfix { zoom: 1; }
 /***  RESET end  *******************************************************/
-
-html, body{
-	width:100%;
-}
 body{
-	min-width:785px;
+	width:expression(document.body.clientWidth > 785 ? "100%" : "785px"); 
 	font-family:Georgia, Serif;
 	font-size:62.5%;
 	font-style:italic;
 	color:#333;
 	background-color:#ffeaef;
-	background-color:rgba(255,51,102,0.1);
 	background-image:url(../images/bg-fon.png);
+	overflow-x:hidden;
 }
 a{
 	color:#39f;
@@ -41,6 +41,7 @@ img{
 }
 /***  HEADER begin  ****************************************************/
 .header{
+	width:82%;
 	position:relative;
     padding: 0 9% 150px;
     margin-bottom:-130px;
@@ -56,7 +57,7 @@ img{
 		padding-top:24px;
 	}
 		.header h1{
-			display:inline-block;
+			display:inline;
 			font-size:7em;
 			font-weight:100;
 			text-indent:40px;
@@ -68,7 +69,7 @@ img{
 				text-decoration:none;
 			}
 		.header h2{ 
-			display:inline-block;
+			display:inline;
 			font-size: 2em;
 		    font-weight: 100;
 		    opacity:0.6;
@@ -83,7 +84,7 @@ img{
 		text-align:right;		
 	}
 	.lang li{
-		display:inline-block;
+		display:inline;
 			
 		font-family:Arial, sans-serif;
 		font-size:1.2em;
@@ -110,12 +111,12 @@ img{
 	white-space:nowrap;
 }
 .navigation li{
-	display:inline-block;
+	display:inline;
 }
 	.navigation .active,
 	.navigation li a {
 		position:relative;
-		display:inline-block;
+		display:inline;
 		padding:16px 39px;
 		margin-left:-30px;		
 		-webkit-border-radius: 15px;
@@ -123,6 +124,7 @@ img{
 		border-radius: 15px;
 		font-size:1.8em;
 		background:#fff;
+		zoom:1;
 	}
 	
 	.navigation .active,
@@ -131,18 +133,11 @@ img{
 		color:#fff;
 		text-decoration:underline;
 		background: #f36; /* Old browsers */
-		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjMDAzMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk5JSIgc3RvcC1jb2xvcj0iI2ZmMzM2NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-		background: -moz-linear-gradient(top, #cc0033 0%, #ff3366 99%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc0033), color-stop(99%,#ff3366)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(top, #cc0033 0%,#ff3366 99%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(top, #cc0033 0%,#ff3366 99%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(top, #cc0033 0%,#ff3366 99%); /* IE10+ */
-		background: linear-gradient(top, #cc0033 0%,#ff3366 99%); /* W3C */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0033', endColorstr='#ff3366',GradientType=0 ); /* IE6-8 */
 }
 /* формы поиска и аутентификации***********/
 form[name="search"]{
-	display:inline-block;
+	display:inline;
 	position:absolute;
 	top:32px;
 	left:65%;
@@ -162,15 +157,14 @@ form[name="search"]{
 			left:10px;
 			line-height:1.4;
 		}
-		input[type=search] {
+		#search {
 			position:relative;
 			z-index:1;
 			width:100px;
-			border:none;
+			border:1px dotted #f36;
 			background:transparent;
-	    	-webkit-appearance: none;
 		}
-			input[type="search"]:focus{
+			#search:focus{
 				background:#fff;
 			}
 #enter{
@@ -233,13 +227,14 @@ form[name="user_enter"]{
 		z-index:1;
 	}
 		.tabs li{
-			display:inline-block; 
+			display:inline; 
 			font-size: 2.4em;
 		    height: 40px;
 		    width: 20px;
 			cursor:pointer;
 			color:#fff;
 			text-align:center;
+			zoom:1;
 		}
 		.tabs li:hover{
 			background:#fff;
@@ -249,10 +244,8 @@ form[name="user_enter"]{
 			border-radius: 9px 9px 0 0;
 		}
 	.tabs-content{
+		zoom:1;
 		position:relative;
-		left:0;
-		width:100%;
-		height:100%;
 		white-space:nowrap;		
 		-webkit-transition:all 2.0s ease-in-out;
 		-moz-transition:all 2.0s ease-in-out;
@@ -261,20 +254,13 @@ form[name="user_enter"]{
 		transition:all 2.0s ease-in-out;
 	}
 		.tabs-content li{
-			display:inline-block;	
+			display:inline;
+			zoom:1;
 		}
 			figure{
 				position:relative;
 			}
-			figcaption{
-				position:absolute;
-				top:36px;
-				left:0;
-				width:730px;
-				height:108px;
-				background:rgba(255,51,102,0.5);
-			}
-			#figfon{ /* для эмуляции прозрачности фона надписи в IE8*/
+			#figfon{
 				position:absolute;
 				top:36px;
 				left:0;
@@ -282,6 +268,13 @@ form[name="user_enter"]{
 				height:108px;
 				background:#f36;
 				filter: alpha(opacity=50);				
+			}
+			figcaption{
+				position:absolute;
+				top:36px;
+				left:0;
+				width:730px;
+				height:108px;
 			}
 			figcaption p {
 			    color: #fff;
@@ -326,7 +319,7 @@ form[name="user_enter"]{
 	    line-height: 1.8;
 	    padding-top: 10px;
 	}
-		.contacts:after{
+		 #ie7decorcontact{
 			background: url("../images/decor-contacts.png") no-repeat scroll 0 0 transparent;
 		    bottom: 20px;
 		    content: " ";
@@ -336,6 +329,7 @@ form[name="user_enter"]{
 		    position: absolute;
 		    width: 153px;
 		}
+		
 
 /***  LAYOUT begin  *******************************************************/
 .layout{
@@ -343,7 +337,7 @@ form[name="user_enter"]{
 }
 section{
 	float:left;
-	width:25%;
+	width:24.9%;
 }
 	section h1 {
 	    color: #666;
@@ -367,10 +361,10 @@ section{
 	}
 .newforms ul{
 	padding-top:14px;
-	margin-bottom:-60px;
+	margin-bottom:-60px; 
 }
 	.newforms li{
-		display:inline-block;
+		display:inline;
 		overflow:hidden;
 		width:106px;
 		height:144px;
@@ -379,6 +373,7 @@ section{
 		font-size:1.2em;
 		color:#333;
 		cursor: default;
+		zoom:1;
 	}
 		.newforms li a{
 			line-height:1.6;
@@ -396,12 +391,13 @@ section{
 			}
 		
 .newphotos li{
-	display:inline-block;
+	display:inline;
 	overflow:hidden;
 	width:106px;
 	height:71px;
 	margin:13px 15px 6px -1px;
 	vertical-align:top;
+	zoom:1;
 }
 	.newphotos li a{
 		text-decoration:none;
@@ -423,7 +419,7 @@ section{
 	font-size:1.2em;
 	padding:118px 10% 0;
 }
-	.footer:after{
+	#decorfooter{
 		position:absolute;
 		right:0;
 		top:0;
@@ -438,9 +434,10 @@ section{
 	.interactive,
 	.otherlang,
 	.author{
-		display:inline-block;
+		display:inline;
 		width:15%;
 		line-height:1.9;
+		zoom:1;
 	}
 	.vcard{
 		position:relative;
@@ -453,7 +450,7 @@ section{
 				float:left;
 			}
 			.tel{white-space:nowrap;}
-		.vcard:before{
+		#ie7decorvcard{
 			content:"\0020";
 			display:block;
 			width:230px;

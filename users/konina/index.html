@@ -2,48 +2,48 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Amour</title>
-	<link rel="stylesheet" href="style/common.css"/>
+	<title>Amour</title>		
 	<!--[if lt IE 9]>
 		<script type="text/javascript">
 		/* emulate HTML5 elements */
-		var E  = ('article:aside:audio:canvas:figure:footer:header:hgroup:nav:section:video:output:detalis:keygen:meter:progress:figcaption:mark:summary:time:wbr').split(':');
+		var E  = ('article:aside:canvas:figure:footer:header:hgroup:nav:section:figcaption').split(':');
 		for (var c = 0; c < E.length; c++) {
 		document.createElement(E[c]);
 		}
-		</script>
+		</script>	
 	<![endif]-->
-	<script type="text/javascript"> 
-		window.onload = slideshow;
 		
-		function slideshow(){
-			var ul = document.getElementsByClassName("tabs");
-			for(var i = 0; i < ul.length; i++){
-				var li = ul[i].getElementsByTagName('LI');
-					for(var j = 0; j < li.length; j++){
-						li[j].onclick = function(){
-							var num = (parseInt(this.textContent) - 1 );
-							var ulCont = document.getElementsByClassName("tabs-content")[0];
-							var x = "-"+(num * 730) + "px";
-							ulCont.style.left = x;
-						}
-					}
-			}
-		}
-	</script>
+	<!--[if lt IE 8]><script type="text/javascript" src="js/emulateBefore.js"></script><![endif]-->
+	<!--[if lt IE 9]><script type="text/javascript" src="js/opacity.js"></script><![endif]-->
+	<!--[if gt IE 7]><!--><link rel="stylesheet" href="style/common.css"/><!--<![endif]-->
+    <!--[if lt IE 8]><link rel=stylesheet href="style/ie.css"><![endif]-->
+	
+	<!--[if gte IE 9]>
+		<style type="text/css">
+			.navigation .active,
+			.navigation li a:hover, 
+			figcaption 	{
+			    filter: none;
+			 }
+			 
+		</style>
+	<![endif]-->
 </head>
 <body>
 	<header class="header" role="banner">
 		<ul class="lang">
-			<li><a href="#">English</a></li>
+			<li><a href="#eng">English</a></li>
 			<li class="active">Русский</li>
-			<li><a href="#">Украинська</a></li>
+			<li><a href="#ukr">Украинська</a></li>
 			<li><a href="#">French</a></li>
 			<li><a href="#">Espanol</a></li>
 			<li><a href="#">Italian</a></li>
 		</ul>
 		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			<img id="logotype" src="images/logo.png" usemap="#maplogo" alt="">
+			<map name="maplogo">
+				<area shape="poly" coords="110,0,182,0,195,40,354,40,354,99,0,100,0,35,110,0" href="index.html" alt="" onfocus="this.blur()">
+			</map>
 			<hgroup>
 				<h1><a href="index.html">Amour</a></h1>
 				<h2>Любовь всегда приходит вовремя</h2>
@@ -59,86 +59,97 @@
 				<li><a href="#help">Помощь</a></li>
 			</ul>
 		</nav>
-		<form action="#" method="get" name="search">
-			<input type="search" id="search"/>
-			<label for="search">поиск</label>
-		</form>
-		<a href="#enter">вход</a>
+		<form action="#" method="get" name="search"
+			><label for="search">поиск</label
+			><input type="search" id="search"
+		/></form>
+		<a href="#" id="enter">вход</a>
 		<form action="#" method="post" name="user_enter">
-			<label for="login">Логин</label>
-			<input type="text" name="user_login" id="login" autocomplete="on" />
-			<label for="password">Пароль</label>
-			<input type="password" name="user_password" id="password" autocomplete="off" />
-			<input type="submit" value="Войти" />
+			<fieldset>
+				<legend>Авторизация</legend>
+				<ul class="user_enter">
+					<li>
+						<label for="login">Логин</label>
+						<input type="text" name="user_login" id="login" autocomplete="on" />
+					</li>
+					<li><label for="password">Пароль</label>
+						<input type="password" name="user_password" id="password" autocomplete="off" />
+					</li>
+					<li>
+						<input type="submit" value="Войти" />
+						<input type="reset" value="Отказаться" />
+					</li>
+				</ul>
+			</fieldset>
 		</form>
 	</header>
 	<div class="layout clearfix">
 		<div class="clearfix">
 			<div class="slideshow">
 				<ul class="tabs">
-				    <li>1</li>
-				    <li>2</li>
-				    <li>3</li>
-				    <li>4</li>
-				    <li>5</li>
-				    <li>6</li>
+					<li>1</li
+					><li>2</li
+					><li>3</li
+					><li>4</li
+					><li>5</li
+					><li>6</li>
 				</ul>      
 				<ul class="tabs-content">
-				            <li>
+					<li>
 						<figure>
-							<img src="images/slide1.jpg" alt="" />
-							<figcaption>
+							<img src="images/slide1.jpg" alt="" 
+							/><figcaption>
 								<p>Для любви нет границ</p>
-								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
+								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
 							</figcaption>
 						</figure>
-					</li>
-				                <li>
+					</li
+					><li>
 						<figure>
-							<img src="images/slide2.jpg" alt="" />
-							<figcaption>
+							<img src="images/slide2.jpg" alt="" 
+							/><figcaption>
 								<p>Для любви нет 2 границ</p>
-								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
+								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
 							</figcaption>
 						</figure>
-					</li>
-				                <li>
+					</li
+					><li>
 						<figure>
-							<img src="images/slide1.jpg" alt="" />
-							<figcaption>
+							<img src="images/slide1.jpg" alt="" 
+							/><figcaption>
 								<p>Для любви нет 3 границ</p>
-								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
+								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
 							</figcaption>
 						</figure>
-					</li>
-				                <li>
+					</li
+					><li>
 						<figure>
-							<img src="images/slide2.jpg" alt="" />
-							<figcaption>
+							<img src="images/slide2.jpg" alt="" 
+							/><figcaption>
 								<p>Для любви нет 4 границ</p>
-								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
+								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
 							</figcaption>
 						</figure>
-					</li>
-				                <li>
+					</li
+					><li>
 						<figure>
-							<img src="images/slide1.jpg" alt="" />
-							<figcaption>
+							<img src="images/slide1.jpg" alt=""
+							/><figcaption>
 								<p>Для любви нет 5 границ</p>
-								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
+								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами.Вашу анкету увидят миллионы иностранцев</p>
 							</figcaption>
 						</figure>
-					</li>
-				                <li>
+					</li
+					><li>
 						<figure>
-							<img src="images/slide2.jpg" alt="" />
-							<figcaption>
+							<img src="images/slide2.jpg" alt=""
+							/><figcaption>
 								<p>Для любви нет 6 границ</p>
-								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>								
+								<p>Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы иностранцев</p>
 							</figcaption>
 						</figure>
 					</li>
-			            </ul>
+				</ul>
 			</div>
 			<div class="contacts">
 				<h2>Ищешь половинку?</h2> 
@@ -225,10 +236,14 @@
 		</section>
 	</div>
 	<footer class="footer" role="contentinfo"> 
-		<div class="vcard">
-			<div>&copy;2010 <span class="org">Международное брачное агентство «Амур»</span></div>
-			<div>телефоны: <span class="tel">050 55-72-894</span><br/><span class="tel">(06543) 12-34-6</span></div>
-		</div>
+		<div class="vcard"
+			><div>&copy;2010 <span class="org">Международное брачное агентство «Амур»</span></div>
+			<dl>
+				<dt>телефоны: </dt>
+					<dd class="tel">050&nbsp;55-72-894</dd>
+					<dd class="tel">(06543) 12-34-6</dd>
+			</dl
+		></div>
 		<ul class="interactive">
 			<li><a href="#map">Посмотреть на карте</a></li>
 			<li><a href="mailto:tadaduta@amour.ru">Написать письмо</a></li>
@@ -247,5 +262,9 @@
 		</form>
 		<div class="author">Дизайн <a href="#admin">Тадатута</a></div>
 	</footer>
+	<script type="text/javascript" src="js/hide.js"></script>
+	<script type="text/javascript" src="js/slideshow.js"></script>
+	<script type="text/javascript" src="js/userEnter.js"></script>\
+	<script type="text/javascript" src="js/colorisebgfone.js"></script>
 </body>
 </html>
