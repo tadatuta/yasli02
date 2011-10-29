@@ -24,6 +24,7 @@ body{
     background:url(../img/background.png) white;
     color:#333333;
     font: 12px Arial,sans-serif;
+
 }
 article, aside, details, footer, header, menu, nav, section,time,figure {
     display: block;
@@ -306,7 +307,6 @@ nav li a{
     float:right;
     margin-right: 97px;
     width:253px;
-    border:1px solid green;
     display: -moz-inline-box;
     display: inline-block;
     //display:inline;
@@ -350,24 +350,94 @@ nav li a{
 
 .content .column{
     vertical-align:top;
-    outline:1px solid blue;
     display: -moz-inline-box;
     display: inline-block;
     //display:inline;
     //zoom:1;
     width:226px;
     margin-right:20px;
+    line-height: 19px;
+
+
 }
-.content .column:last-child{
-    border:1px solid green;
+.content .column p{
+    text-indent:30px;
+    margin-top: 0;
 }
+
 
 .content .column h1,
 .middle .c1 h1{
     font:italic 24px "Georgia Italic";
     color: #666666;
+
 }
-.content .column h1 a{
-    font:italic 16pt "Georgia Italic";
+.content .column h1{
+    margin:0 0 14px 0;
+}
+.content .column dt{
+    margin: -7px 0 6px 0;
+}
+.content .column dt a{
+
+    font:italic 16px/21px "Georgia Italic";
     color: #3399ff;
+}
+.content .column dd{
+    margin:0;
+}
+
+.content .column ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    word-spacing:0px
+}
+.content .column .ulj{
+    overflow:hidden;
+    text-align: justify;
+    text-align-last:justify;
+    font:italic 12px "Georgia Italic";
+
+}
+.content .column .ulj:after{
+    content:"";
+    display: inline-block;
+    width:100%;
+    line-height: 0px;
+
+
+}
+.content .column li{
+    width:108px;
+    display:inline-block;
+    vertical-align: top;
+    margin:0 0 35px 0 ;
+    padding:0;
+}
+.content .column .last li{
+    margin:0 0 20px 0 ;
+
+}
+.content .column .ulj figure{
+    display:inline;
+}
+
+.content .column .photo{
+    border: none;
+    overflow: hidden;
+    margin-bottom:-4px;
+}
+.content .column .ulj figcaption{
+    padding-top:10px;
+    display:inline-block;
+}
+.content .column .age{
+    white-space:nowrap;
+}
+
+.content .column:first-child:after{
+    content:url(../img/amourl.png);
+    display:block;
+
 }
