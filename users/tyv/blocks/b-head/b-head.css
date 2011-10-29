@@ -1,0 +1,9 @@
+.b-head
+{
+    padding: 20px 0 23px;
+
+    background: #e9ebec;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.28);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.28);
+}
