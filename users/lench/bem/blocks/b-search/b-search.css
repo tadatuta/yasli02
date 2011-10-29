@@ -1,0 +1,18 @@
+.b-search
+{
+    display: -moz-inline-box;
+    display: inline-block;
+
+    vertical-align: bottom;
+}
+
+.b-search__input
+{
+    font: 13px/31px Arial, sans-serif;
+
+    width: 115px;
+    height: 31px;
+
+    background: url(b-search__input.png) no-repeat;
+    border: none;
+}
