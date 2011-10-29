@@ -1,0 +1,12 @@
+.b-text
+{
+    padding: 60px 0;
+
+    background-image: url(../b-page/__content/b-text.png);
+}
+
+.b-text h1
+{
+    font: 30px Georgia, serif;
+    margin-bottom: 30px;
+}
