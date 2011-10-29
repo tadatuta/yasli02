@@ -441,3 +441,37 @@ nav li a{
     display:block;
 
 }
+
+footer{
+
+    width:1099px;
+
+    margin: 0 0 0 128px;
+    overflow:hidden;
+
+}
+
+footer .contact{
+    width:160px;
+    display: inline-block;
+    //display: inline;
+    //zoom:1;
+}
+footer .contact dd{
+    margin-left: 64px;
+    text-indent:-64px;
+
+}
+
+footer .links{
+    width:180px;
+    display: inline-block;
+    //display: inline;
+    //zoom:1;
+    margin:0 0 0 80px;
+    list-style: none;
+    padding:0;
+}
+footer .links li{
+    display:block;
+}
