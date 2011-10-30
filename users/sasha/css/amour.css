@@ -50,9 +50,18 @@ nav li a{
 .header{
 
     width:1227px;
+    position:relative;
 
 
-
+outline: 1px solid green;
+}
+.header .roseup{
+    width:713px;
+    height:531px;
+    background: green url('../img/roseup.png');
+    position:absolute;
+    bottom:0;
+    left:0;
 }
 .header .lang{
 
@@ -184,6 +193,7 @@ nav li a{
     display: inline-block;
     //display:inline;
     //zoom:1;
+    position:relative;
 
 }
 .middle .gallery,
