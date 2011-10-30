@@ -191,6 +191,7 @@ outline: 1px solid green;
 }
 .middle .wrapper{
     position:relative;
+    overflow:hidden;/*this line for opera*/
     padding:0;
     margin: 0 0 0 128px;
     width:731px;
