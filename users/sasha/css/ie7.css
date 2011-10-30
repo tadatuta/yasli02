@@ -1,0 +1,25 @@
+.middle,
+.middle .gallery{
+    position:relative;
+}
+.middle .gallery figure figcaption{
+    filter:progid:DXImageTransform.Microsoft.gradient (startColorstr=#99ff3366, endColorstr=#99ff3366);
+}
+.middle .wrapper{
+    border: 1px solid blue;
+    float:left;
+}
+.middle .links{
+
+}
+.middle .c1{
+    z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '<img src="img/amourr.png">'));
+}
+
+.content .column:first-child{
+    z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '<img src="img/amourl.png">'));
+
+}
+.middle .c1 {
+    border: 1px solid green;
+}

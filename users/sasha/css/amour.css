@@ -1,10 +1,13 @@
 
 
 @font-face {
+
     font-family: "Georgia Italic";
     src: local("Georgia Italic"),
+
     local("GeorgiaItalic"),
-    url(../lib/georgiaitalic.ttf) format('truetype')
+    url(../lib/georgiai.ttf) format('truetype');
+
 
 }
 
@@ -52,16 +55,18 @@ nav li a{
     width:1227px;
     position:relative;
 
-
+border: 1px solid red;
 outline: 1px solid green;
 }
 .header .roseup{
     width:713px;
     height:531px;
-    background: green url('../img/roseup.png');
+    background: url('../img/roseup.png');
     position:absolute;
-    bottom:0;
-    left:0;
+    bottom:-178px;
+    left:-92px;
+
+    z-index:-1;
 }
 .header .lang{
 
@@ -87,7 +92,7 @@ outline: 1px solid green;
     border-bottom: 1px solid;
 }
 .header .lang li:first-child{
-    border-left:0px;
+    border-left:0;
 
 }
 
@@ -181,6 +186,7 @@ outline: 1px solid green;
     width:1227px;
     margin: 18px 0 0 0;
     overflow:hidden;
+    border:1px solid blue;
 
 }
 .middle .wrapper{
@@ -193,7 +199,7 @@ outline: 1px solid green;
     display: inline-block;
     //display:inline;
     //zoom:1;
-    position:relative;
+
 
 }
 .middle .gallery,
@@ -222,10 +228,10 @@ outline: 1px solid green;
 .middle .gallery figure{
 
     position:relative;
-    background-size: cover;
-    -moz-background-size: cover;
+    /*background-size: cover;
+    -moz-background-size: cover; */
     background-repeat: no-repeat;
-    background-position: center center;
+    /*background-position: center center;*/
     /*-webkit-transition:all 1.0s ease-in-out;
     	-moz-transition:all 1.0s ease-in-out;
     	-o-transition:all 1.0s ease-in-out;
@@ -265,7 +271,7 @@ outline: 1px solid green;
 
 .middle .links{
     position:absolute;
-    bottom: 0px;
+    bottom: 0;
     right:29px;
     z-index:2;
     margin:0;
@@ -297,6 +303,7 @@ outline: 1px solid green;
     text-shadow: -1px 0 rgba(0,0,0,0.2), 0 1px rgba(0,0,0,0.2), 1px 0 rgba(0,0,0,0.2), 0 -1px rgba(0,0,0,0.2);
     letter-spacing: 2px;
     border-radius: 8px 8px 0 0;
+
     -moz-border-radius: 8px 8px 0 0;
     -webkit-border-radius: 8px 8px 0 0;
 
@@ -304,13 +311,18 @@ outline: 1px solid green;
 .middle .links :link:hover,
 .middle .links :visited:hover{
     color:red;
+}
+.middle .links :link:active,
+.middle .links :visited:active{
+    color:red;
     text-shadow: none;
     background:  white;
-
-
+    outline: none;
 
 
 }
+
+
 
 
 .middle .c1 {
@@ -328,7 +340,7 @@ outline: 1px solid green;
     line-height:32px;
 }
 .middle .c1 h1{
-    margin-bottom:0px;
+    margin-bottom:0;
 
 }
 .middle .c1 .phone{
@@ -356,6 +368,7 @@ outline: 1px solid green;
 
     margin: 0 0 0 128px;
     overflow:hidden;
+    border:1px solid #00ffff;
 }
 
 .content .column{
@@ -401,7 +414,7 @@ outline: 1px solid green;
     margin: 0;
     padding: 0;
     list-style: none;
-    word-spacing:0px
+    word-spacing:0
 }
 .content .column .ulj{
     overflow:hidden;
@@ -414,7 +427,7 @@ outline: 1px solid green;
     content:"";
     display: inline-block;
     width:100%;
-    line-height: 0px;
+    line-height: 0;
 
 
 }
@@ -456,8 +469,12 @@ footer{
 
     width:1099px;
 
-    margin: 0 0 0 128px;
+    margin: -125px 0 0 128px;
     overflow:hidden;
+    position:relative;
+    border: 1px solid red;
+    outline: 1px solid green;
+    padding-top: 125px;
 
 }
 
@@ -484,4 +501,14 @@ footer .links{
 }
 footer .links li{
     display:block;
+}
+footer .rosedown{
+    width:713px;
+    height:531px;
+    background: url('../img/rosedown.png');
+    position:absolute;
+    top:0;
+    right:-64px;
+
+    z-index:-1;
 }
