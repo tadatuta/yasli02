@@ -1,0 +1,469 @@
+map{outline:none;}
+a{outline:none;}
+/***  RESET begin  *****************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	vertical-align:baseline;
+	border:0;
+	outline:0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+ul {list-style:none;}
+
+/* .clearfix:after {
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+	content:"\0020";
+	
+} */
+.clearfix { zoom: 1; }
+/***  RESET end  *******************************************************/
+body{
+	width:expression(document.body.clientWidth > 785 ? "100%" : "785px"); 
+	font-family:Georgia, Serif;
+	font-size:62.5%;
+	font-style:italic;
+	color:#333;
+	background-color:#ffeaef;
+	background-image:url(../images/bg-fon.png);
+	overflow-x:hidden;
+}
+a{
+	color:#39f;
+}
+img{
+	display:inline;
+}
+/***  HEADER begin  ****************************************************/
+.header{
+	width:82%;
+	position:relative;
+    padding: 0 9% 150px;
+    margin-bottom:-130px;
+	background: url("../images/flower-header.png") -17% 85% no-repeat ;
+}
+.header .logo{
+	overflow:hidden;
+	width:691px;
+	height:99px;
+}
+	.header hgroup{
+		color:#f36;
+		padding-top:24px;
+	}
+		.header h1{
+			display:inline;
+			font-size:7em;
+			font-weight:100;
+			text-indent:40px;
+			letter-spacing:5px;
+		}
+			.header h1 a{
+				color:#f36;
+				text-shadow:2px 2px #fff;
+				text-decoration:none;
+			}
+		.header h2{ 
+			display:inline;
+			font-size: 2em;
+		    font-weight: 100;
+		    opacity:0.6;
+		    padding:45px 0 0 70px;	
+		}
+/* выбор языка***************************/
+	.lang{
+		position:relative;
+		z-index:1;
+		padding:13px 9% 0 0;
+		margin-bottom:-22px;
+		text-align:right;		
+	}
+	.lang li{
+		display:inline;
+			
+		font-family:Arial, sans-serif;
+		font-size:1.2em;
+		font-style:normal;
+		color:#666;
+		
+	}
+		.lang li:after{
+			content:"|";
+		}
+		.lang li:last-child:after{
+			content:none;
+		}
+		.lang li a{
+			color:#666;	
+			text-decoration:none;	
+			letter-spacing:1px;
+			
+			border-bottom:1px solid #666;			
+		}
+/* навигация по сайту**********************/
+.navigation{
+	margin:2px 0 0 26%;
+	white-space:nowrap;
+}
+.navigation li{
+	display:inline;
+}
+	.navigation .active,
+	.navigation li a {
+		position:relative;
+		display:inline;
+		padding:16px 39px;
+		margin-left:-30px;		
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		font-size:1.8em;
+		background:#fff;
+		zoom:1;
+	}
+	
+	.navigation .active,
+	.navigation li a:hover{
+		z-index:1;
+		color:#fff;
+		text-decoration:underline;
+		background: #f36; /* Old browsers */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0033', endColorstr='#ff3366',GradientType=0 ); /* IE6-8 */
+}
+/* формы поиска и аутентификации***********/
+form[name="search"]{
+	display:inline;
+	position:absolute;
+	top:32px;
+	left:65%;
+	font-size:1.8em;
+	color:#666;
+}
+	form[name="search"]:before{
+		display:inline;
+		content:"{";
+	}
+	form[name="search"]:after{
+		display:inline;
+		content:"}";
+	}
+		label[for="search"]{
+			position:absolute;
+			left:10px;
+			line-height:1.4;
+		}
+		#search {
+			position:relative;
+			z-index:1;
+			width:100px;
+			border:1px dotted #f36;
+			background:transparent;
+		}
+			#search:focus{
+				background:#fff;
+			}
+#enter{
+	position:absolute;
+	top:32px;
+	left:80%;
+	font-size:1.8em;
+	color:#666;
+}
+form[name="user_enter"]{
+	position: absolute;
+	z-index: 15;
+	width: 24%;
+	height: 100px;
+	background: #F36;
+	color:#fff;
+	font-size: 2em;
+	padding: 10px 20px 60px;
+	top: 10px;
+	left: 32%;
+ 	display:none; 
+}
+	form[name="user_enter"] legend{text-align:center;}
+	.user_enter{
+		text-align:right;
+	}
+	
+	.user_enter label{
+		line-height:2em;
+	}
+	.user_enter input{
+		width:63%;
+		margin-left:10px;
+	}
+	.user_enter li+li+li{
+		text-align:center;
+		padding-top:10px;
+	}
+	.user_enter input[type="submit"],
+	.user_enter input[type="reset"]{
+		width:120px;
+		padding:4px 0;
+	}
+	
+/***  HEADER end  *******************************************************/
+
+/* слайд-шоу ******************************/
+.slideshow{
+	width:730px;
+	height:342px;
+	overflow:hidden;
+	position:relative;	
+	float:left;
+	margin-right:20px;
+}
+	.tabs{
+		position:absolute;
+		right:25px;
+		bottom:0;
+		z-index:1;
+	}
+		.tabs li{
+			display:inline; 
+			font-size: 2.4em;
+		    height: 40px;
+		    width: 20px;
+			cursor:pointer;
+			color:#fff;
+			text-align:center;
+			zoom:1;
+		}
+		.tabs li:hover{
+			background:#fff;
+			color:#f00;
+			-webkit-border-radius: 9px 9px 0 0;
+			-moz-border-radius: 9px 9px 0 0;
+			border-radius: 9px 9px 0 0;
+		}
+	.tabs-content{
+		zoom:1;
+		position:relative;
+		white-space:nowrap;		
+		-webkit-transition:all 2.0s ease-in-out;
+		-moz-transition:all 2.0s ease-in-out;
+		-o-transition:all 2.0s ease-in-out;
+		-ms-transition:all 2.0s ease-in-out;	
+		transition:all 2.0s ease-in-out;
+	}
+		.tabs-content li{
+			display:inline;
+			zoom:1;
+		}
+			figure{
+				position:relative;
+			}
+			#figfon{
+				position:absolute;
+				top:36px;
+				left:0;
+				width:730px;
+				height:108px;
+				background:#f36;
+				filter: alpha(opacity=50);				
+			}
+			figcaption{
+				position:absolute;
+				top:36px;
+				left:0;
+				width:730px;
+				height:108px;
+			}
+			figcaption p {
+			    color: #fff;
+			    font-size: 2.4em;
+			    padding: 14px 50% 0 30px;
+			    white-space:normal;
+			}
+			figcaption p + p {
+			    font-family: Arial,sans-serif;
+			    font-size: 1.2em;
+			    font-style: normal;
+			    line-height: 1.8;
+			}
+			
+			
+/*контакты в центре******************************************************/
+.contacts {
+	position:relative;
+    padding: 27px 0 150px 25px;
+}
+	.contacts h2 {
+	    color: #666;
+	    font-size: 2.4em;
+	    font-weight: 100;
+	}
+	.contacts dt {
+	    color: #666;
+	    font-size: 1.8em;
+	    line-height: 2;
+	}
+		.contacts dd {
+		    color: #F36;
+		    font-size: 3.6em;
+		    line-height: 1.3;
+		}
+		.contacts dd + dd {
+		    font-size: 3.3em;
+		}
+	.contacts p {
+	    color: #666;
+	    font-size: 1.8em;
+	    line-height: 1.8;
+	    padding-top: 10px;
+	}
+		 #ie7decorcontact{
+			background: url("../images/decor-contacts.png") no-repeat scroll 0 0 transparent;
+		    bottom: 20px;
+		    content: " ";
+		    display: block;
+		    height: 113px;
+		    right: 6%;
+		    position: absolute;
+		    width: 153px;
+		}
+		
+
+/***  LAYOUT begin  *******************************************************/
+.layout{
+	margin:0 10%;
+}
+section{
+	float:left;
+	width:24.9%;
+}
+	section h1 {
+	    color: #666;
+	    font-size: 2.4em;
+	    font-weight: 100;
+	}
+	section h2 {
+	    font-size: 1.6em;
+	    font-weight: 100;
+	    line-height: 1.3;
+	    padding-top: 10px;
+	}
+	section p {
+		color: #333;
+	    font-family: Arial,sans-serif;
+	    font-size: 1.2em;
+	    font-style: normal;
+	    line-height: 1.5;
+	    text-indent:30px;
+	    padding-right:30px;
+	}
+.newforms ul{
+	padding-top:14px;
+	margin-bottom:-60px; 
+}
+	.newforms li{
+		display:inline;
+		overflow:hidden;
+		width:106px;
+		height:144px;
+		margin-right:17px;
+		vertical-align:top;
+		font-size:1.2em;
+		color:#333;
+		cursor: default;
+		zoom:1;
+	}
+		.newforms li a{
+			line-height:1.6;
+			text-decoration:none;
+		}
+			.newforms li img{
+				width:112px;
+				height:72px;
+				margin-right:-6px;
+				margin-bottom:-1px;
+			}
+			.newforms li span{
+				text-decoration:underline;
+				padding-top:10px;
+			}
+		
+.newphotos li{
+	display:inline;
+	overflow:hidden;
+	width:106px;
+	height:71px;
+	margin:13px 15px 6px -1px;
+	vertical-align:top;
+	zoom:1;
+}
+	.newphotos li a{
+		text-decoration:none;
+	}
+		.newphotos li img{
+			width:112px;
+			height:72px;
+			margin-right:-6px;
+			margin-bottom:-1px;
+		}
+
+/***  LAYOUT end  *******************************************************/
+
+/***  FOOTER begin  ****************************************************/
+.footer{
+	position:relative;
+	font-family:Arial, sans-serif;
+	font-style:normal;
+	font-size:1.2em;
+	padding:118px 10% 0;
+}
+	#decorfooter{
+		position:absolute;
+		right:0;
+		top:0;
+		display:block;
+		width:100%;
+		height:419px;
+		content:"\0020";
+		background:url(../images/flower-footer.png) 129% 0 no-repeat;
+		z-index:-1;
+	}
+	.vcard, 
+	.interactive,
+	.otherlang,
+	.author{
+		display:inline;
+		width:15%;
+		line-height:1.9;
+		zoom:1;
+	}
+	.vcard{
+		position:relative;
+		padding-right:10%;
+	}
+		.vcard dl{
+			text-align:right;
+		}
+			.vcard dt{
+				float:left;
+			}
+			.tel{white-space:nowrap;}
+		#ie7decorvcard{
+			content:"\0020";
+			display:block;
+			width:230px;
+			height:207px;
+			position:absolute;
+			left:0;
+			top:-200px;
+			background:url(../images/decor-footer.png) 0 0 no-repeat;
+		}
+.otherlang{
+	padding:0 15% 0 2%;
+}
+	select[name="chooselang"]{
+		width:160px;
+	}
+/***  FOOTER end  *******************************************************/
