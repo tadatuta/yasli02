@@ -1,0 +1,64 @@
+.b-menu
+{
+    display: -moz-inline-box;
+    display: inline-block;
+
+    margin-right: 15px;
+
+    vertical-align: bottom;
+
+    background: red;
+}
+
+.b-menu__item
+{
+    display: -moz-inline-box;
+    display: inline-block;
+
+    width: 110px;
+
+    text-align: center;
+
+    border-right: 1px solid #1a3e66;
+    border-left: 1px solid #6691c4;
+
+    background: #2e5279;
+}
+
+.b-menu__item:first-child
+{
+    border-left: 0;
+}
+
+.b-menu__item:last-child
+{
+    border-right: 0;
+}
+
+
+.b-menu__sublist
+{
+    display: none;
+}
+
+
+.b-menu__link
+{
+    display: -moz-inline-box;
+    display: inline-block;
+
+    padding: 10px 0;
+
+    width: 110px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.b-menu__link:hover
+{
+    text-decoration: none;
+    color: #fff;
+    background: url(b-menu__item.png) repeat;
+}

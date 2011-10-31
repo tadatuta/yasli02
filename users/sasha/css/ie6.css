@@ -1,0 +1,6 @@
+body{
+    width:1227px;
+    height:1000px;
+    background: none;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/background.gif');
+}

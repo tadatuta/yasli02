@@ -1,0 +1,23 @@
+body
+{
+    font: 13px/1.5 Arial, sans-serif;
+    color: #333;
+    background: #fff;
+}
+
+:link
+{
+    text-decoration: none;
+
+    color: #0055cc;
+}
+
+:visited
+{
+    color: #d515a6;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
