@@ -240,6 +240,7 @@ outline: 1px solid green;
     display: inline-block;
     //display:inline;
     //zoom:1;
+    white-space:normal;
 }
 .middle .gallery a{
     height:0;
