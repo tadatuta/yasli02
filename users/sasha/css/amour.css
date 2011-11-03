@@ -128,7 +128,7 @@ outline: 1px solid green;
 
 }
 .header .wrapper .login{
-   color:inherit;
+    color: #666666;
 
 }
 
@@ -178,7 +178,15 @@ outline: 1px solid green;
     -moz-border-radius: 17px/13px;
     -webkit-border-radius: 17px/13px;
     color: white;
-    background:red;
+
+    background: #cc0033; /* Old browsers */
+    background: -moz-linear-gradient(top, #cc0033 0%, #ff3366 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cc0033), color-stop(100%,#ff3366)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #cc0033 0%,#ff3366 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #cc0033 0%,#ff3366 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #cc0033 0%,#ff3366 100%); /* IE10+ */
+    background: linear-gradient(top, #cc0033 0%,#ff3366 100%); /* W3C */
+
 
 }
 
@@ -186,6 +194,7 @@ outline: 1px solid green;
     width:1227px;
     margin: 18px 0 0 0;
     overflow:hidden;
+
     border:1px solid blue;
 
 }
@@ -220,6 +229,17 @@ outline: 1px solid green;
     list-style-type: none;
     padding:0;
     margin: 0;
+    white-space:nowrap;
+/*    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;*/
+
+}
+.middle .gallery li{
+    display: -moz-inline-box;
+    display: inline-block;
+    //display:inline;
+    //zoom:1;
 }
 .middle .gallery a{
     height:0;
@@ -313,6 +333,8 @@ outline: 1px solid green;
 .middle .links :visited:hover{
     color:red;
 }
+.middle .links .curent,
+.middle .links .curent:hover:active,
 .middle .links :link:active,
 .middle .links :visited:active{
     color:red;
@@ -322,7 +344,10 @@ outline: 1px solid green;
 
 
 }
-
+.middle .links .curent:hover{
+    color:white;
+    background:red;
+}
 
 
 

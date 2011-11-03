@@ -15,8 +15,25 @@
     <!--[if IE 6]>
         <link rel='stylesheet' href="css/ie6.css">
     <![endif]-->
+    <script type="text/javascript" src="lib/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="lib/jquery.localscroll-1.2.7-min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          // $(".links").localScroll();
+            $(".links a").click(function(){
+                $(".links a").removeClass('curent');
+                 $(this).addClass("curent");
+                var target= $(this.hash);
 
 
+                $(".middle .gallery").scrollTo(target,800 ) ;
+               //$(".middle .gallery").scrollTo($(self.hash),800, {'easing':'elasout'} ) ;
+
+               return false;
+            });
+        });
+    </script>
 </head>
 <body>
     <header class='header'>
@@ -59,7 +76,7 @@
     </header>
     <section class='middle'>
             <div class='wrapper'>
-                <ul class='gallery' ><li><a name='l1'></a>
+                <ul class='gallery' ><li><a id='l1'></a>
                     <figure style='background-image: url(img/0509_Happy_Couple2_1.jpg)'>
                         <img src='img/0509_Happy_Couple2_1.jpg'  alt=''>
 
@@ -70,7 +87,7 @@
                     </figure>
                     </li>
 
-                    <li><a name='l2'></a>
+                    <li><a id='l2'></a>
                     <figure style='background-image: url(img/love-is_1920x1200_1.jpg)'>
                         <img src='img/love-is_1920x1200_1.jpg'   alt=''>
 
@@ -82,7 +99,7 @@
 
 
                 </li>
-                <li><a name='l3'></a>
+                <li><a id='l3'></a>
                     <figure style='background-image: url(img/catherineronny226_1.jpg)'>
                         <img src='img/catherineronny226_1.jpg'   alt=''>
 
@@ -93,7 +110,7 @@
                     </figure>
 
                 </li>
-                <li><a name='l4'></a>
+                <li><a id='l4'></a>
                     <figure style='background-image: url(img/para-na-beregu-morya_1920x1200_1.jpg)'>
                         <img src='img/para-na-beregu-morya_1920x1200_1.jpg'   alt=''>
                         <figcaption>
@@ -102,7 +119,7 @@
                         </figcaption>
                     </figure>
 
-                <li><a name='l5'></a>
+                <li><a id='l5'></a>
                     <figure style='background-image: url(img/forever-love-anime-nice-31000_1.jpg)'>
                         <img src='img/forever-love-anime-nice-31000_1.jpg'   alt=''>
 
@@ -113,7 +130,7 @@
                     </figure>
 
                 </li>
-                    <li><a name='l6'></a>
+                    <li><a id='l6'></a>
                           <figure style='background-image: url(img/catherineronny226_1.jpg)'>
                               <img src='img/catherineronny226_1.jpg'   alt=''>
 

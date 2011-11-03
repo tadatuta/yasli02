@@ -1,0 +1,4 @@
+.header .menu :link:hover,
+.header .menu :visited:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0033', endColorstr='#ff3366',GradientType=0 ); /* IE6-9 */
+}
