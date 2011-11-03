@@ -9,12 +9,11 @@
     border: 1px solid blue;
     float:left;
 }
-.middle .links{
 
-}
 .middle .c1{
     z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '<img src="img/amourr.png">'));
 }
+
 
 .content .column:first-child{
     z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '<img src="img/amourl.png">'));
@@ -22,4 +21,15 @@
 }
 .middle .c1 {
     border: 1px solid green;
+}
+
+
+
+.content .column .ulj li{
+    zoom:0;
+}
+.content .column .ulj .iewrapper{
+    width:50%;
+    display:inline;
+    zoom:1;
 }

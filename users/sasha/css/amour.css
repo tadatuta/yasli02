@@ -399,6 +399,7 @@ outline: 1px solid green;
 .content .column h1{
     margin:0 0 14px 0;
 }
+
 .content .column dt{
     margin: -7px 0 6px 0;
 }
@@ -435,6 +436,8 @@ outline: 1px solid green;
 .content .column li{
     width:108px;
     display:inline-block;
+    //display:inline;
+    //zoom:1;
     vertical-align: top;
     margin:0 0 35px 0 ;
     padding:0;
