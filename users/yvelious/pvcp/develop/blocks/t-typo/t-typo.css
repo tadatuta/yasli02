@@ -26,16 +26,12 @@ child element pixels (your desired pixel value) / parent element pixels = child 
 /* =BODY
 ---------------------------------------------------------
 */
+
 body {
-   font:13px/18px Arial, sans-serif;
-    margin-bottom: 18px;
-    color:#333;
-
-
-
+    font-size: 62.5%;
+    line-height: 1.8em;
+    font-family: sans-serif;
 }
-
-
 
 
 
@@ -59,17 +55,25 @@ img {
 
 */
 
-:link {  text-decoration: none;
-
-    color: #05c;
-
+:link,:visited {
+    text-decoration: underline; color:#39f;
 }
 
-
-:visited {  color: #962680;
-
+a:hover, :active {
+    text-decoration: none;
 }
-a:hover { text-decoration: underline;}
+
+/*dashed*/
+
+a.dashed:link, a.dashed:visited {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+a.dashed:hover, a.dashed:active {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
 
 /* =HEADINGS
 
@@ -80,8 +84,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 
-h1 { font:30px/36px Georgia, serif; color:#333;
-    margin-bottom: 24px;
+h1 { 
 
 }
 
@@ -112,12 +115,9 @@ h6 {
 */
 
 p {
-      font:13px/18px Arial, sans-serif;
-    margin-bottom: 12px;
 
 }
-small {
-    font-size: 11px;}
+
 /* =LIST
 
 ---------------------------------------------------------
