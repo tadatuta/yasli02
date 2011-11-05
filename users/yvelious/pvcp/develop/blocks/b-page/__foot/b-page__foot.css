@@ -1,0 +1,22 @@
+.b-page__foot {
+   
+    padding-bottom: 36px;
+
+}
+
+
+.b-page__foot-l {
+
+    float: left;
+     padding-top: 10px;
+
+}
+
+
+
+.b-page__foot-r {
+    padding-top: 14px;
+
+    float: right;
+
+}
