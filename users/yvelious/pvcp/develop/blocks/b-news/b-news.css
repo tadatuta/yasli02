@@ -1,0 +1,12 @@
+.b-news {
+
+  overflow: hidden;
+}
+
+
+.b-news__head {
+
+font: 18px/36px Georgia, serif;
+    color: #333;
+    margin-bottom: 6px;
+}
