@@ -1,0 +1,9 @@
+.b-sub-menu
+{
+    list-style: none;
+    margin-bottom: 40px;
+}
+.b-sub-menu a
+{
+    line-height: 22px;
+}

@@ -1,0 +1,13 @@
+.b-head
+{
+
+    position: relative;
+    padding: 8px 0 23px;
+    z-index: 20;
+    background: #e9ebec;
+    -webkit-box-shadow:0 1px 3px rgba(0,0,0, 0.49);
+    -moz-box-shadow:0 1px 3px rgba(0,0,0, 0.49);
+    box-shadow:0 1px 3px rgba(0,0,0, 0.49);
+
+    /* ... */
+}
