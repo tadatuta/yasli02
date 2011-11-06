@@ -221,7 +221,7 @@ outline: 1px solid green;*/
     margin: 18px 0 0 0;
     overflow:hidden;
 
-    border:1px solid blue;
+    /*border:1px solid blue;*/
 
 }
 .middle .wrapper{
@@ -420,7 +420,7 @@ outline: 1px solid green;*/
 
     margin: 0 0 0 128px;
     overflow:hidden;
-    border:1px solid #00ffff;
+    /*border:1px solid #00ffff;*/
 }
 
 .content .column{
