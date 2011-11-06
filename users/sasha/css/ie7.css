@@ -10,19 +10,10 @@
 
 
 }
-.middle .gallery{
 
-
-}
-
-.middle .gallery li{
-
-
-
-}
 
 .middle .wrapper{
-    border: 1px solid blue;
+   /* border: 1px solid blue;*/
     float:left;
     overflow:hidden;
 }
@@ -37,7 +28,7 @@
 
 }
 .middle .c1 {
-    border: 1px solid green;
+   /* border: 1px solid green;*/
 }
 
 
