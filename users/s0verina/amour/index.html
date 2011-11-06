@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Amour</title>
+
+    <link rel="stylesheet" href="style/style.css">
+    <script type="text/javascript">
+        window.onload = slideshow;
+
+        function slideshow() {
+            var ul = document.getElementsByClassName("tabs");
+            for (var i = 0; i < ul.length; i++) {
+                var li = ul[i].getElementsByTagName('LI');
+                for (var j = 0; j < li.length; j++) {
+                    li[j].onclick = function() {
+                        var num = (parseInt(this.textContent) - 1 );
+                        var ulCont = document.getElementsByClassName("slide")[0];
+                        var x = "-" + (num * 730) + "px";
+                        ulCont.style.left = x;
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrapper">
+<div class="wrapper_1">
+<header class="header">
+
+    <div class="lang clearfix">
+        <ul class="menu">
+            <li><span><a href="#">Englsh </a>|</span></li>
+            <li><span><a href="#">Русский</a>|</span></li>
+            <li><span><a href="#">Украинська </a>|</span></li>
+            <li><span><a href="#">French</a>|</span></li>
+            <li><span><a href="#">Espanol</a>|</span></li>
+            <li><a href="#">Italian</a></li>
+
+        </ul>
+    </div>
+
+    <div class="reg clearfix">
+        <form action="#">
+            {<input type="text" id="search" placeholder="поиск">}
+            <a href="#">вход</a>
+        </form>
+    </div>
+
+
+    <div class="logo">
+        <a href="#"><img src="img/logo.png" alt="логотип">
+            <img src="img/logo_1.png" alt="логотип">
+        </a>
+
+
+    </div>
+
+    <nav class="clearfix">
+        <ul class="main menu">
+            <li><a href="#">Интересные факты </a></li>
+            <li><a href="#">Анкеты</a></li>
+            <li><a href="#">Услуги </a></li>
+            <li><a href="#">Фото</a></li>
+            <li><a href="#">Тест</a></li>
+            <li><a href="#">Помощь</a></li>
+
+        </ul>
+
+    </nav>
+</header>
+
+
+<div class="content">
+
+    <div class=" clearfix">
+        <div class="slideshow">
+            <ul class="tabs">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+
+             </ul>
+            <ul class="slide">
+                <li>
+                    <img src="img/picture_1.jpg" alt="pictire_1">
+
+                    <div class="ad">
+                        <h2>Для любви нет границ</h2>
+
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами.
+                            Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/picture_2.jpg" alt="pictire_1">
+
+                    <div class="ad">
+                        <h2>Для любви нет границ</h2>
+
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами.
+                            Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                    </div>
+
+                </li>
+                <li>
+                    <img src="img/picture_1.jpg" alt="pictire_1">
+
+                    <div class="ad">
+                        <h2>Для любви нет границ</h2>
+
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами.
+                            Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/picture_2.jpg" alt="pictire_1">
+
+                    <div class="ad">
+                        <h2>Для любви нет границ</h2>
+
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами.
+                            Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                    </div>
+
+                </li>
+                <li>
+                    <img src="img/picture_1.jpg" alt="pictire_1">
+
+                    <div class="ad">
+                        <h2>Для любви нет границ</h2>
+
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами.
+                            Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="img/picture_2.jpg" alt="pictire_1">
+
+                    <div class="ad">
+                        <h2>Для любви нет границ</h2>
+
+                        <p>Мы сотрудничаем с ведущими мировыми брачными агентствами.
+                            Вашу анкету увидят миллионы тысячи ностранцев!</p>
+                    </div>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="contact_info clearfix">
+            <h1>Ищешь половинку? </h1>
+
+            <h2>в любое время дня и&nbsp;ночи:</h2>
+
+            <p class="phone"> 050 55-72-894</p>
+
+            <p class="phone">(06543)12-34-6 </p>
+
+            <p>А если не так срочно,</br>то <a href="#">пиши</a> или <a href="#">заходи</a></p>
+
+        </div>
+    </div>
+
+    <div class="clearfix ">
+        <div class="new news ">
+            <h2>Это интересно</h2>
+
+            <a href="#">Осенние и зимние скидки!</a>
+
+            <p>
+                С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на
+                октябрь, то вам вдвойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.
+            </p>
+
+
+            <a href="#">Ещё больше осенних и зимних скидкок!</a>
+
+            <p>
+                С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни
+                на октябрь, то вам вдвойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.
+            </p>
+
+
+        </div>
+
+        <div class="new anket">
+            <h2>Новые анкеты</h2>
+            <ul>
+                <li><a href="#"><img src="img/photo_ank_1.jpg" alt=" фотографии Ивана">
+
+                    <p><a href="#">Иван</a>, 24&nbsp;года Киев </p>
+
+                </a></li>
+                <li><a href="#"><img src="img/photo_ank_2.jpg" alt="фотографии Натальи">
+
+                    <p><a href="#">Наталья</a>, 20&nbsp;лет Ивано-Франковск</p></a>
+
+                </li>
+                <li><a href="#"><img src="img/photo_ank_3.jpg" alt="фотографии Пола">
+
+                    <p><a href="#">Пол</a>, 32&nbsp;года Нью-Йорк</p></a>
+                </li>
+                <li><a href="#"><img src="img/photo_ank_4.jpg" alt="фотографии Кармен">
+
+                    <p><a href="#">Наталья</a>, 20&nbsp;лет Ивано-Франковск </p></a>
+                </li>
+                <li><a href="#"><img src="img/photo_ank_5.jpg" alt="фотографии Джеймса">
+
+                    <p><a href="#">Наталья</a>, 20&nbsp;лет Ивано-Франковск </p></a>
+                </li>
+                <li><a href="#"><img src="img/photo_ank_6.jpg" alt="фотографии Софии">
+
+                    <p><a href="#">Наталья</a>, 20&nbsp;лет Ивано-Франковск </p></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="new service">
+            <h2>Новые услуги</h2>
+
+            <a href="#">Знакомства</a>
+
+            <p>
+                С приходом осени опадает не только листва, но и наши цены! Если вы планируете начало новой жизни на
+                октябрь, то вам вдвойне повезло, так как именно в этом месяце 20% скидка на все наши услуги.
+            </p>
+
+            <p class="no_indent"><a href="#" class="call_request">Отправить заявку</a> на поиск партнёра вы можете прямо
+                сейчас!</p>
+            <a href="#">Студийная фотосъёмка</a>
+
+            <p>
+                Не секрет, что людям, которые хорошо выглядят, сопутствует удача. Мы вам в этом поможем.
+            </p>
+
+            <a href="#">Тренинги</a>
+
+            <p>
+                Что изменить в своём поведении, чтобы привлекать к себе представителей противоположного пола?
+                Узнайте об этом и многом другом на наших психологических тренингах.
+            </p>
+
+
+        </div>
+
+        <div class="new foto">
+            <h2>Свежие фото</h2>
+            <ul>
+                <li><a href="#"><img src="img/photo_1.jpg" alt=" фотографии"></a></li>
+                <li><a href="#"><img src="img/photo_2.jpg" alt="фотографии"></a></li>
+                <li><a href="#"><img src="img/photo_3.jpg" alt="фотографии"></a></li>
+                <li><a href="#"><img src="img/photo_4.jpg" alt="фотографии"></a></li>
+                <li><a href="#"><img src="img/Untitled-5.jpg" alt="фотографии"></a></li>
+                <li><a href="#"><img src="img/photo_6.jpg" alt="фотографии"></a></li>
+                <li><a href="#"><img src="img/Untitled-7.jpg" alt="фотографии"></a></li>
+                <li><a href="#"><img src="img/photo_8.jpg" alt="фотографии"></a></li>
+            </ul>
+
+
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer clearfix">
+    <ul>
+        <li class="copyright">
+            <p>© 2010 Международное брачное агентство «Амур»</p>
+
+            <p class="tel">телефоны: 050 55-72-894</p>
+
+            <p class="tel">(06543)12-34-6</p>
+
+        </li>
+        <li class="link">
+            <ul>
+                <li><a href="#">Посмотреть на карте</a></li>
+                <li><a href="#">Написать письмо</a></li>
+                <li><a href="#">Партнерство</a></li>
+            </ul>
+        </li>
+        <li class="select_language">
+            <form action="#">
+                <select>
+                    <option selected>Other language</option>
+                    <option>English</option>
+                    <option>Русский</option>
+                    <option>Украинська</option>
+                    <option>French</option>
+                    <option>Espanol</option>
+                    <option>Italian</option>
+                </select>
+            </form>
+        </li>
+        <li class="credits"><p>Дизайн:<a href="#"> Тадатута</a></p></li>
+    </ul>
+
+</div>
+</div>
+</footer>
+
+</body>
+</html>

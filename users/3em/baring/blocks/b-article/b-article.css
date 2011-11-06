@@ -1,0 +1,15 @@
+.b-article
+{
+    width: 610px;
+    display: inline-block;
+    position: relative;
+}
+.b-article h1
+{
+    font-size: 21px;
+}
+.b-article p
+{
+    margin-top: 30px;
+    line-height: 19px;
+}
