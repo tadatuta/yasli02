@@ -557,6 +557,16 @@ footer .links{
 footer .links li{
     display:block;
 }
+footer .wrapper{
+    width:750px;
+
+}
+footer .author,
+footer .wrapper{
+    display:inline-block;
+    //display: inline;
+    //zoom:1;
+}
 footer .rosedown{
     width:713px;
     height:531px;
