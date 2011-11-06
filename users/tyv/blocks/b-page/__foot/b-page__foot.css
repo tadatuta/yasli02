@@ -1,0 +1,19 @@
+.b-page__foot
+{
+    font-size: 11px;
+
+    margin-top: 100px;
+    padding: 12px 0;
+
+    border-top: 1px solid #dce0df;
+}
+
+.b-page__foot-l
+{
+    float: left;
+}
+
+.b-page__foot-r
+{
+    float: right;
+}

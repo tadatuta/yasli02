@@ -37,9 +37,20 @@
 
 .b-menu__item_state_current
 {
-    background: #729cc4;
+    background-color: #729cc4;
 
     text-shadow: 0 -1px 0 #37597c;
+
+    -webkit-box-shadow: inset 0 1px 8px rgba(0,0,0,0.18);
+    -moz-box-shadow: inset 0 1px 8px rgba(0,0,0,0.18);
+    box-shadow: inset 0 1px 8px rgba(0,0,0,0.18);
+
+    background-image: linear-gradient(bottom, #5e8fb9 0%, #81a4cc 100%);
+    background-image: -o-linear-gradient(bottom, #5e8fb9 0%, #81a4cc 100%);
+    background-image: -moz-linear-gradient(bottom, #5e8fb9 0%, #81a4cc 100%);
+    background-image: -webkit-linear-gradient(bottom, #5e8fb9 0%, #81a4cc 100%);
+    background-image: -ms-linear-gradient(bottom, #5e8fb9 0%, #81a4cc 100%);
+
 }
 
 .b-menu__item:first-child

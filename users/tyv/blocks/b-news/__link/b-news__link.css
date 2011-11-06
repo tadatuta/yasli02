@@ -1,0 +1,16 @@
+.b-news__link
+{
+    display: block;
+}
+
+.b-news__link:link,
+.b-news__link:visited
+{
+    color: #333;
+    text-decoration: none;
+}
+
+.b-news__link:hover
+{
+    color: #05c;
+}
