@@ -1,0 +1,12 @@
+
+.b-head{
+	position:relative;
+	z-index:1;
+	
+	 padding: 16px 0;
+
+    background: #e9ebec;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.28);
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.28);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.28);
+}

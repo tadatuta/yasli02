@@ -1,0 +1,11 @@
+.b-menu__link-arrow {
+    position: absolute;
+    top: 50%;
+
+    width: 5px;
+    height: 3px;
+
+    margin: -2px 0 0 8px;
+
+    background: url(b-menu__link-arrow.png) no-repeat;
+}

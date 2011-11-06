@@ -2,63 +2,72 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>bem study</title>
-	<link rel="stylesheet" type="text/css" href="common.css" media="all" />
+	<title>Baring Vostok Capital Partners</title>
+	<link rel="stylesheet" href="common.css" />
+	<!--[if lt IE 9]> 
+		<script type="text/javascript">
+	    /* emulate HTML5 elements */
+	    var E  = ('article:aside:figure:footer:header:hgroup:nav:section:figcaption').split(':');   
+	      for (var c = 0; c < E.length; c++) {
+	        document.createElement(E[c]);
+	      } 
+	    </script>
+    <![endif]-->
 </head>
 <body class="b-page">
-	<div class="b-wrapper">		
-			<header class="b-head">
-				<div class="b-head__i b-wrapper">
-					<div class="b-logo">
-						<a href="#" class="b-logo__link">
-							<img src="b-blocs/b-logo/logo.png" alt="Baring Vostok Capital Partners" />
+	<header class="b-head">
+		<div class="b-head__i b-wrapper">
+			<div class="b-logo">
+				<a href="#" class="b-logo__link">
+					<img class="b-logo__icon" src="blocs/b-logo/__icon/b-logo__icon.png" alt="Baring Vostok Capital Partners" />
+				</a>
+			</div>
+			<nav class="b-menu">
+				<ul class="b-menu__list">
+					<li class="b-menu__item b-menu__item_has_submenu b-menu__item_state_current">
+						<a class="b-menu__link" href="#company">Компания 
+							<i class="b-menu__link-arrow"></i> 
 						</a>
-					</div>
-					<nav class="b-menu">
-						<ul class="b-menu__list">
-							<li class="b-menu__item b-menu__item_has_submenu b-menu__item_state_current"><a class="b-menu__link" href="#company">Компания</a>
-								<ul class="b-menu__sublist">
-									<li class="b-menu__sublist-item"><a href="#team" class="b-menu__sublist__link">Команда</a></li>
-									<li class="b-menu__sublist-item"><a href="#bpi" class="b-menu__sublist__link">BPEI</a></li>
-									<li class="b-menu__sublist-item"><a href="#news" class="b-menu__sublist__link">Новости</a></li>
-								</ul>
-							</li
-							><li class="b-menu__item"><a class="b-menu__link" href="#strategy">Стратегия</a></li
-							><li class="b-menu__item"><a class="b-menu__link" href="#investment">Инвестиции</a></li
-							><li class="b-menu__item"><a class="b-menu__link" href="#funds">Фонды</a></li
-							><li class="b-menu__item"><a class="b-menu__link" href="#contacts">Контакты</a></li>
+						<ul class="b-menu__sublist">
+							<li class="b-menu__sublist-item"><a href="#team" class="b-menu__link">Команда</a></li>
+							<li class="b-menu__sublist-item"><a href="#bpei" class="b-menu__link">BPEI</a></li>
+							<li class="b-menu__sublist-item"><a href="#news" class="b-menu__link">Новости</a></li>
 						</ul>
-					</nav>
-					<div class="b-search">
-						<input type="search" class="b-search__input" />
-					</div>
-				</div>
-			</header>
-			<div class="b-page__content">
+					</li
+					><li class="b-menu__item"><a class="b-menu__link" href="#strategy">Стратегия</a></li
+					><li class="b-menu__item"><a class="b-menu__link" href="#investment">Инвестиции</a></li
+					><li class="b-menu__item"><a class="b-menu__link" href="#funds">Фонды</a></li
+					><li class="b-menu__item"><a class="b-menu__link" href="#contacts">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="b-search"><input class="b-search__input"/></div>
+		</div>
+	</header>
+	
+	<div class="b-page__content">
+		<div class="b-page__content-background">
+			<div class="b-page__content-shadow">
 				<div class="b-page__content__i b-wrapper">
 					<div class="b-illustration b-illustration_show_sladko">
-						<a href="" class="b-illustration__link b-illustration__link_type_sladko">
-							<img src="" alt="sladko" class="b-illustration__logo" />
+						<i class="b-illustration-i b-gradient"></i>
+						<a href="#sladko" class="b-illustration__link b-illustration__link_type_sladko">
+							<img class="b-illustration__logo" src="blocs/b-illustration/__logo/b-illustration__logo_type_sladko.png" alt="Сладко" />
 						</a>
-					</div>
-					<div class="b-illustration b-illustration_show_burren energy">
-						<a href="" class="b-illustration__link b-illustration__link_type_burren energy">
-							<img src="" alt="burren energy" class="b-illustration__logo" />
+					
+						<a href="#benergy" class="b-illustration__link b-illustration__link_type_benergy">
+							<img class="b-illustration__logo" src="blocs/b-illustration/__logo/b-illustration__logo_type_benergy.png" alt="Burren Energy" />
 						</a>
-					</div>
-					<div class="b-illustration b-illustration_show_borjomi">
-						<a href="" class="b-illustration__link b-illustration__link_type_borjomi">
-							<img src="" alt="borjomi" class="b-illustration__logo" />
+					
+						<a href="#borjomi" class="b-illustration__link b-illustration__link_type_borjomi">
+							<img class="b-illustration__logo" src="blocs/b-illustration/__logo/b-illustration__logo_type_borjomi.png" alt="Боржоми"/>
 						</a>
-					</div>
-					<div class="b-illustration b-illustration_show_ozon">
-						<a href="" class="b-illustration__link b-illustration__link_type_ozon">
-							<img src="" alt="ozon" class="b-illustration__logo" />
+					
+						<a href="#ozon" class="b-illustration__link b-illustration__link_type_ozon">
+							<img class="b-illustration__logo" src="blocs/b-illustration/__logo/b-illustration__logo_type_ozon.png" alt="Ozon"/>
 						</a>
-					</div>
-					<div class="b-illustration b-illustration_show_slpk">
-						<a href="" class="b-illustration__link b-illustration__link_type_slpk">
-							<img src="" alt="slpk" class="b-illustration__logo" />
+					
+						<a href="#slpk" class="b-illustration__link b-illustration__link_type_slpk">
+							<img class="b-illustration__logo" src="blocs/b-illustration/__logo/b-illustration__logo_type_slpk.png" alt="СЛПК"/>
 						</a>
 					</div>
 					<article class="b-text">
@@ -70,36 +79,46 @@
 					и университетские фонды США, Западной Европы и Азии, а также члены команды Бэринг Восток.</p>
 					</article>
 				</div>
-				
-				<section class="b-news">
-					<div class="b-news__i b-wrapper">
-						<h1 class="b-news__head">Новости</h1>
-						<ul class="b-news__list">
-							<li class="b-news__item"><a href="#">Группа компаний «Эталон» объявила неаудированные результаты за три месяца, завершившиеся 31 марта 2011 года, на основе управленческого учета.</a></li>
-							<li class="b-news__item"><a href="#">Подписаны документы по сделке, связанной с приобретением фондом Baring Vostok Private Equity Fund IV пакета акций «ЭР-Телеком Холдинг»</a></li>
-							<li class="b-news__item"><a href="">Онлайн-мегамаркет OZON.ru объявляет о завершении раунда финансирования, в результате которого им были получены инвестиции в размере 100 миллионов долларов.</a></li>
-						</ul>
-					</div>
-				</section>
 			</div>
-			
-			<footer class="b-page__foot">
-				<div class="b-page__foot__i b-wrapper">
-					<div class="b-page__foot-l">
-						<ul class="b-foot_list">
-							<li class="b-foot_item">© 2011  Baring Vostok Capital Partners</li>
-							<li class="b-foot_item"><a href="#">Контакты</a></li>
-							<li class="b-foot_item"><a href="mailto:info@bvcp.ru">e-mail: info@bvcp.ru</a></li>
-						</ul>
-					</div>
-					<div class="b-page__foot-r">
-						<ul class="b-foot_list b-foot_list_type_separated">
-							<li class="b-foot_item"><a href="#login">Вход для инвесторов</a></li>
-							<li class="b-foot_item"><a href="#" class="b-lang-switcher b-lang-switcher_lang_en">English</a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
+		</div>
+		
+		<section class="b-news">
+			<div class="b-news__i b-wrapper">
+				<h1 class="b-news__head">Новости</h1>
+				<ul class="b-news__list">
+					<li class="b-news__item">
+						<a href="#newstitle">Группа компаний «Эталон» объявила неаудированные результаты за три месяца, завершившиеся 31 марта 2011 года, на основе управленческого учета.</a>
+						<span class="b-news__date">Сегодня</span>
+					</li>
+					<li class="b-news__item">
+						<a href="#newstitle">Подписаны документы по сделке, связанной с приобретением фондом Baring Vostok Private Equity Fund IV пакета акций «ЭР-Телеком Холдинг»</a>
+						<span class="b-news__date">4 дня назад</span>
+					</li>
+					<li class="b-news__item">
+						<a href="#newstitle">Онлайн-мегамаркет OZON.ru объявляет о завершении раунда финансирования, в результате которого им были получены инвестиции в размере 100 миллионов долларов.</a>
+						<span class="b-news__date">4 дня назад</span>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</div>
+		
+	<footer class="b-page__foot">
+		<div class="b-page__foot__i b-wrapper">
+			<div class="b-page__foot-l">
+				<ul class="b-foot__list">
+					<li class="b-foot__item">© 2011  Baring Vostok Capital Partners</li>
+					<li class="b-foot__item"><a href="#">Контакты</a></li>
+					<li class="b-foot__item"><a href="mailto:info@bvcp.ru">e-mail: info@bvcp.ru</a></li>
+				</ul>
+			</div>
+			<div class="b-page__foot-r">
+				<ul class="b-foot__list b-foot__list_type_separated">
+					<li class="b-foot__item"><a href="#login">Вход для инвесторов</a></li>
+					<li class="b-foot__item"><a href="#" class="b-lang-switcher b-lang-switcher_lang_en">English</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

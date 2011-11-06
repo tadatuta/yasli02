@@ -1,0 +1,12 @@
+.b-logo{
+	position: relative;
+    top: 4px;
+    left:4px;
+
+    display: -moz-inline-box;
+    display: inline-block;
+
+    margin-right: 32px;
+
+    vertical-align: bottom;
+}
