@@ -1,0 +1,35 @@
+.b-search
+{
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 29px;
+    position: relative;
+}
+
+.b-search div
+{
+    width: 115px;
+    height: 31px;
+
+    background: #fff;
+
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-box-shadow: inset 0px 1px 4px #9c9c9c;
+    -moz-box-shadow: inset 0px 1px 4px #9c9c9c;
+    box-shadow: inset 0px 1px 4px #9c9c9c;
+}
+
+.b-search input
+{
+    height: 31px;
+    background: none;
+    margin-left: 25px;
+    width: 88px;
+    outline: none;
+    border: none;
+
+}

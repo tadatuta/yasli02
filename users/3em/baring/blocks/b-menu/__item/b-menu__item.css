@@ -1,0 +1,27 @@
+.b-menu__item
+{
+    padding: 8px 0 7px;
+    width: 110px;
+    text-align: center;
+    
+
+    display: inline-block;
+
+    text-decoration: none;
+    color: #fff;
+
+    background: rgb(58,100,147);
+    background: -moz-linear-gradient(top, rgba(58,100,147,1) 0%, rgba(45,79,118,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(58,100,147,1)), color-stop(100%,rgba(45,79,118,1)));
+    background: -webkit-linear-gradient(top, rgba(58,100,147,1) 0%,rgba(45,79,118,1) 100%);
+    background: -o-linear-gradient(top, rgba(58,100,147,1) 0%,rgba(45,79,118,1) 100%);
+    background: -ms-linear-gradient(top, rgba(58,100,147,1) 0%,rgba(45,79,118,1) 100%);
+    background: linear-gradient(top, rgba(58,100,147,1) 0%,rgba(45,79,118,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a6493', endColorstr='#2d4f76',GradientType=0 );
+
+}
+
+.b-menu__item:hover
+{
+    background: url("menu-texture.gif");
+}
