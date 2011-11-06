@@ -1,0 +1,6 @@
+.b-foot-items_type_separated .b-foot-items__item:first-child
+{
+    padding-right: 1em;
+    margin-right: 1em;
+    border-right: 1px solid #ccc;
+}
