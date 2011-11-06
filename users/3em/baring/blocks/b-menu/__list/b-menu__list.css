@@ -1,0 +1,16 @@
+.b-menu__list
+{
+    display: inline-block;
+    position: relative;
+    border-left: 1px #6691c4 solid;
+    border-right: 1px #1a3e66 solid;
+}
+
+.b-menu__list:first-child
+{
+    border-left: none;
+}
+.b-menu__list:last-child
+{
+    border-right: none;
+}
