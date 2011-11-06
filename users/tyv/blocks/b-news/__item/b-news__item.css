@@ -1,0 +1,26 @@
+.b-news__item
+{
+    position: relative;
+
+    float: left;
+
+    width: 33%;
+}
+
+.b-news__item:before
+{
+    position: absolute;
+    
+    width: 1px;
+    height: 77px;
+    
+    content: '';
+
+    background: #ccc;
+    
+}
+
+.b-news__item-inner
+{
+    padding: 0 25px;
+}

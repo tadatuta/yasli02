@@ -1,0 +1,10 @@
+.b-news__link:link
+{
+    color: #333;
+    text-decoration: none;
+}
+
+.b-news__link:hover
+{
+    color: #05c;
+}
