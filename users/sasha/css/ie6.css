@@ -1,9 +1,9 @@
 
 
 body{
-    background: url(../img/background.png) repeat;
-    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop, src='img/background.png');
-
+    dbackground: url(../img/background.png) repeat;
+    dfilter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop, src='img/background.png');
+    background:none;
 
 
 }
@@ -18,3 +18,4 @@ footer .rosedown{
     background: none;
         filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=crop, src='img/rosedown.png');
 }
+

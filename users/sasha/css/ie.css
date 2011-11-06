@@ -2,3 +2,6 @@
 .header .menu :visited:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0033', endColorstr='#ff3366',GradientType=0 ); /* IE6-9 */
 }
+.middle .gallery figure figcaption{
+    filter:progid:DXImageTransform.Microsoft.gradient (startColorstr=#99ff3366, endColorstr=#99ff3366);
+}

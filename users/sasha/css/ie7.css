@@ -1,13 +1,30 @@
+.header .logo .norm{
+    color:rgb(255,51,102);
+    margin-right: 10px;
+}
+
 .middle,
 .middle .gallery{
     position:relative;
+     overflow:hidden;
+
+
 }
-.middle .gallery figure figcaption{
-    filter:progid:DXImageTransform.Microsoft.gradient (startColorstr=#99ff3366, endColorstr=#99ff3366);
+.middle .gallery{
+
+
 }
+
+.middle .gallery li{
+
+
+
+}
+
 .middle .wrapper{
     border: 1px solid blue;
     float:left;
+    overflow:hidden;
 }
 
 .middle .c1{
