@@ -6,18 +6,18 @@
 
     height: 179px;
 
+    border:  1px solid #fff;
+    -moz-border-radius: 0 0 3px 3px;
+    -webkit-border-radius: 0 0 3px 3px;
+    border-radius:  0 0 3px 3px;
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.38);
+    -moz-box-shadow: inset 0 0 8px rgba(0,0,0,0.38);
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.38);
 }
 
 .b-illustration_show_sladko
 {
     background: url(b-illustration_type_sladko.jpg);
-
-    /* Gecko (Firefox) */
-    -moz-border-radius: 3px;
-    /* WebKit (Safari/Chrome) */
-    -webkit-border-radius: 3px;
-
-    border-radius: 3px;
 }
 
 .b-illustration__link

@@ -7,6 +7,8 @@
 {
     font: 30px Georgia, serif;
     margin-bottom: 30px;
+
+    text-shadow: 0 1px 0 #fff;
 }
 
 .b-text p
