@@ -1,0 +1,20 @@
+.b-menu__link
+{
+    display: -moz-inline-box;
+    display: inline-block;
+
+    width: 110px;
+    line-height: 31px;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+.b-menu__link:hover
+{
+    text-decoration: none;
+
+    color: #fff;
+    background-image: url(b-menu__link.hover.png);
+}

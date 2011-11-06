@@ -1,0 +1,49 @@
+.b-illustration
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 179px;
+
+}
+
+.b-illustration_show_sladko
+{
+    background: url(b-illustration_type_sladko.jpg);
+
+    /* Gecko (Firefox) */
+    -moz-border-radius: 3px;
+    /* WebKit (Safari/Chrome) */
+    -webkit-border-radius: 3px;
+
+    border-radius: 3px;
+}
+
+.b-illustration__link
+{
+    display: none;
+
+    float: right;
+
+    width: 152px;
+    height: 112px;
+    margin-top: 44px;
+
+    background: #fff;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+}
+
+.b-illustration_show_sladko .b-illustration__link_type_sladko
+{
+    display: block;
+}
+
+.b-illustration__logo
+{
+    display: block;
+    margin: auto;
+    padding-top: 35px;
+}
