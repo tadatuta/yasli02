@@ -1,0 +1,33 @@
+.b-menu__sublist
+{
+    position: absolute;
+
+    display: none;
+
+    width: 100%;
+}
+
+.b-menu__sublist:hover
+{
+    display: block;
+}
+
+.b-menu__item_state_current .b-menu__sublist
+{
+    background: #729cc4;
+
+    text-shadow: none;
+}
+
+.b-menu__sublist-item,
+.b-menu__sublist-item .b-menu__link
+{
+    display: block;
+}
+
+.b-menu__sublist-item .b-menu__link
+{
+    width: auto;
+    padding-left: 24px;
+    text-align: left;
+}
