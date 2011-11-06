@@ -527,8 +527,8 @@ footer{
     margin: -125px 0 0 128px;
     overflow:hidden;
     position:relative;
-    border: 1px solid red;
-    outline: 1px solid green;
+    /*border: 1px solid red;
+    outline: 1px solid green;*/
     padding-top: 125px;
 
 }
