@@ -1,7 +1,11 @@
 @import url(blocks/i-reset/i-reset.css);
 @import url(blocks/i-global/i-global.css);
+@import url(blocks/g-line/g-line.css);
+@import url(blocks/b-text/b-text.css);
 @import url(blocks/b-page/b-page.css);
+@import url(blocks/b-page/_page/b-page_page_index.css);
 @import url(blocks/b-page/__content/b-page__content.css);
+@import url(blocks/b-page/__foot/b-page__foot.css);
 @import url(blocks/b-head/b-head.css);
 @import url(blocks/b-wrapper/b-wrapper.css);
 @import url(blocks/b-logo/b-logo.css);
@@ -11,3 +15,13 @@
 @import url(blocks/b-menu/__link-arrow/b-menu__link-arrow.css);
 @import url(blocks/b-search/b-search.css);
 @import url(blocks/b-illustration/b-illustration.css);
+@import url(blocks/b-news/b-news.css);
+@import url(blocks/b-news/__list/b-news__list.css);
+@import url(blocks/b-news/__head/b-news__head.css);
+@import url(blocks/b-news/__item/b-news__item.css);
+@import url(blocks/b-news/__date/b-news__date.css);
+@import url(blocks/b-news/__link/b-news__link.css);
+@import url(blocks/b-foot-items/b-foot-items.css);
+@import url(blocks/b-foot-items/_type/b-foot-items_type_separated.css);
+@import url(blocks/b-lang-switcher/b-lang-switcher.css);
+@import url(blocks/b-lang-switcher/_lang/b-lang-switcher_lang_en.css);
