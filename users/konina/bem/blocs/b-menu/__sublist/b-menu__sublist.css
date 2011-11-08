@@ -10,8 +10,6 @@
 }
 .b-menu__item_state_current .b-menu__sublist{
     background: #729cc4;
-
-    text-shadow: none;
 }
 .b-menu__sublist-item,
 .b-menu__sublist-item .b-menu__link {
