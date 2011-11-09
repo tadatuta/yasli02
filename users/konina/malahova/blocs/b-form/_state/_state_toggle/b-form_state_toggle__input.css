@@ -1,0 +1,6 @@
+.b-form_state_toggle__input{
+	width:200px;	
+}
+.b-form_state_toggle__input:focus{
+	width:595px;
+}

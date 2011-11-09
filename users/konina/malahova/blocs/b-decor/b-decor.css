@@ -1,0 +1,33 @@
+.b-decor__bg{
+	display:inline-block;
+	vertical-align:text-top;
+	height:26px;
+	margin-right:6px;
+	overflow:hidden;
+	background-image:url(b-decor.png);
+	background-repeat:no-repeat;	
+}
+.b-decor__bg_view_facebook{
+	background-position:100% -26px;
+	width:14px;
+}
+.b-decor__bg_view_vkontakte{
+	background-position:100% 0;
+	width:16px;
+}
+.b-decor__bg_view_author{
+	background-position:100% -104px;
+	width:36px;
+}
+.b-decor__bg_view_comments{
+	background-position:100% -52px;
+	width:9px;
+}
+.b-decor__bg_view_divide{
+	background-position:100% -78px;
+	width:9px;
+}
+.b-decor__link{
+	border-bottom:1px solid #424249;
+	vertical-align:text-bottom;
+}

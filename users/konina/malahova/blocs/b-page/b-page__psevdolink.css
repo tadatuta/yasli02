@@ -1,0 +1,7 @@
+.b-page__psevdolink{
+	display:inline;
+	
+	cursor:pointer;
+	
+	border-bottom:1px dashed;
+}

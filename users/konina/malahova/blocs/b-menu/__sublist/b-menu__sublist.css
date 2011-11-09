@@ -1,0 +1,33 @@
+.b-menu__sublist{
+	position:absolute;
+	left:0;
+	top:44px;
+	display:none; 
+	white-space:nowrap;	
+	width:100%;
+}
+ .b-menu__item_has_submenu:hover .b-menu__sublist{
+	display:block;
+} 
+
+.b-menu__item_bgcolor_pale .b-menu__sublist{
+	border-width: 6px 0px 0px;
+	-moz-border-image: url(b-menu-decor_color_pale.png) 6 0 0 repeat;
+	-webkit-border-image: url(b-menu-decor_color_pale.png) 6 0 0 repeat;
+	-o-border-image: url(b-menu-decor_color_pale.png) 6 0 0 repeat;
+	border-image: url(b-menu-decor_color_pale.png) 6 0 0 repeat;
+}
+.b-menu__item_bgcolor_lilac .b-menu__sublist{
+	border-width: 6px 0px 0px;
+	-moz-border-image: url(b-menu-decor_color_lilac.png) 6 0 0 repeat;
+	-webkit-border-image: url(b-menu-decor_color_lilac.png) 6 0 0 repeat;
+	-o-border-image: url(b-menu-decor_color_lilac.png) 6 0 0 repeat;
+	border-image: url(b-menu-decor_color_lilac.png) 6 0 0 repeat;
+}
+.b-menu__item_bgcolor_green .b-menu__sublist{	
+	border-width: 6px 0px 0px;
+	-moz-border-image: url(b-menu-decor_color_green.png) 6 0 0 repeat;
+	-webkit-border-image: url(b-menu-decor_color_green.png) 6 0 0 repeat;
+	-o-border-image: url(b-menu-decor_color_green.png) 6 0 0 repeat;
+	border-image: url(b-menu-decor_color_green.png) 6 0 0 repeat;
+}

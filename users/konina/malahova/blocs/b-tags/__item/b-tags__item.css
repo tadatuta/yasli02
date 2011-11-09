@@ -1,0 +1,30 @@
+.b-tags__item{
+	display:none;
+	
+	-moz-margin-start:0;
+	-webkit-margin-start:0;
+	margin-start:0;
+	
+	cursor:pointer;
+	
+	vertical-align:sub;
+		
+	padding:0 6px;
+	margin:0 3px 7px 0;
+	
+	border:1px solid #e6e6e6;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+.b-tags__item:hover,
+.b-tags__item:active{
+	background:#f26d7d;
+	
+	border:1px solid transparent;
+	
+	-webkit-box-shadow:inset 1px 1px 3px rgba(0,0,0,0.13);
+	-moz-box-shadow: inset 1px 1px 3px rgba(0,0,0,0.13);
+	-ms-box-shadow:inset 1px 1px 3px rgba(0,0,0,0.13);
+	box-shadow:inset 1px 1px 3px rgba(0,0,0,0.13);
+}

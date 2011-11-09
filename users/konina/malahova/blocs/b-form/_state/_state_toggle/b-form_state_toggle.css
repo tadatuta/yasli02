@@ -1,0 +1,13 @@
+.b-form_state_toggle{
+	position:relative;
+	display:inline-block;
+	float:right;
+	z-index:1;
+	
+	vertical-align:top;
+	
+	box-sizing:border-box;
+	padding:17px 20px 2px;
+	
+	background:#fff;
+}

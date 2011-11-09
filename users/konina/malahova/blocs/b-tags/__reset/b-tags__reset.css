@@ -1,0 +1,11 @@
+.b-tags__reset{
+	display:none;
+	text-transform:none;
+	font-style:normal;
+	line-height:1;
+	vertical-align:text-top;
+	margin-left:6px;
+}
+.b-tags__item_state_checked .b-tags__reset{
+	display:inline;
+}

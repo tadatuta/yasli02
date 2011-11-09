@@ -1,0 +1,21 @@
+.b-form__submit{
+	position:relative;
+	display:block;
+	font-size:11px;
+	font-family:Georgia, serif;
+	text-transform:uppercase;
+	height:28px;
+	border-width: 4px;
+	-moz-border-image: url(b-form__submit.png) 4 repeat;
+	-webkit-border-image: url(b-form__submit.png) 4 repeat;
+	-o-border-image: url(b-form__submit.png) 4 repeat;
+	border-image: url(b-form__submit.png) 4 repeat;
+	color:#fff;
+}
+.b-form__submit:hover{
+	border-width: 4px;
+-moz-border-image: url(b-form__submit_hover.png) 4 repeat;
+-webkit-border-image: url(b-form__submit_hover.png) 4 repeat;
+-o-border-image: url(b-form__submit_hover.png) 4 repeat;
+border-image: url(b-form__submit_hover.png) 4 repeat;
+}

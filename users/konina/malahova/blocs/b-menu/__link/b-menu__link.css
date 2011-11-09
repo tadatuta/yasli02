@@ -1,0 +1,21 @@
+.b-menu__link{
+	position:relative;
+	font:12px/20px Georgia, serif;
+	text-transform:uppercase;
+	color:#33424b;
+}
+.b-menu__item:hover .b-menu__link{
+	color:#fff;
+}
+.b-menu__link-arrow{
+	position:absolute;
+	top:48%;
+	width:5px;
+	height:3px;
+	overflow:hidden;
+	margin-left:-8px;
+	background:url(b-menu__link-arrow.png) 0 0 no-repeat;	
+}
+.b-menu__item_has_submenu:hover .b-menu__link-arrow{
+	background-position:100% 0;
+}

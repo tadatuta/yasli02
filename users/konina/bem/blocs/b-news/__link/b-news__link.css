@@ -1,0 +1,9 @@
+.b-news__link{
+	display:block;
+	
+	color:#333;
+	
+}
+.b-news__link:hover{
+	color:#05c;
+}

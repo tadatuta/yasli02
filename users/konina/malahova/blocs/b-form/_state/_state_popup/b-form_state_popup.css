@@ -1,0 +1,12 @@
+.b-form_state_popup{
+	position:static;
+	display:block;
+	float:none;
+	z-index:0;
+	
+	vertical-align:top;
+	
+	padding:0 0 10px;
+	
+	background:inherit;
+}

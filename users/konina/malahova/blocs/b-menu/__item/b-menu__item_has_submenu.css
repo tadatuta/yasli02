@@ -1,0 +1,17 @@
+.b-menu__item_has_submenu{
+	padding-left:19px;
+	padding-right:15px;
+}
+.b-menu__item_has_submenu:hover{
+	border-width:0;
+	padding-bottom:16px;	
+}
+.b-menu__item_bgcolor_pale:hover{
+	background:#fe7183;
+}
+.b-menu__item_bgcolor_lilac:hover{
+	background:#a46f8c;
+}
+.b-menu__item_bgcolor_green:hover{
+	background:#498f4d;
+}
