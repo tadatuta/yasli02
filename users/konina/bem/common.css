@@ -13,5 +13,10 @@
 @import url("blocs/b-illustration/b-illustration.css");
 @import url("blocs/b-text/b-text.css");
 @import url("blocs/b-news/b-news.css");
+@import url("blocs/b-news/__head/b-news__head.css");
 @import url("blocs/b-page/__foot/b-page__foot.css");
 @import url("blocs/b-lang-switcher/b-lang-switcher.css");
+@import url("blocs/b-news/__item/b-news__item.css");
+@import url("blocs/b-news/__date/b-news__date.css");
+@import url("blocs/b-news/__link/b-news__link.css");
+@import url("blocs/b-page/_page/b-page_page_index.css");

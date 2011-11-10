@@ -1,0 +1,14 @@
+.b-wrapper{
+	box-sizing:border-box;
+	-moz-box-sizing: border-box;
+	width:1000px;
+	height:500px;
+	margin:auto;
+	padding:20px;
+	
+	background:#e9eff5;
+	
+	-webkit-box-shadow:1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+	box-shadow:1px 1px 15px 0px rgba(0, 0, 0, 0.2);
+}

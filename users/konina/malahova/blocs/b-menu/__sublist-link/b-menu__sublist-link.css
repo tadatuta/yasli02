@@ -1,0 +1,14 @@
+.b-menu__sublist-link{
+	font:13px/20px Georgia, serif;
+	color:#fff;
+	border:5px solid transparent;
+	padding:2px 5px;
+}
+.b-menu__sublist-item:hover .b-menu__sublist-link{
+	color:#fff;
+	border-width: 5px;
+-moz-border-image: url(sublist-link.png) 5 repeat;
+-webkit-border-image: url(sublist-link.png) 5 repeat;
+-o-border-image: url(sublist-link.png) 5 repeat;
+border-image: url(sublist-link.png) 5 repeat;
+}

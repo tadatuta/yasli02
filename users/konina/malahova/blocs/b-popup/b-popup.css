@@ -1,0 +1,21 @@
+.b-popup{
+	position:absolute;
+	left:50%;
+	top:0;
+	
+	/* display:block; */
+	display:none;
+	
+	-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    width: 334px;
+	margin-left: -167px;
+    margin-top: 140px;
+    padding:7px 4px;
+	
+	border-width: 26px 28px 28px 26px;
+	-moz-border-image: url(b-popup.png) 26 28 28 26 repeat;
+	-webkit-border-image: url(b-popup.png) 26 28 28 26 repeat;
+	-o-border-image: url(b-popup.png) 26 28 28 26 repeat;
+	border-image: url(b-popup.png) 26 28 28 26 repeat;
+}
