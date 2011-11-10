@@ -1,0 +1,14 @@
+.b-menu-drop__item
+{
+    padding: 8px 25px 7px;
+    display: block;
+
+    text-decoration: none;
+    color: #fff;
+
+    background: #6191ba;
+}
+.b-menu-drop__item:hover
+{
+    background: url("menu-texture.gif");
+}

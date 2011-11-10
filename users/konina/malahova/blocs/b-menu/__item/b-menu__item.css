@@ -1,0 +1,14 @@
+.b-menu__item{
+	display:inline-block;
+	padding:13px 12px;
+	background:#fff;
+	border-width: 0px 0px 6px;
+	-moz-border-image: url(b-menu-decor_color_wrapper.png) 0 0 6 repeat;
+	-webkit-border-image: url(b-menu-decor_color_wrapper.png) 0 0 6 repeat;
+	-o-border-image: url(b-menu-decor_color_wrapper.png) 0 0 6 repeat;
+	border-image: url(b-menu-decor_color_wrapper.png) 0 0 6 repeat;
+}
+.b-menu__item:hover{
+	cursor:pointer;
+	background:#669;
+}

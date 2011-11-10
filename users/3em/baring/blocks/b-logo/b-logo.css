@@ -1,0 +1,8 @@
+.b-logo
+{
+    background: url("images/logo.png") no-repeat;
+    width: 130px;
+    height: 104px;
+    display: inline-block;
+    margin: 20px 30px 24px 0;
+}

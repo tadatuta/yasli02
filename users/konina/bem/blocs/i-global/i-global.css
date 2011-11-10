@@ -1,0 +1,18 @@
+body{
+	font:13px/1.4 Arial, sans-serif;
+	
+	color:#333;
+	background:#fff;
+}
+
+:link{
+	text-decoration:none;
+	
+	color:#05c;
+}
+:visited{
+	color:#962680;
+}
+a:hover{
+	text-decoration:none;
+}

@@ -1,0 +1,13 @@
+.b-page__page_index .b-text{
+	padding:46px 90px 46px 0;
+}
+
+.b-page__page_index .b-text h1{
+	font:30px Georgia, serif;
+	
+	padding:13px 0 26px;
+	text-shadow:0 1px 0 #fff;
+}
+.b-page__page_index .b-text p{
+	margin-bottom:8px;
+}

@@ -1,0 +1,9 @@
+.b-news__shadow {
+
+      background: #fff;
+    width: 100%;
+    padding-right: 6px;
+       -webkit-box-shadow: inset -2px 0 6px rgba(0,0,0, 0.39);
+    -moz-box-shadow:inset -2px 0 6px rgba(0,0,0, 0.39);
+    box-shadow:inset -2px 0 6px rgba(0,0,0, 0.39);
+}

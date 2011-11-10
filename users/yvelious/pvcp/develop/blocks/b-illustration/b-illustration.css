@@ -1,0 +1,58 @@
+.b-illustration {
+position: relative;
+overflow: hidden;
+height: 179px;
+      /* Gecko (Firefox) */
+    -moz-border-radius: 3px;
+    /* WebKit (Safari/Chrome) */
+    -webkit-border-radius: 3px;
+      border-radius: 3px;
+
+     -moz-box-shadow: inset 0 0 8px rgba(51,51,51,0.4);
+     -webkit-box-shadow: inset 0 0 8px rgba(51,51,51,0.4);
+     box-shadow: inset 0 0 8px rgba(51,51,51,0.4);
+
+    margin-bottom: 56px;
+
+
+}
+
+.b-illustration_show_sladko
+{
+    background: url(b-illustration_type_sladko.jpg);
+
+
+
+
+}.b-illustration_show_borjomi
+{
+    background: url(b-illustration_type_borjomi.jpg);
+
+
+
+
+}
+.b-illustration_show_ozon
+{
+    background: url(b-illustration_type_ozon.jpg);
+
+}
+.b-illustration_show_slpk
+{
+    background: url(b-illustration_type_slpk.jpg);
+
+}
+.b-illustration_show_gallery
+{
+    background: url(b-illustration_type_gallery.jpg);
+
+}
+.b-illustration_show_benergy
+{
+    background: url(b-illustration_type_benergy.jpg);
+    
+}
+
+
+
+

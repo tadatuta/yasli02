@@ -1,0 +1,29 @@
+.b-menu-drop
+{
+    /* ... */
+}
+
+.b-menu-drop ul
+{
+    display: none;
+    list-style: none;
+}
+
+.b-menu-drop:hover ul
+{
+    display:block;
+    position:absolute;
+    width: 100%;
+    z-index: 40;
+}
+.b-menu-drop:hover .b-menu__item
+{
+    background: #6191ba !important;
+}
+
+.b-menu-drop .b-menu__item
+{
+    padding: 8px 2px 7px 25px;
+    text-align: left;
+    width: 83px;
+}

@@ -1,0 +1,12 @@
+.b-header
+{
+    background: #e9ebec;
+
+    min-width: 860px;
+
+    position: relative;
+
+    -webkit-box-shadow: 1px 1px 3px #454343;
+    -moz-box-shadow: 1px 1px 3px #454343;
+    box-shadow: 1px 1px 3px #454343;
+}

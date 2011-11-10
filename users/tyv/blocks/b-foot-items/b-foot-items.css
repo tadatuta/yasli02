@@ -1,0 +1,11 @@
+.b-foot-items__item
+{
+    display: inline;
+
+    margin-right: 30px;
+}
+
+.b-foot-items__item_role_title
+{
+    margin-right: 22px;
+}

@@ -1,0 +1,17 @@
+.b-text
+{
+    padding: 60px 0;
+}
+
+.b-text h1
+{
+    font: 30px Georgia, serif;
+    margin-bottom: 30px;
+
+    text-shadow: 0 1px 0 #fff;
+}
+
+.b-text p
+{
+    margin-bottom: 14px;
+}

@@ -1,0 +1,381 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+
+    outline: 0;
+
+    font-size: 100%;
+
+    vertical-align: baseline;
+
+    background: transparent;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #39f;
+}
+
+body {
+    background: #fff url(../img/bg_fon.png);
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.wrapper {
+    background: url(../img/up_rose.png) no-repeat 0% 0%;
+
+}
+
+.wrapper_1 {
+    background: url(../img/low_rose.png) no-repeat 100% 100%;
+}
+
+.header, .content, .footer {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*begin header*/
+
+.menu, .reg {
+    float: right;
+
+}
+
+.lang {
+    z-index: 5;
+    position: relative;
+}
+
+.lang ul {
+    margin: 15px 80px 0 0;
+}
+
+.lang   li {
+    list-style-type: none;
+    display: -moz-inline-stack;
+    display: inline-block;
+    margin: 0 6px 0 0;
+}
+
+.lang   li a {
+    color: #666;
+}
+
+.lang li a:hover {
+    text-decoration: none;
+}
+
+.reg {
+    margin: 5px 86px 0 0;
+}
+
+.reg a {
+    color: #666;
+    font: italic 18px Georgia, serif;
+}
+
+.reg input[type="text"] {
+    background: transparent;
+    border: none;
+    font: italic 18px Georgia, serif;
+    width: 40%;
+}
+
+.logo a {
+    float: left;
+}
+
+.logo {
+    position: absolute;
+    top: 7px;
+    left: -16px;
+
+}
+
+.main {
+
+    min-height: 55px;
+    background: #fff;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    margin: 55px 0 0 0;
+    margin-bottom: 15px;
+}
+
+.main li {
+
+    display: inline-block;
+
+}
+
+.main li a {
+    color: #3399ff;
+    font: italic 18px Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    padding: 18px 25px 5px 25px;
+
+}
+
+.main li a:hover {
+    color: #fff;
+    background: url("../img/li_fon.png");
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    height: 32px;
+    padding-right: 50px;
+    margin-right: -25px;
+}
+
+/*end header*/
+
+/*begin content*/
+
+.slideshow {
+    float: left;
+    width: 730px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.tabs {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    z-index: 1;
+}
+
+.tabs li {
+    display: inline-block;
+    font-size: 24px;
+    height: 40px;
+    width: 18px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+.slide {
+    width: 4380px;
+    position: relative;
+    left: 0;
+    -webkit-transition: all 2.0s ease-in-out;
+    -moz-transition: all 2.0s ease-in-out;
+    -o-transition: all 2.0s ease-in-out;
+    -ms-transition: all 2.0s ease-in-out;
+    transition: all 2.0s ease-in-out;
+}
+
+.slide li {
+    float:left;
+}
+
+.tabs li:hover {
+    background: #fff;
+    color: #f00;
+    -webkit-border-radius: 9px 9px 0 0;
+    -moz-border-radius: 9px 9px 0 0;
+    border-radius: 9px 9px 0 0;
+}
+
+.slideshow img {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.ad {
+    width: 700px;
+    height: 87px;
+    background: rgba(255, 153, 178, 0.5);
+    position: absolute;
+    top: 40px;
+    padding: 20px 0 0 30px;
+
+}
+
+.ad h2 {
+    font: italic 24px Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+    margin: 0 0 22px 0;
+}
+
+.ad p {
+    color: #fff;
+}
+
+.contact_info {
+    float: right;
+    width: 250px;
+    background: url("../img/amour_1.png") no-repeat bottom;
+    padding: 34px 0 165px 0;
+
+}
+
+.contact_info h1 {
+    font: italic 24px Georgia, 'Times New Roman', Times, serif;
+    color: #666;
+
+}
+
+.contact_info h2 {
+    font: italic 18px Georgia, 'Times New Roman', Times, serif;
+    color: #666;
+}
+
+.contact_info .phone {
+    color: #f36;
+    font: italic 36px Georgia, 'Times New Roman', Times, serif;
+    line-height: 50px;
+
+}
+
+.contact_info p {
+    color: #666;
+    font: italic 18px Georgia, 'Times New Roman', Times, serif;
+    line-height: 27px;
+}
+
+/*begin new*/
+.new {
+    float: left;
+}
+
+.news, .service {
+    width: 225px;
+    padding-right: 25px;
+}
+
+.anket, .foto {
+    width: 250px;
+}
+
+.new h2 {
+    font: italic 24px Georgia, 'Times New Roman', Times, serif;
+    color: #666;
+    margin: 0 0 10px 0;
+}
+
+.new a {
+    font: italic 16px Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.news p, .service p {
+    text-indent: 30px;
+    margin-bottom: 20px;
+    line-height: 16px;
+
+}
+
+.new .call_request {
+    font: 12px Arial, Helvetica, sans-serif;
+
+}
+
+.new .no_indent {
+    text-indent: 0px;
+}
+
+.new ul li {
+    display: inline-block;
+    width: 108px;
+    vertical-align: top;
+}
+
+.new ul li p {
+    text-indent: 0px;
+    font: italic 12px Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.anket li, .foto li {
+    margin-right: 15px;
+}
+
+/*end new*/
+/*end content*/
+
+/*begin footer*/
+
+.footer {
+
+}
+
+.footer ul li {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 0 0 18px 0;
+
+}
+
+.copyright {
+    width: 250px;
+}
+
+.copyright p {
+    line-height: 22px;
+    padding: 0 90px 0 0;
+
+}
+
+.tel {
+    text-align: right;
+}
+
+.link {
+    width: 180px;
+
+}
+
+.link ul li {
+    display: block;
+    padding: 0 0 5px 0;
+}
+
+.link ul li {
+    display: block;
+    padding: 8px 0 0 0;
+}
+
+.select_language {
+    width: 312px;
+}
+
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: block;
+    visibility: hidden;
+}
+

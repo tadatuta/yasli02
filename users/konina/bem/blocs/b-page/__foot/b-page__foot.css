@@ -1,0 +1,33 @@
+.b-page__foot{
+	padding:14px 0;
+	font-size:11px;
+	background:url(b-page__foot.png);
+}
+.b-page__foot__i{
+	display:table;
+}
+.b-foot__list{
+}
+.b-foot__item{
+	display:inline-block;
+	padding-left:20px;
+}
+.b-foot__item:first-child{
+	padding-left:0;
+}
+.b-page__foot-l{
+	display:table-cell;
+	vertical-align:top;
+}
+.b-page__foot-r{
+	display:table-cell;
+	text-align:right;
+	vertical-align:top;
+}
+.b-foot__list_type_separated li{
+	padding-left:15px;
+}
+.b-foot__list_type_separated li:first-child{
+	
+	border-right:1px solid #ccc;
+	padding-right:15px;

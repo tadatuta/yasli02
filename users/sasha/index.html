@@ -4,15 +4,40 @@
     <meta charset="UTF-8">
     <title>Amour</title>
     <link rel='stylesheet' href="css/amour.css">
+
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <link rel='stylesheet' href="css/ie.css">
+     <![endif]-->
+    <!--[if lt IE 8]>
+        <link rel='stylesheet' href="css/ie7.css">
+     <![endif]-->
+    <!--[if IE 6]>
+        <link rel='stylesheet' href="css/ie6.css">
     <![endif]-->
+    <script type="text/javascript" src="lib/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.scrollTo-1.4.2-min.js"></script>
+    <script type="text/javascript" src="lib/jquery.easing.1.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            $(".links a").click(function(){
+                $(".links a").removeClass('curent');
+                 $(this).addClass("curent");
+                var target= $(this.hash);
 
 
+                $(".middle .gallery").scrollTo(target,800 ) ;
+
+
+               return false;
+            });
+        });
+    </script>
 </head>
 <body>
     <header class='header'>
+
         <nav class='lang' >&nbsp;
             <ul>
                 <li><a href="/lang/en">English</a></li
@@ -33,7 +58,7 @@
 
             <a href="login" class="login">вход</a>
         </div>
-        <div class='logo'></div>
+        <div class='logo'><span class='big'>Amour</span><span class='norm'>Любовь всегда приходит вовремя</span> </div>
         <nav class='menu'>
             <ul>
                 <li><a href="/fakty">Интересные факты</a></li
@@ -46,13 +71,15 @@
 
         </nav>
         
+        <div class='roseup'>
 
+        </div>
     </header>
     <section class='middle'>
             <div class='wrapper'>
-                <ul class='gallery' ><li><a name='l1'></a>
+                <ul class='gallery' ><li><a id='l1'></a>
                     <figure style='background-image: url(img/0509_Happy_Couple2_1.jpg)'>
-                        <img src='img/0509_Happy_Couple2_mid.jpg' lowres='img/0509_Happy_Couple2_sml.jpg'  alt=''>
+                        <img src='img/0509_Happy_Couple2_1.jpg'  alt=''>
 
                         <figcaption>
                             <h1>Для любви нет границ</h1>
@@ -61,9 +88,9 @@
                     </figure>
                     </li>
 
-                    <li><a name='l2'></a>
+                    <li><a id='l2'></a>
                     <figure style='background-image: url(img/love-is_1920x1200_1.jpg)'>
-                        <img src='img/love-is_1920x1200.jpg' lowres='img/0509_Happy_Couple2_sml.jpg'  alt=''>
+                        <img src='img/love-is_1920x1200_1.jpg'   alt=''>
 
                         <figcaption>
                             <h1>Для любви нет границ</h1>
@@ -73,9 +100,10 @@
 
 
                 </li>
-                <li><a name='l3'></a>
+
+                <li><a id='l3'></a>
                     <figure style='background-image: url(img/catherineronny226_1.jpg)'>
-                        <img src='img/love-is_1920x1200.jpg' lowres='img/catherineronny226.jpg'  alt=''>
+                        <img src='img/catherineronny226_1.jpg'   alt=''>
 
                         <figcaption>
                             <h1>Для любви нет границ</h1>
@@ -84,18 +112,19 @@
                     </figure>
 
                 </li>
-                <li><a name='l4'></a>
+
+                <li><a id='l4'></a>
                     <figure style='background-image: url(img/para-na-beregu-morya_1920x1200_1.jpg)'>
-                        <img src='img/love-is_1920x1200.jpg' lowres='img/catherineronny226.jpg'  alt=''>
+                        <img src='img/para-na-beregu-morya_1920x1200_1.jpg'   alt=''>
                         <figcaption>
                             <h1>Для любви нет границ</h1>
                             Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи иностранцев!
                         </figcaption>
                     </figure>
 
-                <li><a name='l5'></a>
+                <li><a id='l5'></a>
                     <figure style='background-image: url(img/forever-love-anime-nice-31000_1.jpg)'>
-                        <img src='img/love-is_1920x1200.jpg' lowres='img/forever-love-anime-nice-31000.jpg'  alt=''>
+                        <img src='img/forever-love-anime-nice-31000_1.jpg'   alt=''>
 
                         <figcaption>
                             <h1>Для любви нет границ</h1>
@@ -104,17 +133,17 @@
                     </figure>
 
                 </li>
-                    <li><a name='l6'></a>
-                          <figure style='background-image: url(img/catherineronny226_1.jpg)'>
-                              <img src='img/love-is_1920x1200.jpg' lowres='img/catherineronny226.jpg'  alt=''>
+                <li><a id='l6'></a>
+                      <figure style='background-image: url(img/catherineronny226_1.jpg)'>
+                          <img src='img/catherineronny226_1.jpg'   alt=''>
 
-                              <figcaption>
-                                  <h1>Для любви нет границ</h1>
-                                  Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи иностранцев!
-                              </figcaption>
-                          </figure>
+                          <figcaption>
+                              <h1>Для любви нет границ</h1>
+                              Мы сотрудничаем с ведущими мировыми брачными агентствами. Вашу анкету увидят миллионы тысячи иностранцев!
+                          </figcaption>
+                      </figure>
 
-                      </li>
+                  </li>
 
             </ul>
              <ul class='links'>
@@ -141,7 +170,7 @@
 
 
     </section>
-<section class='content'>
+    <section class='content'>
     <div class='column'>
     <h1>Это интересно</h1>
 
@@ -171,29 +200,35 @@
         <h1>Новые анкеты</h1>
 
             <ul class='ulj'>
-                <li>
+                <li><div class='iewrapper'>
                     <figure><a href="#"><img src='img/img1.jpg' class='photo' alt='фото'>
-                    <figcaption><span class='name'>Иван</span></figcaption></a></figure>, <span class='age'>24 года</span>, <span class="city">Киев</span>
+                    <figcaption><span class='name'>Иван</span></figcaption></a>, <span class='age'>24 года</span>, <span class="city">Киев</span>
+                    </figure></div>
                 </li>
-                <li>
-                    <figure><a href="#"><img src='img/img2.jpg'class='photo' alt='фото'>
-                    <figcaption><span class='name'>Наталья</span></figcaption></a></figure>, <span class='age'>20 лет</span>, <span class="city">Ивано-Франковск</span>
-                </li>
-                <li>
-                    <figure><a href="#"><img src='img/img1.jpg' class='photo' alt='фото'>
-                    <figcaption><span class='name'>Пол</span></figcaption></a></figure>, <span class='age'>32 года</span>, <span class="city">Нью-Йорк</span>
-                </li>
-                <li>
+                <li><div class='iewrapper'>
                     <figure><a href="#"><img src='img/img2.jpg' class='photo' alt='фото'>
-                    <figcaption><span class='name'>Кармен</span></figcaption></a></figure>, <span class='age'>25 лет</span>, <span class="city">Милан</span>
+                    <figcaption><span class='name'>Наталья</span></figcaption></a>, <span class='age'>20 лет</span>, <span class="city">Ивано-Франковск</span>
+                    </figure></div>
                 </li>
-                <li>
+                <li><div class='iewrapper'>
                     <figure><a href="#"><img src='img/img1.jpg' class='photo' alt='фото'>
-                    <figcaption><span class='name'>Джеймс</span></figcaption></a></figure>, <span class='age'>45 лет</span>, <span class="city">Лодон</span>
+                    <figcaption><span class='name'>Пол</span></figcaption></a>, <span class='age'>32 года</span>, <span class="city">Нью-Йорк</span>
+                    </figure></div>
                 </li>
-                <li>
+                <li><div class='iewrapper'>
                     <figure><a href="#"><img src='img/img2.jpg' class='photo' alt='фото'>
-                    <figcaption><span class='name'>София</span></figcaption></a></figure>, <span class='age'>56 лет</span>, <span class="city">Ялта</span>
+                    <figcaption><span class='name'>Кармен</span></figcaption></a>, <span class='age'>25 лет</span>, <span class="city">Милан</span>
+                    </figure></div>
+                </li>
+                <li><div class='iewrapper'>
+                    <figure><a href="#"><img src='img/img1.jpg' class='photo' alt='фото'>
+                    <figcaption><span class='name'>Джеймс</span></figcaption></a>, <span class='age'>45 лет</span>, <span class="city">Лодон</span>
+                    </figure></div>
+                </li>
+                <li><div class='iewrapper'>
+                    <figure><a href="#"><img src='img/img2.jpg' class='photo' alt='фото'>
+                    <figcaption><span class='name'>София</span></figcaption></a> <span class='age'>56 лет</span>, <span class="city">Ялта</span>
+                    </figure></div>
                 </li>
 
             </ul>
@@ -224,9 +259,6 @@
                 </dd>
             </dl>
 
-
-
-        </aside>
     </div>
     <div class='column'>
         <h1>Свежие фото</h1>
@@ -271,7 +303,8 @@
     
 </section>
 <footer>
-    <div class='contact' itemtype='http://microformats.org/profile/hcard'>
+    <div class='wrapper'>
+    <div class='contact' itemtype='http://microformats.org/profile/hcard' itemscope>
         <dl>
             <dt>© 2010 <span itemprop='title'>Международное
                 брачное агентство «Амур»</span>
@@ -282,16 +315,19 @@
         </dl>
     </div>
 
-        <ul class='links'>
-            <li><a href="#">Посмотреть на карте</a></li>
-            <li><a href="#">Написать письмо</a></li>
-            <li><a href="#">Партнёрство</a></li>
-        </ul>
+    <ul class='links'>
+        <li><a href="#">Посмотреть на карте</a></li>
+        <li><a href="#">Написать письмо</a></li>
+        <li><a href="#">Партнёрство</a></li>
+    </ul>
 
     <select class='otherlang'>
         <option>Other language?</option>
     </select>
+    </div>
     <div class='author'>Дизайн: <a href="#">Тадатута</a></div>
+
+    <div class='rosedown'> </div>
 </footer>    
 
 </body>

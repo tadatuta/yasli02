@@ -1,0 +1,8 @@
+.b-form__input:focus+.b-form_state_toggle__submit{
+	display:inline-block;
+}
+.b-form_state_toggle__submit{
+	display:none;
+	width:75px;
+	margin-left:6px;
+}

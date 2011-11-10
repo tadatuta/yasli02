@@ -1,0 +1,21 @@
+
+.b-news__item{
+	position:relative;
+	display:inline-block;
+	width:28%;
+	padding:0 3.5%;
+	vertical-align:top;
+	white-space:normal;
+}
+.b-news__item:first-child{
+	padding-left:0;
+}
+.b-news__item:before{
+	position:absolute;
+	top:0;
+	right:0;
+	content:"\0020";
+	display:inline-block;
+	height:75px;
+	border-left:1px solid #ccc;
+}
