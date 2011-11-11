@@ -1,4 +1,6 @@
 @import url("../blocks/u-reset/u-reset.css");
+@import url("../blocks/u-clearfix/u-clearfix.css");
+@import url("../blocks/u-inline-block/u-inline-block.css");
 @import url("../blocks/t-typo/t-typo.css");
 @import url("../blocks/b-page/b-page.css");
 @import url("../blocks/b-page/__content/b-page__content.css");
