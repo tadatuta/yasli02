@@ -1,0 +1,28 @@
+
+.b-text__head{
+	font:10px/18px Georgia, serif;
+	text-transform:uppercase;
+	color:#888890;
+	text-decoration:underline;
+}
+.b-text__foot{
+	font:11px/18px Helvetica, sans-serif;
+	font-style:italic;
+	margin-top:9px;
+	color:#888890;
+}
+.b-text__foot:before{
+	display:block;	
+	width:19px;
+	height:6px;
+	overflow:hidden;
+	background:url(b-decor.png) 100% -38px no-repeat; 
+	content:"\0020";
+}
+.b-text__link{
+	text-decoration:underline;
+}
+
+.b-text__counter-comments{}
+
+

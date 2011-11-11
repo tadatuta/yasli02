@@ -1,3 +1,6 @@
+.b-enter_popup{
+	display:none;
+}
 .b-enter_popup__link{
 	font-size: 11px;
 	position:absolute;

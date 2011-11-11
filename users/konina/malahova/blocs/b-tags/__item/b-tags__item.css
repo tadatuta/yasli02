@@ -1,5 +1,5 @@
 .b-tags__item{
-	display:none;
+	display:inline-block;
 	
 	-moz-margin-start:0;
 	-webkit-margin-start:0;

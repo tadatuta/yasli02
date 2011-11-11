@@ -1,33 +1,47 @@
 .b-decor__bg{
 	display:inline-block;
 	vertical-align:text-top;
-	height:26px;
-	margin-right:6px;
 	overflow:hidden;
 	background-image:url(b-decor.png);
 	background-repeat:no-repeat;	
 }
-.b-decor__bg_view_facebook{
-	background-position:100% -26px;
-	width:14px;
-}
 .b-decor__bg_view_vkontakte{
-	background-position:100% 0;
 	width:16px;
+	height:16px;
+	margin-right:6px;
+	background-position:100% 0;
 }
-.b-decor__bg_view_author{
-	background-position:100% -104px;
-	width:36px;
+.b-decor__bg_view_facebook{
+	width:14px;
+	height:14px;
+	margin-right:6px;
+	background-position:100% -16px;
 }
 .b-decor__bg_view_comments{
-	background-position:100% -52px;
 	width:9px;
+	height:8px;
+	background-position:100% -30px;
 }
 .b-decor__bg_view_divide{
-	background-position:100% -78px;
-	width:9px;
+	display:block;
+	width:19px;
+	height:6px;
+	background-position:100% -38px;
 }
+.b-decor__bg_view_author{
+	width:36px;
+	height:26px;
+	background-position:100% -44px;
+}
+.b-decor__bg_view_recipes{
+	width:18px;
+	height:14px;
+	background-position:100% -70px;
+}
+
+
 .b-decor__link{
-	border-bottom:1px solid #424249;
 	vertical-align:text-bottom;
+	border-bottom:1px solid #424249;
 }
+

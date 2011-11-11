@@ -2,9 +2,8 @@
 	position:absolute;
 	left:50%;
 	top:0;
-	
-	/* display:block; */
-	display:none;
+	z-index:10;
+	display:block;  
 	
 	-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -18,4 +17,9 @@
 	-webkit-border-image: url(b-popup.png) 26 28 28 26 repeat;
 	-o-border-image: url(b-popup.png) 26 28 28 26 repeat;
 	border-image: url(b-popup.png) 26 28 28 26 repeat;
+}
+
+.b-popup-i{
+	background:#fff;
+	outline: 10px solid #fff;
 }

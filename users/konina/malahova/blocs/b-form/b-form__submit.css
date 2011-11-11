@@ -1,21 +1,30 @@
-.b-form__submit{
-	position:relative;
-	display:block;
-	font-size:11px;
-	font-family:Georgia, serif;
-	text-transform:uppercase;
-	height:28px;
+.b-form__submit-o{
 	border-width: 4px;
 	-moz-border-image: url(b-form__submit.png) 4 repeat;
 	-webkit-border-image: url(b-form__submit.png) 4 repeat;
 	-o-border-image: url(b-form__submit.png) 4 repeat;
 	border-image: url(b-form__submit.png) 4 repeat;
-	color:#fff;
 }
-.b-form__submit:hover{
+
+.b-form__submit-o:hover{
+	cursor:pointer;
 	border-width: 4px;
--moz-border-image: url(b-form__submit_hover.png) 4 repeat;
--webkit-border-image: url(b-form__submit_hover.png) 4 repeat;
--o-border-image: url(b-form__submit_hover.png) 4 repeat;
-border-image: url(b-form__submit_hover.png) 4 repeat;
+	-moz-border-image: url(b-form__submit_hover.png) 4 repeat;
+	-webkit-border-image: url(b-form__submit_hover.png) 4 repeat;
+	-o-border-image: url(b-form__submit_hover.png) 4 repeat;
+	border-image: url(b-form__submit_hover.png) 4 repeat;
+} 
+
+.b-form__submit{		
+	font-size:11px;
+	font-family:Georgia, serif;
+	height:20px;
+	margin:0 5px;
+	border-width:0;
+	color:#fff;
+	background:#324049;
+}
+
+.b-form__submit-o:hover .b-form__submit{
+	background:#e54555;	
 }
