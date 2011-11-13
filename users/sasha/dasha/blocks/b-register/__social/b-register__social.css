@@ -1,0 +1,11 @@
+.b-register__social{
+    width:210px;
+    font:italic 11px Arial,sans-serif;
+
+    display:inline-block;
+}
+
+.b-register__social_item{
+    display:inline-block;
+    outline: 1px solid red;
+}

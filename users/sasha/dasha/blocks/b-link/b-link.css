@@ -1,0 +1,19 @@
+.b-link{
+    text-decoration: none;
+    display:inline-block;
+    font: 13px Arial,sans-serif;
+    color:  #424242;
+    border-color: #424242;
+
+}
+.b-link_solid{
+    border-bottom:1px solid;
+}
+
+.b-link_dashed{
+    border-bottom:1px dashed ;
+}
+
+
+
+
