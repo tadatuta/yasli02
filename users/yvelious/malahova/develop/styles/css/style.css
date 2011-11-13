@@ -155,7 +155,7 @@ table {
 ---------------------------------------------------------
 */
 .u-inline-block {
-  display: -moz-inline-block;
+  display: -moz-inline-stack;
   display: inline-block;
   /* ... */
 
@@ -383,6 +383,7 @@ h2 {
   border-radius: 10px;
 }
 .b-nav {
+  position: relative;
   /* ... */
 
 }
@@ -413,10 +414,10 @@ h2 {
 }
 .b-nav__sublist {
   position: absolute;
-  left: 20px;
+  left: 0;
   height: 48px;
   background: #47ad54;
-  width: 960px;
+  width: 100%;
   /* ... */
 
 }
