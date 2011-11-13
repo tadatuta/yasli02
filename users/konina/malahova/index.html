@@ -17,6 +17,7 @@
 </head>
 <body class="b-page b-page_page_index">
 	<div class="b-wrapper">
+<!-- начало блока Header -->	
 		<header class="b-head">
 			<div class="b-logo">
 				<a href="#index" class="b-logo__link">
@@ -26,7 +27,9 @@
 			</div>
 			<form action="get" class="b-form b-form_state_toggle">
 				<input class="b-form__input b-form_state_toggle__input"/>
-				<input type="submit" value="Найти" class="b-form__submit b-form_state_toggle__submit"/>
+				<div class="b-form__submit-o b-form_state_toggle__submit">
+					<input type="submit" value="НАЙТИ" class="b-form__submit "/>
+				</div>
 				<div class="b-tags">
 					<div class="b-tags__head" onclick="this.style.display='none'"><span class="b-page__psevdolink">Добавить тэг</span></div>					
 					<dl class="b-tags__list">				
@@ -46,8 +49,8 @@
 					</dl>
 				</div>
 			</form>
-			<div class="b-tags b-popup b-module">
-					<div class="b-module__head">выберите теги</div>					
+			<div class="b-tags b-tags_popup b-popup">
+					<div class="b-page__captcha">выберите теги</div>					
 					<dl class="b-tags__list">
 						<dd class="b-tags__item" onclick="this.className='b-tags__item_state_checked'">петрушка<span class="b-tags__reset">x</span></dd>
 						<dd class="b-tags__item">сельдерей<span class="b-tags__reset">x</span></dd>
@@ -78,7 +81,7 @@
 						</ul>
 					</li
 					><li class="b-menu__item b-menu__item_has_submenu b-menu__item_bgcolor_lilac">
-						<a href="#preferences" class="b-menu__link"><i class="b-menu__link-arrow">gbdgbnfcg bbdfgb fg</i>Даша любит</a>
+						<a href="#preferences" class="b-menu__link"><i class="b-menu__link-arrow"></i>Даша любит</a>
 						<ul class="b-menu__sublist">
 							<li class="b-menu__sublist-item"><a href="#breakfast" class="b-menu__sublist-link">Завтраки</a></li
 							><li class="b-menu__sublist-item"><a href="#meat" class="b-menu__sublist-link">Мясо. Птица. Дичь</a></li
@@ -128,30 +131,199 @@
 						</dd>
 				</dl>
 			</div>
-			<div class="b-enter_popup b-popup b-module">
-				<div class="b-module__head">войдите<span class="b-enter__text">&nbsp;&nbsp;или&nbsp;&nbsp;<a href="#registration"><span class="b-decor__link">Зарегистрируйтесь</span></a></span></div>
-				<form action="#" method="post" name="user_enter" class="b-form b-form_state_popup">
-					<input type="text" name="user_login" id="login" placeholder="E-mail"  class="b-form__input b-form_state_popup__input" autocomplete="on" />
-					<input type="password" name="user_password" id="password" placeholder="пароль" class="b-form__input b-form_state_popup__input" autocomplete="off" />
-					<input type="submit" value="Все верно!" class="b-form__submit b-form_state_popup__submit"/>
-				</form>
-				<a href="#test.autent" class="b-enter_popup__link"><span class="b-decor__link">Напомнить?</span></a>
+			<div class="b-enter_popup b-popup">
+				<div class="b-popup-i">
+					<div class="b-page__captcha">войдите<span class="b-enter__text">&nbsp;&nbsp;или&nbsp;&nbsp;<a href="#registration"><span class="b-decor__link">Зарегистрируйтесь</span></a></span></div>
+					<form action="#" method="post" name="user_enter" class="b-form b-form_state_popup">
+						<input type="text" name="user_login" id="login" placeholder="E-mail"  class="b-form__input b-form_state_popup__input" autocomplete="on" />
+						<input type="password" name="user_password" id="password" placeholder="пароль" class="b-form__input b-form_state_popup__input" autocomplete="off" />
+						<div class="b-form__submit-o b-form_state_popup__submit">
+							<input type="submit" value="ВСЕ ВЕРНО!" class="b-form__submit"/>
+						</div>
+					</form>
+					<a href="#test.autent" class="b-enter_popup__link"><span class="b-decor__link">Напомнить?</span></a>
+				</div>
 			</div>
 		</header>
-	
-	</div>
+<!-- конец блока Header -->	
+		<div class="g-line">
+			<div class="b-recipe">
+					<a href="#archive.recipes" class="b-recipe__archive">
+						<span class="b-decor__bg b-decor__bg_view_recipes"></span>
+						<span class="b-decor__link">Архив рецептов</span>
+					</a>
+				<ul class="b-recipe__date-list">
+					<li class="b-recipe__date-item"><span class="b-page__psevdolink">Сегодня</span></li
+					><li class="b-recipe__date-item"><span class="b-page__psevdolink">Вчера</span></li
+					><li class="b-recipe__date-item"><span class="b-page__psevdolink">Позавчера</span></li>
+				</ul>								
+				<ul class="b-recipe__content-list">
+					<li  class="b-recipe__content-item">
+						<figure class="b-recipe__image">
+							<img src="blocs/b-recipe/b-recipe__image.jpg" alt="Куриные ножки «Тропикана»"
+							/><figcaption class="b-recipe__caption">
+								<h2 class="b-recipe__caption-head">Куриные ножки «Тропикана»</h2>
+								<p class="b-recipe__caption-text">Лавровый лист, перец горошком, лук, чеснок, соль, листья розмарина и тимьяна измельчить в блендере. Добавить сметану и хорошо перемешать.</p>
+							</figcaption>
+						</figure>
+					</li
+					><li  class="b-recipe__content-item">
+						<figure class="b-recipe__image">
+							<img src="blocs/b-recipe/b-recipe__image.jpg" alt="Куриные ножки «Тропикана»"
+							/><figcaption class="b-recipe__caption">
+								<h2 class="b-recipe__caption-head">Куриные ножки «Тропикана»</h2>
+								<p class="b-recipe__caption-text">Лавровый лист, перец горошком, лук, чеснок, соль, листья розмарина и тимьяна измельчить в блендере. Добавить сметану и хорошо перемешать.</p>
+							</figcaption>
+						</figure>
+					</li>
+				</ul>
+				<ul>
+					<li class="b-recipe__image-preview"></li>
+					<li class="b-recipe__image-next"></li>
+				</ul>		
+			</div>
+			<section class="b-recipe__comment">
+				<h2 class="b-page__captcha">Комментарии</h2>
+				<article class="b-text_status_comment b-text_status_comment-first">
+					<h1 class="b-text__head"><a href="#recipe1">Свинная лопатка</a></h1>
+					<p class="b-text_status_comment__content">Очень интересный рецепт, мясо с яблочным пюре — просто класс!</p>
+					<footer class="b-text__foot vcard">
+						<span class="b-text__author fn">Натали,</span>
+						<time class="b-text__date" pubdate datetime="2011-04-11T14:42:11+03:00"> 11 апреля, в 14:42</time>
+					</footer>
+				</article>
+				<article class="b-text_status_comment">
+					<h1 class="b-text__head"><a href="#recipe2">Свинина с персиками</a></h1>
+					<p class="b-text_status_comment__content">А я считаю что и со свининой неплохо :-)</p>
+					<footer class="b-text__foot vcard">
+						<span class="b-text__author fn">Йося Розенблюм,</span>
+						<time class="b-text__date" pubdate datetime="2011-04-11T14:42:11+03:00"> 11 апреля, в 14:42</time>
+					</footer>
+				</article>
+				<article class="b-text_status_comment">
+					<h1 class="b-text__head"><a href="#recipe3">Яйца Бенедикт</a></h1>
+					<p class="b-text_status_comment__content">Происхождение названия достоверно не известно. Существует много версий. Но все эти версии маловероятны.</p>
+					<footer class="b-text__foot vcard">
+						<span class="b-text__author org">Редакция,</span>
+						<time class="b-text__date" pubdate datetime="2011-04-11T14:42:11+03:00"> 11 апреля, в 14:42</time>
+					</footer>
+				</article>
+			</section>
+		</div>
+		<div class="g-line">
+			<section class="b-page__content">
+				<div class="b-page__content-wrap_wrap_captcha">
+					<h2 class="b-page__captcha">СВЕЖИЕ ПУБЛИКАЦИИ</h2>
+				</div>
+				<div class="b-page__content-wrap">			
+					<article class="b-text_status_main">
+						<h1 class="b-text__head"><a href="#blog">Блог Даши</a></h1>
+						<h2 class="b-text_status_main__head">
+							<a href="#art1" class="b-text__link">
+								<img src="blocs/b-page/_page/art1.jpg" alt="#" class="b-text_status_main__head-image" />
+								Ура, мы вместе
+							</a>
+						</h2>
+						<p>Привет! Это напоминает приезд долгожданных друзей к тебе домой, а еще лучше – на дачу</p>
+						<footer class="b-text__foot vcard">
+							<time class="b-text__date" pubdate datetime="2011-05-05T11:36:11+03:00">05 мая, в 11:36,</time>
+							 <span class="b-text__counter-comments b-decor__bg_view_comments">134</span>
+						</footer>
+					</article
+					><article class="b-text_status_main">
+						<h1 class="b-text__head"><a href="#blog">Детская кулинарная школа</a></h1>
+						<h2 class="b-text_status_main__head"><a href="#art1"><img src="blocs/b-page/_page/art2.jpg" alt="#" class="b-text_status_main__head-image" />Жить вкуснее!</a></h2>
+						<p>Когда рождается ребенок – все безумно счастливы, а когда ему исполняется 6 месяцев – никто (кроме родителей и друзей.</p>
+						<footer class="b-text__foot vcard">
+							<time class="b-text__date" pubdate datetime="2011-05-03T17:18:11+03:00">03 мая, в 17:18,</time>
+							 <span class="b-text__counter-comments b-decor__bg_view_comments">18</span>
+						</footer>
+					</article
+					><article class="b-text_status_main">
+						<h1 class="b-text__head"><a href="#blog">СОВЕТЫ ДИЕТОЛОГА</a></h1>
+						<h2 class="b-text_status_main__head"><a href="#art1"><img src="blocs/b-page/_page/art3.jpg" alt="#" class="b-text_status_main__head-image" />Едим зелень</a></h2>
+						<p>Зелень условно можно разделить на мягкую и твердую. У твердой, как ты догадываешься, стебельки и листья – жесткие.</p>
+						<footer class="b-text__foot vcard">
+							<time class="b-text__date" pubdate datetime="2011-05-05T11:36:11+03:00">05 мая, в 11:36,</time>
+							 <span class="b-text__counter-comments b-decor__bg_view_comments">134</span>
+						</footer>
+					</article>
+				</div>
+				<div class="b-page__content-wrap">
+					<article class="b-text_status_main b_text_status_top">
+						<h1 class="b-text__head"><a href="#blog">СОВЕТЫ ДИЕТОЛОГА</a></h1>
+						<h2 class="b-text_status_main__head"><a href="#art1"><img src="blocs/b-page/_page/art4.jpg" alt="#" class="b-text_status_main__head-image" />Ферменты и их роль в организме</a></h2>
+						<p>Зелень условно можно разделить на мягкую и твердую. У твердой, как ты догадываешься, стебельки и листья – жесткие.</p>
+						<footer class="b-text__foot vcard">
+							<time class="b-text__date" pubdate datetime="2011-04-11T14:42:11+03:00"> 11 апреля, в 14:42</time>
+							 <span class="b-text__counter-comments b-decor__bg_view_comments">42</span>
+						</footer>
+					</article
+					><article class="b-text_status_main">
+						<h1 class="b-text__head"><a href="#blog">Блог даши</a></h1>
+						<h2 class="b-text_status_main__head"><a href="#art1"><img src="blocs/b-page/_page/art5.jpg" alt="#" class="b-text_status_main__head-image" />Ура, мы вместе</a></h2>
+						<p>Когда рождается ребенок – все безумно счастливы, а когда ему исполняется 6 месяцев – никто (кроме родителей и друзей, конечно) не замечает эту дату. Вот уже полгода, как наш сайт появился в нете. И мы как родители рады за наше дитя:)</p>
+						<footer class="b-text__foot vcard">
+							<time class="b-text__date" pubdate datetime="2011-05-05T11:36:11+03:00">05 мая, в 11:36,</time>
+							 <span class="b-text__counter-comments b-decor__bg_view_comments">134</span>
+						</footer>
+					</article>
+				</div>
+				<a href="#more.articles" class="b-page__button_view_more">Показать еще</a>					
+			</section>
+			<aside class="b-page__aside">
+				<div class="b-banner"></div>
+				<div class="b-advice">
+					<p class="b-advice__text">Не забывай, свинину нельзя оставлять доходить в духовке, она получится сухой.</p>
+					<span class="b-advice__link">Посоветуйте еще!</span>
+				</div>
+				<div class="facebook-api"></div>			
+			</aside>	
+		</div>
+	</div> <!-- конец b-wrapper -->	
 	<footer class="b-foot">
-	<dl>
-	<dt>
-		<span class="b-decor__bg b-decor__bg_view_author"></span>Made by:
-	</dt>
-	<dd>
-		<a href="#author">
-			<span class="b-decor__link">dp!Production House</span>
-		</a>
-	</dd>
-</dl>
+		<div class="vcard">
+			&copy;&nbsp;<span class="fn">Даша Малахова</span>,&nbsp;2001
+			
+			<a href="mailto:dasha.malahova@site.ru">Обратная связь</a>
+		</div>
+		<ul class="b-foot__menu-list">
+			<li class="b-foot__menu-item"><a href="#recipes" class="b-decor__link">Дашины рецепты</a></li
+			><li class="b-foot__menu-item"><a href="#preferences" class="b-decor__link">Даша любит</a></li
+			><li class="b-foot__menu-item"><a href="#tv" class="b-decor__link">Даша на TV</a></li
+			><li class="b-foot__menu-item"><a href="#school" class="b-decor__link">Детская кулинарная школа</a></li
+			><li class="b-foot__menu-item"><a href="#book" class="b-decor__link">Книга</a></li
+			><li class="b-foot__menu-item"><a href="#blog" class="b-decor__link">Блог Даши</a></li
+			><li class="b-foot__menu-item"><a href="#note" class="b-decor__link">Хозяйке на заметку</a></li>
+		</ul>
+		<dl>
+			<dt><span class="b-decor__bg b-decor__bg_view_author"></span>Made by:</dt>
+			<dd><a href="#author"><span class="b-decor__link">dp!Production House</span></a></dd>
+		</dl>
 	</footer>
-
 </body>
 </html>
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

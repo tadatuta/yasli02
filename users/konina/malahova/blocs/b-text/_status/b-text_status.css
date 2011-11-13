@@ -1,0 +1,35 @@
+.b-text_status_main {
+	position:relative;
+	display:inline-block;
+	width:75%;
+	padding:162px 18% 0 7%;
+	white-space:normal;
+	vertical-align:top;
+}
+.b_text_status_top {
+	padding:324px 18% 0 7%;
+	width:175%;
+}
+.b-text_status_main__head{
+	font:18px/26px Georgia, serif;
+	margin-bottom:6px;
+	text-decoration:underline;
+}
+.b-text_status_main__head-image{
+	position:absolute;
+	top:24px;
+	right:40px;
+}
+.b-text_status_comment{
+	width:100%;
+	margin-top:25px;
+}
+.b-text_status_comment-first{
+	margin-top:15px;
+}
+.b-text_status_comment__content{
+	font-family:Georgia, serif;
+	font-style:italic;
+	letter-spacing:-0.15ex;
+	word-spacing:2px;
+}

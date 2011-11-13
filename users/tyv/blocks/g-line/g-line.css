@@ -1,8 +1,11 @@
-.g-line:after
-{
-    display: block;
-
-    clear: both;
-
-    content: '';
+.g-line:after{
+	clear:both;
+	display:block;
+	visibility:hidden;
+	height:0;
+	content:"";
 }
+
+
+/*стиль для младших IE*/
+/*.g-line { zoom: 1; }*/

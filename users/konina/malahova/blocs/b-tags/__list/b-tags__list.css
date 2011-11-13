@@ -1,8 +1,11 @@
 .b-tags__list{
-	display:none;
+	display:block;
 	
 	text-transform:capitalize;	
 	
-	margin:0;
+	margin:21px 0 0;
 	
+}
+.b-form .b-tags__list{
+	display:none;
 }

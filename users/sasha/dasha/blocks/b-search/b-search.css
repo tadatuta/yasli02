@@ -1,0 +1,9 @@
+.b-search{
+    background-color:white;
+    border: 1px solid green;
+    display: inline-block;
+    float:right;
+    width:242px;
+    min-height:80px;
+    padding: 20px 20px 0 20px;
+}

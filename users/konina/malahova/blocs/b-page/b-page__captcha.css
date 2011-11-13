@@ -1,0 +1,44 @@
+.b-page__captcha{
+	font:18px/16px Georgia, serif;
+	text-transform:uppercase;
+	
+	height:18px;
+	padding-bottom:18px;
+	background: -moz-linear-gradient(top,  
+	transparent 0%, 
+	transparent 33px, 
+	#888890 34px, 	
+	transparent 34px, 
+	transparent 35px, 
+	#888890 36px); /* FF3.6+ */
+	background: -webkit-linear-gradient(top, 
+	 transparent 0%,
+	 transparent 33px,
+	 #888890 33px,
+	 transparent 34px,
+	 transparent 35px, 
+	 #888890 36px); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  
+	 transparent 0%,
+	 transparent 33px,
+	 #888890 33px,
+	 transparent 34px,
+	 transparent 35px, 
+	 #888890 36px); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  
+	 transparent 0%,
+	 transparent 33px,
+	 #888890 33px,
+	 transparent 34px,
+	 transparent 35px, 
+	 #888890 36px); /* IE10+ */
+	background: linear-gradient(top,  
+	 transparent 0%,
+	 transparent 33px,
+	 #888890 33px,
+	 transparent 34px,
+	 transparent 35px, 
+	 #888890 36px); /* W3C */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#888890',GradientType=0 ); /* IE6-9 */
+	
+}

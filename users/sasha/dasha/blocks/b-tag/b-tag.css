@@ -1,0 +1,43 @@
+.b-tag{
+    font:italic 11px Arial, sans-serif;
+    background: white;
+    border:1px solid #ababab;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    line-height:20px;
+    padding:0 7px 0 7px;
+    display:inline-block;
+    //display:inline;
+    //zoom:1;
+
+}
+
+.b-tag_type_checked{
+
+   background: #e9eff5;
+}
+
+.b-tag_type_checked:after{
+   content:'×';
+   width:13px;
+
+   display:inline-block;
+   text-align: right;
+
+}
+
+.b-tag_type_active{
+   background: #f36b7a;
+   color:white;
+}
+
+.b-tag_type_active:after{
+   content:'×';
+   width:13px;
+   color:white;
+
+   display:inline-block;
+   text-align: right;
+
+}

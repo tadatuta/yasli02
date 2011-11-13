@@ -1,0 +1,15 @@
+.b-page__content{
+	float:left;
+	width:700px;
+	overflow:hidden;
+	background:#fff;
+}
+.b-page__content-wrap{
+	width:240px;
+	margin-bottom:14px;
+	white-space:nowrap;
+}
+.b-page__content-wrap_wrap_captcha{
+	padding:20px 20px 0;
+}
+
