@@ -1,0 +1,16 @@
+.b-h1{
+    font:italic 18px Georgia,serif;
+    color:#424249;
+    *z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('beforeEnd', '<div class="b-h1_ie7_after">'));
+    }
+.b-h1_ie7_after,
+.b-h1:after{
+    content:"";
+    display:block;
+    height:1px;
+    line-height: 1px;
+    border-top: 1px solid #424249;
+    border-bottom:1px solid #424249;
+    margin-bottom:1px;
+}
+

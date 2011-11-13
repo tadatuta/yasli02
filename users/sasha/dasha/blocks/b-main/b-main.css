@@ -1,0 +1,10 @@
+.b-main{
+    background: #e9eff5;
+    margin:34px auto;
+    width:700px;
+    height:300px;
+    -moz-box-shadow: -8px 14px 15px -1px rgba(0,35,46,0.25), 8px -14px 15px -1px rgba(0,35,46,0.25) ;
+    -webkit-box-shadow: -8px 14px 15px -1px rgba(0,35,46,0.25), 8px -14px 15px -1px rgba(0,35,46,0.25) ;
+    box-shadow: -8px 14px 15px -1px rgba(0,35,46,0.25), 8px -14px 15px -1px rgba(0,35,46,0.25) ;
+    padding:20px;
+}
