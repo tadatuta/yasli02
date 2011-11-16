@@ -1,0 +1,12 @@
+.b-logo__captcha{
+	font-family: Georgia,serif;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+	
+	width: 83%;
+	margin: 17px;
+	outline: 5px solid #fe7183;
+	border: 1px solid #fff;   
+	background:#fe7183;
+}

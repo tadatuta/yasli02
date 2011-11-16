@@ -1,21 +1,30 @@
 .b-menu__link{
-	position:relative;
 	font:12px/20px Georgia, serif;
 	text-transform:uppercase;
+	position:relative;
+	z-index:1;
+	display:inline-block;
+	padding:7px 13px 17px;
 	color:#33424b;
+	border-top:5px solid transparent;
 }
+.b-menu__item_has_submenu .b-menu__link {
+	padding-left:20px;
+	padding-right:9px;
+}	
 .b-menu__item:hover .b-menu__link{
 	color:#fff;
-}
-.b-menu__link-arrow{
-	position:absolute;
-	top:48%;
-	width:5px;
-	height:3px;
-	overflow:hidden;
-	margin-left:-8px;
-	background:url(b-menu__link-arrow.png) 0 0 no-repeat;	
-}
-.b-menu__item_has_submenu:hover .b-menu__link-arrow{
-	background-position:100% 0;
-}
+}	
+	.b-menu__link-arrow{
+		position:absolute;
+		top:40%;
+		left:0;
+		width:5px;
+		height:3px;
+		overflow:hidden;
+		margin-left:7px;
+		background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAADCAYAAACqPZ51AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAClJREFUeNpiNHby/s+ABs7s3YIuxMAExIxoYozYxJiQJBnQFKCIAQQYALaRBAoGuApmAAAAAElFTkSuQmCC) 0 0 no-repeat;	
+	}
+	.b-menu__item_has_submenu:hover .b-menu__link-arrow{
+		background-position:100% 0;
+	}

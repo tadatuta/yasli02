@@ -1,0 +1,10 @@
+.b-logo__link{
+	display:block;
+	padding:11px 0;
+}
+.b-logo__link:link{
+	color:#fff;	
+}
+.b-logo__link:hover{
+	color:#888890;
+}

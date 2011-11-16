@@ -1,0 +1,16 @@
+.b-advice{
+	
+	
+	
+	
+	
+	border-width: 20px;
+	-moz-border-image: url(b-advice.png) 20 repeat;
+	-webkit-border-image: url(b-advice.png) 20 repeat;
+	-o-border-image: url(b-advice.png) 20 repeat;
+	border-image: url(b-advice.png) 20 repeat;
+}
+.b-advice-i{
+	background-image:url(b-advice__bg.png);
+	background-color:#fe7183;
+}

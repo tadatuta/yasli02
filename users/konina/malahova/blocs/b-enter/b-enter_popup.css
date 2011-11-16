@@ -1,0 +1,9 @@
+.b-enter_popup{
+	display:none;
+}
+.b-enter_popup__link{
+	font-size: 11px;
+	position:absolute;
+	top:144px;
+    left: 5px;
+}

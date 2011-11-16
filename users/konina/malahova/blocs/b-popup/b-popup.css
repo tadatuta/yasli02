@@ -5,12 +5,11 @@
 	z-index:10;
 	display:block;  
 	
-	-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-    width: 334px;
+	
+    width: 270px;
 	margin-left: -167px;
     margin-top: 140px;
-    padding:7px 4px;
+    padding:7px 5px;
 	
 	border-width: 26px 28px 28px 26px;
 	-moz-border-image: url(b-popup.png) 26 28 28 26 repeat;
@@ -18,8 +17,12 @@
 	-o-border-image: url(b-popup.png) 26 28 28 26 repeat;
 	border-image: url(b-popup.png) 26 28 28 26 repeat;
 }
-
-.b-popup-i{
+.no-borderimage .b-popup{
+	margin-top:160px;
+	outline: 20px solid #fff;
+	-webkit-box-shadow: 1px 1px 15px 20px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 15px 20px rgba(0,0,0,0.3);
+	-ms-box-shadow: 1px 1px 15px 20px rgba(0,0,0,0.3);
+	box-shadow: 1px 1px 15px 20px rgba(0,0,0,0.3);
 	background:#fff;
-	outline: 10px solid #fff;
 }

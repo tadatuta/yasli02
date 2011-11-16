@@ -1,28 +1,52 @@
-
 .b-text__head{
 	font:10px/18px Georgia, serif;
 	text-transform:uppercase;
-	color:#888890;
-	text-decoration:underline;
+}
+.b-text__head:link,
+.b-text__head:visited{
+	text-decoration:underline;	
 }
 .b-text__foot{
+	position:relative;
 	font:11px/18px Helvetica, sans-serif;
 	font-style:italic;
-	margin-top:9px;
+	margin-top:12px;
 	color:#888890;
 }
 .b-text__foot:before{
-	display:block;	
-	width:19px;
-	height:6px;
-	overflow:hidden;
-	background:url(b-decor.png) 100% -38px no-repeat; 
-	content:"\0020";
+	position:absolute;
+	top: -10px;
+	left:2px;
+	
+	font-weight: 900;
+	font-size: 17px;
+	line-height: 20px;
+	font-family: monospace;
+
+	display:block;
+	content:"\222B";	
+	
+	width:20px;
+	height:20px;
+	
+	vertical-align:middle;
+	
+	-moz-transform:rotate(55deg);
+	-webkit-transform:rotate(55deg);
+	-o-transform:rotate(55deg);
+	-ms-transform:rotate(55deg);
+	transform:rotate(55deg);
+	color:#888890;
 }
-.b-text__link{
-	text-decoration:underline;
+.b-text__foot .b-page__link{
+	vertical-align:top;
 }
-
-.b-text__counter-comments{}
-
-
+.b-text__comments:link{
+	color:#888890;
+}
+.b-text__comments:hover{
+	color:#424249;
+}
+.b-text__comments:hover .b-icon_view_comments{
+	background-position:0 -30px;
+}

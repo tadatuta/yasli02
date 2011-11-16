@@ -1,0 +1,15 @@
+.b-form__input{
+	height:24px;
+	
+	line-height:24px;
+	padding-left:5px;
+	
+	border-top:1px solid #aaadb2;
+	border-right:1px solid #e2e2ec;
+	border-bottom:1px solid #e2e9ef;
+	border-left:1px solid #e3e3ed;
+	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}

@@ -1,16 +1,9 @@
 .b-logo{
-	position:relative;
-	top:-49px;
-	left:-12px;
-	
 	display:inline-block;
 	
 	overflow:hidden;
 	
 	width:227px;
 	height:152px;
-	margin-bottom:-49px;
-}
-.b-logo h1{
-	float:left;
+	margin: -49px 0 0 -12px;
 }

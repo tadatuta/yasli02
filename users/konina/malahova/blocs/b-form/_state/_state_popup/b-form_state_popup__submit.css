@@ -1,7 +1,10 @@
 .b-form_state_popup__submit{
+	display: inline-block;
 	position:relative;
 	left:50%;
 	margin-left:-54px;
-	width:87px;
+	padding: 1px 5px;
 	margin-top:10px;
+	text-align: center;
+	vertical-align: middle;
 }

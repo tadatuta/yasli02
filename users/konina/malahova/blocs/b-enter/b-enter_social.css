@@ -1,0 +1,14 @@
+.b-enter_social{
+	display:inline-block;
+}
+.b-enter_social__head{
+	font:italic 11px/19px Arial, serif;
+	color:#888890;
+	line-height:20px;
+}
+.b-enter_social__item{
+	display:inline-block;
+	-webkit-margin-start:0;
+	-moz-margin-start:0;
+	margin-right:16px;
+}

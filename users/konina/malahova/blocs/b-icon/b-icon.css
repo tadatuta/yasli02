@@ -1,0 +1,39 @@
+.b-icon{
+	display:inline-block;
+	vertical-align:text-top;
+	overflow:hidden;
+	background-image:url(b-icon.png);
+	background-repeat:no-repeat;	
+}
+.b-icon_view_vkontakte{
+	width:16px;
+	height:16px;
+	margin-right:6px;
+	background-position:100% 0;
+}
+.b-icon_view_facebook{
+	width:14px;
+	height:14px;
+	margin-right:6px;
+	background-position:100% -16px;
+}
+.b-icon_view_comments{
+	width:9px;
+	height:8px;
+	margin:0 3px;
+	vertical-align:baseline;
+	background-position:100% -30px;
+}
+.b-icon_view_author{
+	width:36px;
+	height:26px;
+	background-position:100% -38px;
+}
+.b-icon_view_recipes{
+	width:18px;
+	height:14px;
+	background-position:100% -64px;
+}
+
+
+
