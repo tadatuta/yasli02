@@ -1,0 +1,15 @@
+@import url(blocks/i-reset/i-reset.css);
+@import url(blocks/i-global/i-global.css);
+@import url(blocks/b-body/b-body.css);
+@import url(blocks/b-main/b-main.css);
+@import url(blocks/b-header/b-header.css);
+@import url(blocks/b-logo/b-logo.css);
+@import url(blocks/b-register/b-register.css);
+@import url(blocks/b-register/__normal/b-register__normal.css);
+@import url(blocks/b-register/__social/b-register__social.css);
+@import url(blocks/b-search/b-search.css);
+@import url(blocks/b-tag/b-tag.css);
+@import url(blocks/b-h1/b-h1.css);
+@import url(blocks/b-link/b-link.css);
+
+
